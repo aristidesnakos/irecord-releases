@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle">
+  <channel>
+    <title>iRecord Updates</title>
+    <link>https://github.com/aristidesnakos/irecord-releases/releases</link>
+    <description>Updates for iRecord - Professional screen recording</description>
+    <language>en</language>
+
+    <!--
+      Intentionally no <item> entries yet.
+
+      Sparkle reads an empty channel as "you are up to date" and says so quietly. That is the
+      correct state before the first release: the alternative — an <item> pointing at an
+      iRecord.dmg that has not been uploaded — makes every update check fail on download.
+
+      A missing file is worse still: this URL is baked into every shipped bundle, so a 404 here
+      breaks "Check for Updates…" for every user, forever.
+
+      scripts/release.sh REGENERATES this whole file on each release, so do not hand-edit it
+      to add releases; run the script instead.
+    -->
+
+  </channel>
+</rss>
