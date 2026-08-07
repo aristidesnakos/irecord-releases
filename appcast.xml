@@ -6,19 +6,39 @@
     <description>Updates for iRecord - Professional screen recording</description>
     <language>en</language>
 
-    <!--
-      Intentionally no <item> entries yet.
+    <item>
+      <title>Version 1.219.0</title>
+      <pubDate>Fri, 07 Aug 2026 18:46:55 +0300</pubDate>
+      <sparkle:version>2621900</sparkle:version>
+      <sparkle:shortVersionString>1.219.0</sparkle:shortVersionString>
+      <sparkle:minimumSystemVersion>15.0</sparkle:minimumSystemVersion>
+      <description><![CDATA[
+        <style>
+          body { font-family: -apple-system, BlinkMacSystemFont, sans-serif; font-size: 13px; line-height: 1.4; }
+          h3 { margin: 0 0 10px 0; font-size: 15px; }
+          ul { margin: 0; padding-left: 20px; }
+          li { margin: 6px 0; }
+        </style>
+        <h3>What's New in 1.219.0</h3>
+        <ul>
+          <li>Every section can have its own camera view — a recording no longer has to look the same the whole way through. Set the intro to **Camera full**, the demo to **Corner**, the wrap-up to **Side by side**, and the video cuts between them at the section boundaries, in the editor canvas and in the saved MP4 alike. Switch the Camera panel from *Whole recording* to *Each section*, then move the playhead to the section you want to reframe; the timeline shows each block's framing so you can read the cuts at a glance. Flipping the switch either way never changes what is on screen — turning it on gives every section the look the recording already had, and turning it off keeps the one you are looking at.</li>
+          <li>A "Camera full" view — the camera alone, filling the frame. The talking-head shot an intro or a sign-off wants, and the thing that made every other framing feel like a variation on one layout.</li>
+          <li>A section recorded without the camera could show the previous section's frozen face — the exported video held the last camera frame it had seen across any section that had no camera of its own. Those sections now play with no camera, which is what they were recorded as.</li>
+          <li>Camera framing is chosen, not assembled — the Camera panel used to spend three controls on one decision: a checkbox to enable the camera, a picker to choose a mode, and a stack of sliders to place it. It is now a row of four swatches that draw the layout they produce — **Screen only**, **Corner**, **Side by side**, **Camera full** — and the numbers moved behind *Fine-tune* for the rare time you want 27% rather than 25%. Nothing was taken away: every slider is still there, and switching views and back returns the framing you tuned rather than a factory default.</li>
+          <li>The app is now called iRecord — same app, the name it ships under at irecord.video. Direktor was the internal working name and is retired; earlier entries in this file keep it because that is what those releases were called.</li>
+          <li>The bundle identifier moved to `com.irecord.app` (from `com.direktor.app`).</li>
+          <li>Your Recordings moved from `~/Movies/Direktor` to `~/Movies/iRecord` — migrated automatically the first time the renamed app launches, once. Nothing is copied twice and nothing is left behind; if the new folder already exists the migration is skipped.</li>
+          <li>Version numbers now read `1.219.0` — major, the day of the year, and a counter for repeat releases on the same day. The same scheme the Expo apps use. Earlier entries in this file keep their `YYYY.MM.DD` headings because that is genuinely what those builds were called.</li>
+          <li>iRecord requires macOS 15 (Sequoia) and an Apple Silicon Mac. Microphone capture is a macOS 15 API with no earlier equivalent, so on macOS 14 the app recorded your screen and your Mac's own sound but silently dropped your voice — the kind of failure you only discover after the take. Rather than ship that, the app now says it needs Sequoia. Apple Silicon is the same principle applied to hardware: it is what can actually be tested, and an Intel build nobody could debug would be a worse promise than an honest limit.</li>
+        </ul>
+      ]]></description>
+      <enclosure
+        url="https://github.com/aristidesnakos/irecord-releases/releases/download/v1.219.0/iRecord.dmg"
+        type="application/x-apple-diskimage"
+        sparkle:edSignature="kNnD1hyPHv6yh8iEgh3cSFgvcBZy9oPoSHiZwYiZqbLMjKwa5gr5ErvisCxmiH8cMp8cPLeBBDdme+Cgxa38Cg==" length="2932006"
+      />
+    </item>
 
-      Sparkle reads an empty channel as "you are up to date" and says so quietly. That is the
-      correct state before the first release: the alternative — an <item> pointing at an
-      iRecord.dmg that has not been uploaded — makes every update check fail on download.
-
-      A missing file is worse still: this URL is baked into every shipped bundle, so a 404 here
-      breaks "Check for Updates…" for every user, forever.
-
-      scripts/release.sh REGENERATES this whole file on each release, so do not hand-edit it
-      to add releases; run the script instead.
-    -->
 
   </channel>
 </rss>
