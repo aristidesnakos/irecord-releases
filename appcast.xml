@@ -7,6 +7,45 @@
     <language>en</language>
 
     <item>
+      <title>Version 1.220.0</title>
+      <pubDate>Sat, 08 Aug 2026 14:34:32 +0300</pubDate>
+      <sparkle:version>2622000</sparkle:version>
+      <sparkle:shortVersionString>1.220.0</sparkle:shortVersionString>
+      <sparkle:minimumSystemVersion>15.0</sparkle:minimumSystemVersion>
+      <description><![CDATA[
+        <style>
+          body { font-family: -apple-system, BlinkMacSystemFont, sans-serif; font-size: 13px; line-height: 1.4; }
+          h3 { margin: 0 0 10px 0; font-size: 15px; }
+          h4 { margin: 14px 0 4px 0; font-size: 13px; }
+          code { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 12px; }
+          ul { margin: 0; padding-left: 20px; }
+          li { margin: 6px 0; }
+        </style>
+        <h3>What's New in 1.220.0</h3>
+        <h4>Fixed</h4>
+        <ul>
+          <li><strong>Trimming a clip no longer overshoots</strong> — dragging a clip's end moved it many times further than the cursor went, so the first edit most people try collapsed the clip instead of shortening it. A 40-pixel drag now trims exactly what 40 pixels is worth, and the handle stays under the cursor for the whole drag, in both directions.</li>
+          <li><strong>Re-recording a section keeps the edits you made in it</strong> — if you had split a section into three and then re-recorded it, all three pieces were silently thrown away and ⌘Z could not bring them back. Your splits and trims now carry across to the new take, because they are positions in the section, not in one particular file. When a take is genuinely too short to hold them, the app says so and how much shorter it is, rather than quietly rearranging the timeline. Re-recording is a single ⌘Z away either way.</li>
+        </ul>
+        <h4>Added</h4>
+        <ul>
+          <li><strong>A clip's ends look draggable</strong> — the trim handles were invisible until you happened to hover exactly over them. Each end now carries a quiet grip at rest, turns amber under the pointer, and marks the exact cut while you drag. The area you can grab is twice as wide as the handle you see.</li>
+          <li><strong>Every take you record is reachable</strong> — a section that has been re-recorded shows <code>⟲ 3</code> on its timeline block, listing each take with its length so you can put an earlier one back. Nothing was ever deleted; until now there was simply no way to get to it.</li>
+          <li><strong>Clip lengths show tenths under a minute</strong> — the sliver left by a split used to read "0:00".</li>
+        </ul>
+        <h4>Changed</h4>
+        <ul>
+          <li><strong>The timeline says what an edit cost</strong> — when a re-recorded take is too short to hold the splits you had made, a line above the timeline says how much shorter it is and what no longer applies, instead of quietly rearranging the blocks.</li>
+        </ul>
+      ]]></description>
+      <enclosure
+        url="https://github.com/aristidesnakos/irecord-releases/releases/download/v1.220.0/iRecord.dmg"
+        type="application/x-apple-diskimage"
+        sparkle:edSignature="DACMcZ+CuhYITKpyactjI9IqLT8MpbXd19tFSw3I8PUGkwSL+i4NE8/FzKslKj0blW1wmqkIHpoPVrrhat30Dw==" length="2974109"
+      />
+    </item>
+
+    <item>
       <title>Version 1.219.0</title>
       <pubDate>Fri, 07 Aug 2026 18:46:55 +0300</pubDate>
       <sparkle:version>2621900</sparkle:version>
@@ -38,7 +77,5 @@
         sparkle:edSignature="kNnD1hyPHv6yh8iEgh3cSFgvcBZy9oPoSHiZwYiZqbLMjKwa5gr5ErvisCxmiH8cMp8cPLeBBDdme+Cgxa38Cg==" length="2932006"
       />
     </item>
-
-
   </channel>
 </rss>
