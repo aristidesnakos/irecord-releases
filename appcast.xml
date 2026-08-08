@@ -7,6 +7,34 @@
     <language>en</language>
 
     <item>
+      <title>Version 1.220.1</title>
+      <pubDate>Sat, 08 Aug 2026 15:04:01 +0300</pubDate>
+      <sparkle:version>2622001</sparkle:version>
+      <sparkle:shortVersionString>1.220.1</sparkle:shortVersionString>
+      <sparkle:minimumSystemVersion>15.0</sparkle:minimumSystemVersion>
+      <description><![CDATA[
+        <style>
+          body { font-family: -apple-system, BlinkMacSystemFont, sans-serif; font-size: 13px; line-height: 1.4; }
+          h3 { margin: 0 0 10px 0; font-size: 15px; }
+          h4 { margin: 14px 0 4px 0; font-size: 13px; }
+          code { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 12px; }
+          ul { margin: 0; padding-left: 20px; }
+          li { margin: 6px 0; }
+        </style>
+        <h3>What's New in 1.220.1</h3>
+        <h4>Fixed</h4>
+        <ul>
+          <li><strong>A trimmed-down clip can always be dragged back out</strong> — trim a section short enough and <code>Record next section</code> came to rest on top of it, covering the very handle you needed to undo the trim. The button now starts after the last block instead of after the timeline's nominal end, and a trim can no longer shrink a block below the width it is drawn at, so the state that trapped the clip cannot be reached in the first place. Zoom in when you need to trim finer than the lane can show.</li>
+        </ul>
+      ]]></description>
+      <enclosure
+        url="https://github.com/aristidesnakos/irecord-releases/releases/download/v1.220.1/iRecord.dmg"
+        type="application/x-apple-diskimage"
+        sparkle:edSignature="2aHMY5vgtEG91rEw7d6UZRvgzbq50KBTSj66bjS8JREcMybFaOcRA5VXv7Q0a42oSZpVrUG2RyD62p0fnhi/BA==" length="2974156"
+      />
+    </item>
+
+    <item>
       <title>Version 1.220.0</title>
       <pubDate>Sat, 08 Aug 2026 14:34:32 +0300</pubDate>
       <sparkle:version>2622000</sparkle:version>
@@ -44,7 +72,6 @@
         sparkle:edSignature="DACMcZ+CuhYITKpyactjI9IqLT8MpbXd19tFSw3I8PUGkwSL+i4NE8/FzKslKj0blW1wmqkIHpoPVrrhat30Dw==" length="2974109"
       />
     </item>
-
     <item>
       <title>Version 1.219.0</title>
       <pubDate>Fri, 07 Aug 2026 18:46:55 +0300</pubDate>
