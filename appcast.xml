@@ -7,6 +7,42 @@
     <language>en</language>
 
     <item>
+      <title>Version 1.221.0</title>
+      <pubDate>Sun, 09 Aug 2026 15:19:08 +0300</pubDate>
+      <sparkle:version>2622100</sparkle:version>
+      <sparkle:shortVersionString>1.221.0</sparkle:shortVersionString>
+      <sparkle:minimumSystemVersion>15.0</sparkle:minimumSystemVersion>
+      <description><![CDATA[
+        <style>
+          body { font-family: -apple-system, BlinkMacSystemFont, sans-serif; font-size: 13px; line-height: 1.4; }
+          h3 { margin: 0 0 10px 0; font-size: 15px; }
+          h4 { margin: 14px 0 4px 0; font-size: 13px; }
+          code { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 12px; }
+          ul { margin: 0; padding-left: 20px; }
+          li { margin: 6px 0; }
+        </style>
+        <h3>What's New in 1.221.0</h3>
+        <h4>Changed</h4>
+        <ul>
+          <li><strong>The timeline zooms out to the whole recording, and in to a single frame</strong> — a long recording could not be seen end to end at any zoom, and could not be zoomed in far enough to place a cut on a frame. The zoom-out end now means "everything, in one screen", whatever the recording's length, and the zoom-in end reaches frame level. The editor opens showing the whole thing, <code>Fit</code> returns to it in one click, the two magnifiers step in and out, and zooming keeps the playhead where your eye already is instead of scrolling out from under you. Long timelines also stay smooth while you do it.</li>
+          <li><strong>Picking a window tells you what each window is</strong> — the grid was ragged, and windows that could not be previewed all came out as the same grey rectangle, so four different windows read as one app repeated. Every window now shows its app icon — instead of the preview when there isn't one, beside it when there is — with the window title and the app it belongs to on every card. A line under the grid explains what the list contains: windows from every desktop and Space, which is why some have no preview and all of them are still recordable.</li>
+          <li><strong>The camera's Fine-tune settings are easier to find, and easier to skip</strong> — the row that opens position, size, shape and border was the faintest thing in the panel while being the door to all of it. It now reads as a control, and when closed it shows what it is hiding, so checking your framing costs nothing.</li>
+          <li><strong>A new recording's camera has no white ring</strong> — the border was 2 px by default, a styling opinion applied to footage nobody had looked at yet. It now starts at 0 and the slider is there when you want one. Recordings you have already made are untouched.</li>
+          <li><strong>Reporting a problem now brings the evidence with it</strong> — Help → "Report an Issue…" gathers a diagnostics file, shows it to you in Finder, and opens an email ready to send. Attach the file and the report arrives with your macOS version, Mac model, free disk space, permission states and the app's own log, instead of "it didn't work". Nothing is sent anywhere on its own: the file is written to your Mac, you read it, and you decide whether to attach it. It contains no video and no licence key.</li>
+        </ul>
+        <h4>Fixed</h4>
+        <ul>
+          <li><strong>A failed save says where it failed</strong> — an export that could not read part of a recording reported two words, "Cannot Decode", with no indication of what had gone wrong or where. It now names the point in the video it stopped at, so a damaged stretch of one take is identifiable instead of looking like a broken app.</li>
+        </ul>
+      ]]></description>
+      <enclosure
+        url="https://github.com/aristidesnakos/irecord-releases/releases/download/v1.221.0/iRecord.dmg"
+        type="application/x-apple-diskimage"
+        sparkle:edSignature="Ra6dkquinK7jZTUj1pMDXg2oMls9ABfmrzMrd6IP8jY2jAxG6lfv+NXbtDNY5i6KVS4z9uaCv6cyArqK1ogvAQ==" length="3033310"
+      />
+    </item>
+
+    <item>
       <title>Version 1.220.1</title>
       <pubDate>Sat, 08 Aug 2026 15:04:01 +0300</pubDate>
       <sparkle:version>2622001</sparkle:version>
@@ -33,7 +69,6 @@
         sparkle:edSignature="2aHMY5vgtEG91rEw7d6UZRvgzbq50KBTSj66bjS8JREcMybFaOcRA5VXv7Q0a42oSZpVrUG2RyD62p0fnhi/BA==" length="2974156"
       />
     </item>
-
     <item>
       <title>Version 1.220.0</title>
       <pubDate>Sat, 08 Aug 2026 14:34:32 +0300</pubDate>
