@@ -7,6 +7,46 @@
     <language>en</language>
 
     <item>
+      <title>Version 1.224.0</title>
+      <pubDate>Wed, 12 Aug 2026 02:31:06 +0300</pubDate>
+      <sparkle:version>2622400</sparkle:version>
+      <sparkle:shortVersionString>1.224.0</sparkle:shortVersionString>
+      <sparkle:minimumSystemVersion>15.0</sparkle:minimumSystemVersion>
+      <description><![CDATA[
+        <style>
+          body { font-family: -apple-system, BlinkMacSystemFont, sans-serif; font-size: 13px; line-height: 1.4; }
+          h3 { margin: 0 0 10px 0; font-size: 15px; }
+          h4 { margin: 14px 0 4px 0; font-size: 13px; }
+          code { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 12px; }
+          ul { margin: 0; padding-left: 20px; }
+          li { margin: 6px 0; }
+        </style>
+        <h3>What's New in 1.224.0</h3>
+        <h4>Added</h4>
+        <ul>
+          <li><strong>Reorder the sections of a recording without re-recording them</strong> — select a block on the timeline and press ⌥← or ⌥→ to move it one place earlier or later. The pricing bit can come before the demo after the fact. ⌘Z puts the order back exactly as it was, and the saved video follows the order you see. Dragging blocks to reorder is still to come; the keyboard works today.</li>
+        </ul>
+        <h4>Fixed</h4>
+        <ul>
+          <li><strong>⌘Z while renaming a recording now undoes what you typed</strong> — it used to reach past the name field and undo your last trim or split instead, which is the opposite of what a text field is expected to do. Renaming also no longer lets ⌘B or ⌘K cut the timeline mid-word.</li>
+          <li><strong>Cancelling "Record next section" no longer leaves an empty section behind</strong> — the section had to be created before the recorder could roll, and backing out of the source picker left it in the recording for good, silently pushing the numbering along each time. Backing out now leaves the recording exactly as it was, however the recording failed to start.</li>
+          <li><strong>The Ready screen tells you screen recording access is needed before you press Record</strong> — macOS takes that permission back every so often on its own, and the app only found out at the moment capture started, after the countdown. It is now checked when the Ready screen opens and every time you switch back to iRecord, so the Grant row is on screen before you pick anything, alongside a line saying that macOS re-asks periodically and this is not iRecord losing your permission. On a Mac where access had been revoked, that same check used to take about eighteen seconds and let the system raise its own dialog on top; it is now immediate and silent.</li>
+          <li><strong>Recording a specific window could fail instantly, every time</strong> — picking a window from Ready and hitting Record threw "Failed to setup capture session" before the countdown even started. The window list had been widened to show windows on other Spaces or behind other apps, but the check that runs when Record is actually pressed was never updated to match, so it could never find the window the list had just offered. The two now agree.</li>
+          <li><strong>Record could run its countdown and fail on a microphone permission it already knew was missing</strong> — with Microphone switched on but not yet granted, the Grant row said so right there in the same screen, but Record stayed enabled and only failed after the countdown, with a raw system error instead of pointing at the row.</li>
+        </ul>
+        <h4>Changed</h4>
+        <ul>
+          <li><strong>The quality row on Save Video reads as a control now, not a caption</strong> — "High Quality — Best quality · Larger file ⌄ Advanced" was plain text next to a chevron, with no chrome telling you it opened anything. It now has the same button chip and hover state as the rest of the sheet, and the "Advanced" label and chevron sit together at the trailing edge, which is where a disclosure control is expected.</li>
+        </ul>
+      ]]></description>
+      <enclosure
+        url="https://github.com/aristidesnakos/irecord-releases/releases/download/v1.224.0/iRecord.dmg"
+        type="application/x-apple-diskimage"
+        sparkle:edSignature="3BMB4pBeYU9/+qAJDH9Xcjw5vylVOsx9svOFKx1N7RcQ/bUN/9H2us7Qj9VRUktYCthARbvNWByO7oEdOIyLBA==" length="3065672"
+      />
+    </item>
+
+    <item>
       <title>Version 1.223.0</title>
       <pubDate>Tue, 11 Aug 2026 01:43:20 +0300</pubDate>
       <sparkle:version>2622300</sparkle:version>
@@ -33,7 +73,6 @@
         sparkle:edSignature="SvLhFta17tEJXuc3ZKEHPd3uANquf6wqi8YtSqQCF1mi+sqE5LakwJxeP6Ywwn5K4hSVX2lD3wa3uoiToC1yBA==" length="3055359"
       />
     </item>
-
     <item>
       <title>Version 1.222.0</title>
       <pubDate>Mon, 10 Aug 2026 01:29:29 +0300</pubDate>
@@ -127,44 +166,6 @@
         url="https://github.com/aristidesnakos/irecord-releases/releases/download/v1.220.1/iRecord.dmg"
         type="application/x-apple-diskimage"
         sparkle:edSignature="2aHMY5vgtEG91rEw7d6UZRvgzbq50KBTSj66bjS8JREcMybFaOcRA5VXv7Q0a42oSZpVrUG2RyD62p0fnhi/BA==" length="2974156"
-      />
-    </item>
-    <item>
-      <title>Version 1.220.0</title>
-      <pubDate>Sat, 08 Aug 2026 14:34:32 +0300</pubDate>
-      <sparkle:version>2622000</sparkle:version>
-      <sparkle:shortVersionString>1.220.0</sparkle:shortVersionString>
-      <sparkle:minimumSystemVersion>15.0</sparkle:minimumSystemVersion>
-      <description><![CDATA[
-        <style>
-          body { font-family: -apple-system, BlinkMacSystemFont, sans-serif; font-size: 13px; line-height: 1.4; }
-          h3 { margin: 0 0 10px 0; font-size: 15px; }
-          h4 { margin: 14px 0 4px 0; font-size: 13px; }
-          code { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 12px; }
-          ul { margin: 0; padding-left: 20px; }
-          li { margin: 6px 0; }
-        </style>
-        <h3>What's New in 1.220.0</h3>
-        <h4>Fixed</h4>
-        <ul>
-          <li><strong>Trimming a clip no longer overshoots</strong> — dragging a clip's end moved it many times further than the cursor went, so the first edit most people try collapsed the clip instead of shortening it. A 40-pixel drag now trims exactly what 40 pixels is worth, and the handle stays under the cursor for the whole drag, in both directions.</li>
-          <li><strong>Re-recording a section keeps the edits you made in it</strong> — if you had split a section into three and then re-recorded it, all three pieces were silently thrown away and ⌘Z could not bring them back. Your splits and trims now carry across to the new take, because they are positions in the section, not in one particular file. When a take is genuinely too short to hold them, the app says so and how much shorter it is, rather than quietly rearranging the timeline. Re-recording is a single ⌘Z away either way.</li>
-        </ul>
-        <h4>Added</h4>
-        <ul>
-          <li><strong>A clip's ends look draggable</strong> — the trim handles were invisible until you happened to hover exactly over them. Each end now carries a quiet grip at rest, turns amber under the pointer, and marks the exact cut while you drag. The area you can grab is twice as wide as the handle you see.</li>
-          <li><strong>Every take you record is reachable</strong> — a section that has been re-recorded shows <code>⟲ 3</code> on its timeline block, listing each take with its length so you can put an earlier one back. Nothing was ever deleted; until now there was simply no way to get to it.</li>
-          <li><strong>Clip lengths show tenths under a minute</strong> — the sliver left by a split used to read "0:00".</li>
-        </ul>
-        <h4>Changed</h4>
-        <ul>
-          <li><strong>The timeline says what an edit cost</strong> — when a re-recorded take is too short to hold the splits you had made, a line above the timeline says how much shorter it is and what no longer applies, instead of quietly rearranging the blocks.</li>
-        </ul>
-      ]]></description>
-      <enclosure
-        url="https://github.com/aristidesnakos/irecord-releases/releases/download/v1.220.0/iRecord.dmg"
-        type="application/x-apple-diskimage"
-        sparkle:edSignature="DACMcZ+CuhYITKpyactjI9IqLT8MpbXd19tFSw3I8PUGkwSL+i4NE8/FzKslKj0blW1wmqkIHpoPVrrhat30Dw==" length="2974109"
       />
     </item>
   </channel>
