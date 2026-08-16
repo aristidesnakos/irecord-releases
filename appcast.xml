@@ -7,6 +7,46 @@
     <language>en</language>
 
     <item>
+      <title>Version 1.228.0</title>
+      <pubDate>Sun, 16 Aug 2026 23:41:04 +0300</pubDate>
+      <sparkle:version>2622800</sparkle:version>
+      <sparkle:shortVersionString>1.228.0</sparkle:shortVersionString>
+      <sparkle:minimumSystemVersion>15.0</sparkle:minimumSystemVersion>
+      <description><![CDATA[
+        <style>
+          body { font-family: -apple-system, BlinkMacSystemFont, sans-serif; font-size: 13px; line-height: 1.4; }
+          h3 { margin: 0 0 10px 0; font-size: 15px; }
+          h4 { margin: 14px 0 4px 0; font-size: 13px; }
+          code { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 12px; }
+          ul { margin: 0; padding-left: 20px; }
+          li { margin: 6px 0; }
+        </style>
+        <h3>What's New in 1.228.0</h3>
+        <h4>Added</h4>
+        <ul>
+          <li><strong>A recording that doesn't finish is offered back to you next time you open iRecord</strong> — if the app or your Mac stopped unexpectedly mid-recording, the file used to be unplayable and iRecord never mentioned it existed. Recordings are now written so that everything up to the last few seconds survives, and the next launch asks whether you want it back. Choosing to discard keeps the files for a week in case you didn't mean it.</li>
+          <li><strong>The recording indicator shows how much is already safe on disk</strong> — a second line under the timer, so you can see the recording is being written and not just counting. For the first few seconds it reads <code>--:--</code>, because nothing has been written yet and saying <code>00:00</code> looked like something had gone wrong.</li>
+        </ul>
+        <h4>Fixed</h4>
+        <ul>
+          <li><strong>The recording timer no longer freezes while a menu is open</strong> — opening a menu, or dragging the recording indicator around the screen, stopped the clock for as long as you held it there, and then it jumped forward when you let go. The recording itself was always fine; only the counter stalled. It now keeps time from the clock rather than by counting its own ticks, so it stays right even when the Mac is busy.</li>
+          <li><strong>The mouse pointer is still tracked while a menu is open</strong> — the same fault affected the pointer trail behind the zoom effect, which stopped being recorded for as long as any menu was down. That left a gap at the exact moment the pointer was most likely to be moving.</li>
+          <li><strong>Recordings you add or remove in Finder now show up on the Home screen</strong> — the list was read once when iRecord started, so a Recording folder you deleted in Finder kept appearing, and one you moved in never showed at all until you quit and reopened the app. Home now checks for changes when you go back to it and when you switch back to iRecord.</li>
+          <li><strong>A recording that didn't finish now says when it stopped, not just when it started</strong> — the offer to bring it back gave the length and the start time, so there was no way to tell a recording that ended early from one that ran until the Mac did.</li>
+          <li><strong>Running out of disk space mid-recording now stops and saves instead of silently breaking the take</strong> — the check only ran before you pressed Record, so a long recording could outrun the space it started with and end up damaged with nothing said. iRecord now warns while there is still room to free some up, and if space runs out anyway it stops and saves what you have.</li>
+          <li><strong>A take with no picture no longer breaks the whole recording</strong> — the app used to pick a take that saved sound but no video, and then your video wouldn't save at all. Those takes are skipped now, and a recording already stuck this way fixes itself when you open it. Nothing is deleted.</li>
+          <li><strong>The camera stays in step with an iPhone or iPad recording after the cable is knocked</strong> — when the connection dropped and came back, the app trimmed the dead air out of the phone recording but not out of the camera in the corner. Your face then ran behind your voice for the rest of the take, by however long the cable was out. The camera now pauses with the recording and picks up in the right place.</li>
+          <li><strong>Recordings on the home screen no longer sit on top of each other</strong> — each card was being stretched to the size of the picture inside it, so they came out at different widths and overlapped their neighbours. Every recording now gets an evenly sized card with the picture trimmed to fit.</li>
+        </ul>
+      ]]></description>
+      <enclosure
+        url="https://github.com/aristidesnakos/irecord-releases/releases/download/v1.228.0/iRecord.dmg"
+        type="application/x-apple-diskimage"
+        sparkle:edSignature="BavSwn9Z7JfgO0PU/yOAh6udc4SRJP4+Xxgxo0lvZAa36UxxdK4k8kerfLMI1JNAjgDTdgUKa9922HSDYmEuCQ==" length="3150275"
+      />
+    </item>
+
+    <item>
       <title>Version 1.224.0</title>
       <pubDate>Wed, 12 Aug 2026 02:31:06 +0300</pubDate>
       <sparkle:version>2622400</sparkle:version>
@@ -45,7 +85,6 @@
         sparkle:edSignature="3BMB4pBeYU9/+qAJDH9Xcjw5vylVOsx9svOFKx1N7RcQ/bUN/9H2us7Qj9VRUktYCthARbvNWByO7oEdOIyLBA==" length="3065672"
       />
     </item>
-
     <item>
       <title>Version 1.223.0</title>
       <pubDate>Tue, 11 Aug 2026 01:43:20 +0300</pubDate>
@@ -139,33 +178,6 @@
         url="https://github.com/aristidesnakos/irecord-releases/releases/download/v1.221.0/iRecord.dmg"
         type="application/x-apple-diskimage"
         sparkle:edSignature="Ra6dkquinK7jZTUj1pMDXg2oMls9ABfmrzMrd6IP8jY2jAxG6lfv+NXbtDNY5i6KVS4z9uaCv6cyArqK1ogvAQ==" length="3033310"
-      />
-    </item>
-    <item>
-      <title>Version 1.220.1</title>
-      <pubDate>Sat, 08 Aug 2026 15:04:01 +0300</pubDate>
-      <sparkle:version>2622001</sparkle:version>
-      <sparkle:shortVersionString>1.220.1</sparkle:shortVersionString>
-      <sparkle:minimumSystemVersion>15.0</sparkle:minimumSystemVersion>
-      <description><![CDATA[
-        <style>
-          body { font-family: -apple-system, BlinkMacSystemFont, sans-serif; font-size: 13px; line-height: 1.4; }
-          h3 { margin: 0 0 10px 0; font-size: 15px; }
-          h4 { margin: 14px 0 4px 0; font-size: 13px; }
-          code { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 12px; }
-          ul { margin: 0; padding-left: 20px; }
-          li { margin: 6px 0; }
-        </style>
-        <h3>What's New in 1.220.1</h3>
-        <h4>Fixed</h4>
-        <ul>
-          <li><strong>A trimmed-down clip can always be dragged back out</strong> — trim a section short enough and <code>Record next section</code> came to rest on top of it, covering the very handle you needed to undo the trim. The button now starts after the last block instead of after the timeline's nominal end, and a trim can no longer shrink a block below the width it is drawn at, so the state that trapped the clip cannot be reached in the first place. Zoom in when you need to trim finer than the lane can show.</li>
-        </ul>
-      ]]></description>
-      <enclosure
-        url="https://github.com/aristidesnakos/irecord-releases/releases/download/v1.220.1/iRecord.dmg"
-        type="application/x-apple-diskimage"
-        sparkle:edSignature="2aHMY5vgtEG91rEw7d6UZRvgzbq50KBTSj66bjS8JREcMybFaOcRA5VXv7Q0a42oSZpVrUG2RyD62p0fnhi/BA==" length="2974156"
       />
     </item>
   </channel>
