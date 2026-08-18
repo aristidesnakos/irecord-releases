@@ -7,6 +7,47 @@
     <language>en</language>
 
     <item>
+      <title>Version 1.230.0</title>
+      <pubDate>Tue, 18 Aug 2026 12:50:05 +0300</pubDate>
+      <sparkle:version>2623000</sparkle:version>
+      <sparkle:shortVersionString>1.230.0</sparkle:shortVersionString>
+      <sparkle:minimumSystemVersion>15.0</sparkle:minimumSystemVersion>
+      <description><![CDATA[
+        <style>
+          body { font-family: -apple-system, BlinkMacSystemFont, sans-serif; font-size: 13px; line-height: 1.4; }
+          h3 { margin: 0 0 10px 0; font-size: 15px; }
+          h4 { margin: 14px 0 4px 0; font-size: 13px; }
+          code { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 12px; }
+          ul { margin: 0; padding-left: 20px; }
+          li { margin: 6px 0; }
+        </style>
+        <h3>What's New in 1.230.0</h3>
+        <h4>Changed</h4>
+        <ul>
+          <li><strong>Cursor zoom set to <code>Auto</code> now follows your pointer instead of staying zoomed in the whole time</strong> — <code>Auto</code> was meant to zoom while you are working and ease out when you stop, but it never did: it held the zoom from the first frame to the last. New recordings now zoom in while the pointer is being used and let go once it has been still for a second and a half. Recordings you already made are left exactly as they were and will save the same video as before; the panel shows them as <code>Auto (always on)</code> so you can see what they are doing, and picking any mode switches that recording over. <code>Always follow</code> gives you the old behaviour whenever you want it.</li>
+        </ul>
+        <h4>Fixed</h4>
+        <ul>
+          <li><strong>Recording another section no longer stretches the zoom across it</strong> — if you had switched cursor zoom on and never dragged the ends of the zoom bar, it meant "to the end of the recording", so adding a section quietly extended it over footage you had not even watched yet. The zoom now stops where it did before, and the bar still drags out over the new section if that is what you wanted.</li>
+          <li><strong>Turning on cursor zoom no longer makes the top of the window unclickable</strong> — with the zoom switched on, <code>Home</code> and the recording's name stopped responding to clicks, which looked like the app had frozen. The zoomed video was covering them without being visible there. The same thing happened at the 150% and 200% preview sizes with the zoom switched off.</li>
+          <li><strong>The pointer trail no longer drifts out of step after a pause</strong> — the trail behind the zoom effect kept being recorded while a recording was paused, so everything after the pause was stamped as happening later than it did — by however long you were paused, for the rest of the recording. The zoom then followed your pointer from the wrong moment. It now pauses with the recording.</li>
+          <li><strong>A recording tells you when the camera didn't record</strong> — if the camera was switched on but produced nothing, iRecord saved the recording, kept a pointer to a camera file it had just deleted, and said nothing at all. The section then opened with no camera and no explanation. It now says so as soon as the recording stops, and the recording itself is saved either way.</li>
+          <li><strong>An older recording keeps its edits after you record another section into it</strong> — recordings made by early versions of iRecord stored their takes differently. Adding one new section to such a recording made the app stop seeing the takes on all the older sections: their trims and splits were undone, Delete Section did nothing on them, and the file was rewritten every time you opened the app. All of it works again, and the edits stay exactly as you left them.</li>
+          <li><strong>A future update can no longer wipe the trims and splits you have already made</strong> — because of the way edits were read back from disk, anything new added to them in a later version would have quietly replaced every existing edit with an untouched recording, with no warning and no way back. Edits are now read piece by piece, so new features can be added around yours without disturbing them.</li>
+          <li><strong>The zoom you set on part of a recording now saves where you put it</strong> — if you dragged the zoom bar to cover just one stretch of your recording, the saved video ignored that and switched the zoom on at some other moment inside every section instead. What you see in the editor and what comes out of Save Video now match. Only recordings where you moved the zoom bar were affected.</li>
+          <li><strong>The zoom bar's edges follow your pointer</strong> — dragging either end of the zoom bar made it race away from the pointer and slam into the end of the timeline, so the range was almost impossible to set. It now moves with your pointer.</li>
+          <li><strong>The zoom no longer flickers where two sections meet</strong> — in the saved video a zoom that carried across a cut dropped out and eased back in at every cut. It now holds steady across the cut, the way the editor always showed it.</li>
+          <li><strong>Takes are numbered in the order you recorded them</strong> — re-recording a section could give the new take a number already in use, so the take list showed two takes with the same name. Each take now gets the next free number.</li>
+        </ul>
+      ]]></description>
+      <enclosure
+        url="https://github.com/aristidesnakos/irecord-releases/releases/download/v1.230.0/iRecord.dmg"
+        type="application/x-apple-diskimage"
+        sparkle:edSignature="LN4eY+K5m0LeZYcQ8bHaNUy82FIlJAYYiQb5AHmLj2dibyZsNDOQCwcLTH5LHXwnbz/A+FmhsablDCLVso0DCg==" length="3162962"
+      />
+    </item>
+
+    <item>
       <title>Version 1.228.0</title>
       <pubDate>Sun, 16 Aug 2026 23:41:04 +0300</pubDate>
       <sparkle:version>2622800</sparkle:version>
@@ -45,7 +86,6 @@
         sparkle:edSignature="BavSwn9Z7JfgO0PU/yOAh6udc4SRJP4+Xxgxo0lvZAa36UxxdK4k8kerfLMI1JNAjgDTdgUKa9922HSDYmEuCQ==" length="3150275"
       />
     </item>
-
     <item>
       <title>Version 1.224.0</title>
       <pubDate>Wed, 12 Aug 2026 02:31:06 +0300</pubDate>
@@ -143,41 +183,6 @@
         url="https://github.com/aristidesnakos/irecord-releases/releases/download/v1.222.0/iRecord.dmg"
         type="application/x-apple-diskimage"
         sparkle:edSignature="iVcYUcYqEK8eBGY0Sj75Eu0TjKcqnw6u+2Fsh3myC7f0o1iL6uCbXmfUYLkD2EcWeA82lsXfNU5RcGDiNMfVCw==" length="3047271"
-      />
-    </item>
-    <item>
-      <title>Version 1.221.0</title>
-      <pubDate>Sun, 09 Aug 2026 15:19:08 +0300</pubDate>
-      <sparkle:version>2622100</sparkle:version>
-      <sparkle:shortVersionString>1.221.0</sparkle:shortVersionString>
-      <sparkle:minimumSystemVersion>15.0</sparkle:minimumSystemVersion>
-      <description><![CDATA[
-        <style>
-          body { font-family: -apple-system, BlinkMacSystemFont, sans-serif; font-size: 13px; line-height: 1.4; }
-          h3 { margin: 0 0 10px 0; font-size: 15px; }
-          h4 { margin: 14px 0 4px 0; font-size: 13px; }
-          code { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 12px; }
-          ul { margin: 0; padding-left: 20px; }
-          li { margin: 6px 0; }
-        </style>
-        <h3>What's New in 1.221.0</h3>
-        <h4>Changed</h4>
-        <ul>
-          <li><strong>The timeline zooms out to the whole recording, and in to a single frame</strong> — a long recording could not be seen end to end at any zoom, and could not be zoomed in far enough to place a cut on a frame. The zoom-out end now means "everything, in one screen", whatever the recording's length, and the zoom-in end reaches frame level. The editor opens showing the whole thing, <code>Fit</code> returns to it in one click, the two magnifiers step in and out, and zooming keeps the playhead where your eye already is instead of scrolling out from under you. Long timelines also stay smooth while you do it.</li>
-          <li><strong>Picking a window tells you what each window is</strong> — the grid was ragged, and windows that could not be previewed all came out as the same grey rectangle, so four different windows read as one app repeated. Every window now shows its app icon — instead of the preview when there isn't one, beside it when there is — with the window title and the app it belongs to on every card. A line under the grid explains what the list contains: windows from every desktop and Space, which is why some have no preview and all of them are still recordable.</li>
-          <li><strong>The camera's Fine-tune settings are easier to find, and easier to skip</strong> — the row that opens position, size, shape and border was the faintest thing in the panel while being the door to all of it. It now reads as a control, and when closed it shows what it is hiding, so checking your framing costs nothing.</li>
-          <li><strong>A new recording's camera has no white ring</strong> — the border was 2 px by default, a styling opinion applied to footage nobody had looked at yet. It now starts at 0 and the slider is there when you want one. Recordings you have already made are untouched.</li>
-          <li><strong>Reporting a problem now brings the evidence with it</strong> — Help → "Report an Issue…" gathers a diagnostics file, shows it to you in Finder, and opens an email ready to send. Attach the file and the report arrives with your macOS version, Mac model, free disk space, permission states and the app's own log, instead of "it didn't work". Nothing is sent anywhere on its own: the file is written to your Mac, you read it, and you decide whether to attach it. It contains no video and no licence key.</li>
-        </ul>
-        <h4>Fixed</h4>
-        <ul>
-          <li><strong>A failed save says where it failed</strong> — an export that could not read part of a recording reported two words, "Cannot Decode", with no indication of what had gone wrong or where. It now names the point in the video it stopped at, so a damaged stretch of one take is identifiable instead of looking like a broken app.</li>
-        </ul>
-      ]]></description>
-      <enclosure
-        url="https://github.com/aristidesnakos/irecord-releases/releases/download/v1.221.0/iRecord.dmg"
-        type="application/x-apple-diskimage"
-        sparkle:edSignature="Ra6dkquinK7jZTUj1pMDXg2oMls9ABfmrzMrd6IP8jY2jAxG6lfv+NXbtDNY5i6KVS4z9uaCv6cyArqK1ogvAQ==" length="3033310"
       />
     </item>
   </channel>
