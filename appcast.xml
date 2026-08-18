@@ -7,6 +7,34 @@
     <language>en</language>
 
     <item>
+      <title>Version 1.231.0</title>
+      <pubDate>Wed, 19 Aug 2026 00:48:21 +0300</pubDate>
+      <sparkle:version>2623100</sparkle:version>
+      <sparkle:shortVersionString>1.231.0</sparkle:shortVersionString>
+      <sparkle:minimumSystemVersion>15.0</sparkle:minimumSystemVersion>
+      <description><![CDATA[
+        <style>
+          body { font-family: -apple-system, BlinkMacSystemFont, sans-serif; font-size: 13px; line-height: 1.4; }
+          h3 { margin: 0 0 10px 0; font-size: 15px; }
+          h4 { margin: 14px 0 4px 0; font-size: 13px; }
+          code { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 12px; }
+          ul { margin: 0; padding-left: 20px; }
+          li { margin: 6px 0; }
+        </style>
+        <h3>What's New in 1.231.0</h3>
+        <h4>Changed</h4>
+        <ul>
+          <li><strong>Notifications no longer appear in your recordings</strong> — a message or alert that arrived while you were recording the whole screen was captured along with everything else, and the only way to avoid it was to remember to turn notifications off first. Banners are now left out of the recording. You still see them on your screen; your viewers never do. Nothing about your Mac's settings is changed to make that happen, so there is nothing left switched off afterwards.</li>
+        </ul>
+      ]]></description>
+      <enclosure
+        url="https://github.com/aristidesnakos/irecord-releases/releases/download/v1.231.0/iRecord.dmg"
+        type="application/x-apple-diskimage"
+        sparkle:edSignature="LX3o5FepQkbjAeE9INBYO0yZN2Op+mKzxoy9yW8PP2XqtcvubZNQYZZM0opAY+uN4kw6SiyFQDI+A4UQjh2eAQ==" length="3163589"
+      />
+    </item>
+
+    <item>
       <title>Version 1.230.0</title>
       <pubDate>Tue, 18 Aug 2026 12:50:05 +0300</pubDate>
       <sparkle:version>2623000</sparkle:version>
@@ -46,7 +74,6 @@
         sparkle:edSignature="LN4eY+K5m0LeZYcQ8bHaNUy82FIlJAYYiQb5AHmLj2dibyZsNDOQCwcLTH5LHXwnbz/A+FmhsablDCLVso0DCg==" length="3162962"
       />
     </item>
-
     <item>
       <title>Version 1.228.0</title>
       <pubDate>Sun, 16 Aug 2026 23:41:04 +0300</pubDate>
@@ -150,39 +177,6 @@
         url="https://github.com/aristidesnakos/irecord-releases/releases/download/v1.223.0/iRecord.dmg"
         type="application/x-apple-diskimage"
         sparkle:edSignature="SvLhFta17tEJXuc3ZKEHPd3uANquf6wqi8YtSqQCF1mi+sqE5LakwJxeP6Ywwn5K4hSVX2lD3wa3uoiToC1yBA==" length="3055359"
-      />
-    </item>
-    <item>
-      <title>Version 1.222.0</title>
-      <pubDate>Mon, 10 Aug 2026 01:29:29 +0300</pubDate>
-      <sparkle:version>2622200</sparkle:version>
-      <sparkle:shortVersionString>1.222.0</sparkle:shortVersionString>
-      <sparkle:minimumSystemVersion>15.0</sparkle:minimumSystemVersion>
-      <description><![CDATA[
-        <style>
-          body { font-family: -apple-system, BlinkMacSystemFont, sans-serif; font-size: 13px; line-height: 1.4; }
-          h3 { margin: 0 0 10px 0; font-size: 15px; }
-          h4 { margin: 14px 0 4px 0; font-size: 13px; }
-          code { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 12px; }
-          ul { margin: 0; padding-left: 20px; }
-          li { margin: 6px 0; }
-        </style>
-        <h3>What's New in 1.222.0</h3>
-        <h4>Fixed</h4>
-        <ul>
-          <li><strong>Saving a long recording no longer fails with "Cannot Decode"</strong> — past a certain length, saving stopped partway and reported two words that explained nothing. Your recording was never damaged: the app was decoding your footage several times over at once — once to save it, and again to keep the preview and the camera running behind the Save screen — while holding on to frames it had finished with. macOS eventually shut the decoder down, which the app reported as being unable to read your video. It now stops the preview while saving and releases frames as it uses them. This was never about a particular Mac; it reproduced on one with twice the memory. Saving also got faster: the shape used to round the camera's corners was being redrawn for every frame instead of once, and the progress bar was being updated fifty thousand times.</li>
-          <li><strong>A save that loses frames says so</strong> — if a Mac ran short of memory mid-save, frames could be dropped and the video would come out shorter than the canvas with nothing said about it. That can no longer pass in silence.</li>
-          <li><strong>The preview stops when a save starts</strong> — it used to keep playing, and keep decoding the same footage, for the whole export.</li>
-        </ul>
-        <h4>Changed</h4>
-        <ul>
-          <li><strong>A failed update now leaves evidence behind</strong> — when an update would not install, nothing was written down anywhere, so the only account of it was the customer's memory of a dialog. Sparkle's download, install and failure steps now go into the app's log, naming the reason the way the developers of Sparkle name it rather than as a bare number, and a diagnostics report picks them up. The report also says where iRecord is installed and whether it can update itself from there — an app still running from its disk image, or from a copy macOS has quarantined, cannot replace itself no matter how many times you check for updates, and neither state looks wrong from the outside. Drag iRecord to Applications and it can.</li>
-        </ul>
-      ]]></description>
-      <enclosure
-        url="https://github.com/aristidesnakos/irecord-releases/releases/download/v1.222.0/iRecord.dmg"
-        type="application/x-apple-diskimage"
-        sparkle:edSignature="iVcYUcYqEK8eBGY0Sj75Eu0TjKcqnw6u+2Fsh3myC7f0o1iL6uCbXmfUYLkD2EcWeA82lsXfNU5RcGDiNMfVCw==" length="3047271"
       />
     </item>
   </channel>
