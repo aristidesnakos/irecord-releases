@@ -7,6 +7,48 @@
     <language>en</language>
 
     <item>
+      <title>Version 1.241.0</title>
+      <pubDate>Sat, 29 Aug 2026 21:17:38 +0300</pubDate>
+      <sparkle:version>2624100</sparkle:version>
+      <sparkle:shortVersionString>1.241.0</sparkle:shortVersionString>
+      <sparkle:minimumSystemVersion>15.0</sparkle:minimumSystemVersion>
+      <description><![CDATA[
+        <style>
+          body { font-family: -apple-system, BlinkMacSystemFont, sans-serif; font-size: 13px; line-height: 1.4; }
+          h3 { margin: 0 0 10px 0; font-size: 15px; }
+          h4 { margin: 14px 0 4px 0; font-size: 13px; }
+          code { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 12px; }
+          ul { margin: 0; padding-left: 20px; }
+          li { margin: 6px 0; }
+        </style>
+        <h3>What's New in 1.241.0</h3>
+        <h4>Added</h4>
+        <ul>
+          <li><strong>Crop your screen recording right in the editor</strong> — say your window recording caught a row of browser tabs you'd rather not show. Open <code>Edit</code> and <code>Crop</code> is right there at the top; draw the area you want to keep and the rest is trimmed away in both the editor and your saved video.</li>
+          <li><strong>A trash icon in the editor deletes a Recording without hunting for a right-click menu</strong> — that was the only way to delete a Recording from inside the editor before. Save Video and Edit also lost their text labels in favour of a tidier row of icons next to it (hover any of them for a reminder of what it does). Deleting still asks you to confirm first, since it can't be undone.</li>
+          <li><strong>The timeline blocks show the sound in your recording</strong> — finding the pause where you stopped to think meant scrubbing back and forth watching the picture, because every block was a flat colour. Each block now draws the shape of its own sound, and a silence reads as a flat line along the bottom. Nothing about the recording changes; it is only easier to see where to cut.</li>
+          <li><strong>The New Recording window says what is about to spoil the take</strong> — a cluttered desktop, a chat app that is one message away from showing on screen, a battery about to run out. These are easy to miss until you watch the recording back, so iRecord now lists them before you press Record. It only looks: nothing on your Mac is changed or switched off, and you can start recording whatever it says.</li>
+          <li><strong>Re-record one part of a section without redoing the rest</strong> — if you had cut a section in two and wanted to redo only the second half, re-recording replaced both halves with the new take, so the first half stopped playing what you had recorded for it. Right-clicking a block now offers <code>Re-record this Part</code> alongside <code>Re-record the Whole Section</code>. The part you pick is the only one that changes, and every other block plays exactly what it played before.</li>
+        </ul>
+        <h4>Fixed</h4>
+        <ul>
+          <li><strong>Your face and your voice are back in sync</strong> — the camera video started counting from the moment the camera woke up rather than from the moment the recording began, so everything it filmed played about a second early and your lips ran ahead of what you were saying. The camera now starts where the recording starts. If the camera takes a moment to wake up, that moment is simply blank instead of shifting the whole thing.</li>
+          <li><strong>Choosing a window no longer offers you pieces of a window</strong> — some apps quietly keep extra windows open for their own toolbars and menus. These were listed alongside real windows, with nothing but the app's name on them, so two Chrome entries looked identical and picking the wrong one recorded a thin black strip instead of the page. Only real windows are offered now, and when two of them share a name the list shows their size so you can tell which is which.</li>
+          <li><strong>The shortcut for stopping a recording actually stops it</strong> — the menu said ⌘⇧. stops recording, but it only worked while iRecord itself was in front, which is never the case while you are recording something else. It now works from any app, for as long as a recording is running.</li>
+          <li><strong>Stopping from the floating bar takes one click, not two</strong> — clicking Stop while another app was in front spent the first click bringing iRecord forward, which on a full-screen recording put iRecord's own window into the video. The first click now stops the recording and iRecord stays out of the way.</li>
+          <li><strong>The floating recording bar stays where you put it</strong> — dragging it out of the way worked until the next recording, when it went back to the top of the screen. It now reappears where you left it, including after you unplug an external display.</li>
+          <li><strong>The file size shown before you save is now a limit, not a guess</strong> — the number on the Save screen was the most the video could weigh, but it was written as though it were the size you would get. Saved files often came in a lot smaller, because a recording of a mostly still screen compresses much further than a busy one. It now reads <code>up to 31 MB</code>, and the file you get is never bigger than that.</li>
+          <li><strong>Re-recording a section could hide part of the take you just made</strong> — if you had split a section and then re-recorded it, only as much of the new take as the old one was long stayed on the timeline. Anything past that point was saved to disk but left out of your video, with nothing on screen to say so. The whole take now appears, and a note tells you it came out longer. If you had deliberately trimmed the end off a section, that trim is still respected.</li>
+        </ul>
+      ]]></description>
+      <enclosure
+        url="https://github.com/aristidesnakos/irecord-releases/releases/download/v1.241.0/iRecord.dmg"
+        type="application/x-apple-diskimage"
+        sparkle:edSignature="u1/mK1IG3YgfC8eZ3shwqwZhxO5I9SJikx09p1Z6a2g04/H9ZY3j96O010+ub/ePO7IydJfo059MG4V5CxnjAw==" length="3312888"
+      />
+    </item>
+
+    <item>
       <title>Version 1.231.0</title>
       <pubDate>Wed, 19 Aug 2026 00:48:21 +0300</pubDate>
       <sparkle:version>2623100</sparkle:version>
@@ -33,7 +75,6 @@
         sparkle:edSignature="LX3o5FepQkbjAeE9INBYO0yZN2Op+mKzxoy9yW8PP2XqtcvubZNQYZZM0opAY+uN4kw6SiyFQDI+A4UQjh2eAQ==" length="3163589"
       />
     </item>
-
     <item>
       <title>Version 1.230.0</title>
       <pubDate>Tue, 18 Aug 2026 12:50:05 +0300</pubDate>
@@ -150,33 +191,6 @@
         url="https://github.com/aristidesnakos/irecord-releases/releases/download/v1.224.0/iRecord.dmg"
         type="application/x-apple-diskimage"
         sparkle:edSignature="3BMB4pBeYU9/+qAJDH9Xcjw5vylVOsx9svOFKx1N7RcQ/bUN/9H2us7Qj9VRUktYCthARbvNWByO7oEdOIyLBA==" length="3065672"
-      />
-    </item>
-    <item>
-      <title>Version 1.223.0</title>
-      <pubDate>Tue, 11 Aug 2026 01:43:20 +0300</pubDate>
-      <sparkle:version>2622300</sparkle:version>
-      <sparkle:shortVersionString>1.223.0</sparkle:shortVersionString>
-      <sparkle:minimumSystemVersion>15.0</sparkle:minimumSystemVersion>
-      <description><![CDATA[
-        <style>
-          body { font-family: -apple-system, BlinkMacSystemFont, sans-serif; font-size: 13px; line-height: 1.4; }
-          h3 { margin: 0 0 10px 0; font-size: 15px; }
-          h4 { margin: 14px 0 4px 0; font-size: 13px; }
-          code { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 12px; }
-          ul { margin: 0; padding-left: 20px; }
-          li { margin: 6px 0; }
-        </style>
-        <h3>What's New in 1.223.0</h3>
-        <h4>Fixed</h4>
-        <ul>
-          <li><strong>The camera stays live when the screen holds still, in the editor and in the saved video alike</strong> — if you talked over a slide, a document or any window you weren't touching, the camera in the corner froze for as long as the screen didn't change, then jumped back to life the moment it did. The recording of your screen and your voice were both fine; only the camera stopped. It was being recorded one frame per change on screen, and a screen that isn't changing produces none — so a recording that sat still for three minutes lost three minutes of your face. Saving had the same fault a second time over, so even a good recording came out of Save Video frozen. The camera now records on its own clock, and a saved video keeps a steady picture no matter how still your screen is. Recordings already made cannot be repaired: the frames were never captured. Saving one of them will now play the frames it does have at a steady rate, but it cannot invent the missing ones.</li>
-        </ul>
-      ]]></description>
-      <enclosure
-        url="https://github.com/aristidesnakos/irecord-releases/releases/download/v1.223.0/iRecord.dmg"
-        type="application/x-apple-diskimage"
-        sparkle:edSignature="SvLhFta17tEJXuc3ZKEHPd3uANquf6wqi8YtSqQCF1mi+sqE5LakwJxeP6Ywwn5K4hSVX2lD3wa3uoiToC1yBA==" length="3055359"
       />
     </item>
   </channel>
