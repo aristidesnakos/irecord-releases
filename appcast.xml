@@ -7,6 +7,37 @@
     <language>en</language>
 
     <item>
+      <title>Version 1.243.0</title>
+      <pubDate>Mon, 31 Aug 2026 17:01:28 +0300</pubDate>
+      <sparkle:version>2624300</sparkle:version>
+      <sparkle:shortVersionString>1.243.0</sparkle:shortVersionString>
+      <sparkle:minimumSystemVersion>15.0</sparkle:minimumSystemVersion>
+      <description><![CDATA[
+        <style>
+          body { font-family: -apple-system, BlinkMacSystemFont, sans-serif; font-size: 13px; line-height: 1.4; }
+          h3 { margin: 0 0 10px 0; font-size: 15px; }
+          h4 { margin: 14px 0 4px 0; font-size: 13px; }
+          code { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 12px; }
+          ul { margin: 0; padding-left: 20px; }
+          li { margin: 6px 0; }
+        </style>
+        <h3>What's New in 1.243.0</h3>
+        <h4>Fixed</h4>
+        <ul>
+          <li><strong>Recording a window no longer leaves a black strip down one side of the video</strong> — for some windows, iRecord asked for a slightly wrong size before recording started, so the picture didn't quite fill the frame it was given and the leftover space showed up black in every frame. iRecord now checks the real size right before it starts and uses that instead. Full-screen recordings were never affected.</li>
+          <li><strong>Deleting a Recording now really deletes it</strong> — the Recording disappeared from iRecord as it should, but an empty folder was left behind on your Mac every single time. They piled up quietly where your recordings are kept, and nothing ever cleared them. Nothing is left behind now.</li>
+          <li><strong>A quiet hiccup could throw away your edits</strong> — when iRecord couldn't write one small companion file next to a take, it gave up on saving that Recording altogether, so the trims and splits you had just made were lost without a word. The companion file is now skipped if it can't be written, and your edits are saved either way.</li>
+          <li><strong>Cropping your recording now fills the frame instead of leaving black bars</strong> — the trimmed picture used to play back inside the shape it had before you cropped it, so it looked smaller than the area you drew, with dark gaps where the trimmed edges used to be. The video now reshapes to exactly what you crop, in the editor and in the saved file.</li>
+        </ul>
+      ]]></description>
+      <enclosure
+        url="https://github.com/aristidesnakos/irecord-releases/releases/download/v1.243.0/iRecord.dmg"
+        type="application/x-apple-diskimage"
+        sparkle:edSignature="kgccjQ1DxgJlf8I6yFbUO4WJmWeEWmgwJr3eAfeJbZX91GMSX40LCQJi0BQsYkwx2vbjZ5fglt3HOoIzPfT6Aw==" length="3321457"
+      />
+    </item>
+
+    <item>
       <title>Version 1.241.0</title>
       <pubDate>Sat, 29 Aug 2026 21:17:38 +0300</pubDate>
       <sparkle:version>2624100</sparkle:version>
@@ -47,7 +78,6 @@
         sparkle:edSignature="u1/mK1IG3YgfC8eZ3shwqwZhxO5I9SJikx09p1Z6a2g04/H9ZY3j96O010+ub/ePO7IydJfo059MG4V5CxnjAw==" length="3312888"
       />
     </item>
-
     <item>
       <title>Version 1.231.0</title>
       <pubDate>Wed, 19 Aug 2026 00:48:21 +0300</pubDate>
@@ -152,45 +182,6 @@
         url="https://github.com/aristidesnakos/irecord-releases/releases/download/v1.228.0/iRecord.dmg"
         type="application/x-apple-diskimage"
         sparkle:edSignature="BavSwn9Z7JfgO0PU/yOAh6udc4SRJP4+Xxgxo0lvZAa36UxxdK4k8kerfLMI1JNAjgDTdgUKa9922HSDYmEuCQ==" length="3150275"
-      />
-    </item>
-    <item>
-      <title>Version 1.224.0</title>
-      <pubDate>Wed, 12 Aug 2026 02:31:06 +0300</pubDate>
-      <sparkle:version>2622400</sparkle:version>
-      <sparkle:shortVersionString>1.224.0</sparkle:shortVersionString>
-      <sparkle:minimumSystemVersion>15.0</sparkle:minimumSystemVersion>
-      <description><![CDATA[
-        <style>
-          body { font-family: -apple-system, BlinkMacSystemFont, sans-serif; font-size: 13px; line-height: 1.4; }
-          h3 { margin: 0 0 10px 0; font-size: 15px; }
-          h4 { margin: 14px 0 4px 0; font-size: 13px; }
-          code { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 12px; }
-          ul { margin: 0; padding-left: 20px; }
-          li { margin: 6px 0; }
-        </style>
-        <h3>What's New in 1.224.0</h3>
-        <h4>Added</h4>
-        <ul>
-          <li><strong>Reorder the sections of a recording without re-recording them</strong> — select a block on the timeline and press ⌥← or ⌥→ to move it one place earlier or later. The pricing bit can come before the demo after the fact. ⌘Z puts the order back exactly as it was, and the saved video follows the order you see. Dragging blocks to reorder is still to come; the keyboard works today.</li>
-        </ul>
-        <h4>Fixed</h4>
-        <ul>
-          <li><strong>⌘Z while renaming a recording now undoes what you typed</strong> — it used to reach past the name field and undo your last trim or split instead, which is the opposite of what a text field is expected to do. Renaming also no longer lets ⌘B or ⌘K cut the timeline mid-word.</li>
-          <li><strong>Cancelling "Record next section" no longer leaves an empty section behind</strong> — the section had to be created before the recorder could roll, and backing out of the source picker left it in the recording for good, silently pushing the numbering along each time. Backing out now leaves the recording exactly as it was, however the recording failed to start.</li>
-          <li><strong>The Ready screen tells you screen recording access is needed before you press Record</strong> — macOS takes that permission back every so often on its own, and the app only found out at the moment capture started, after the countdown. It is now checked when the Ready screen opens and every time you switch back to iRecord, so the Grant row is on screen before you pick anything, alongside a line saying that macOS re-asks periodically and this is not iRecord losing your permission. On a Mac where access had been revoked, that same check used to take about eighteen seconds and let the system raise its own dialog on top; it is now immediate and silent.</li>
-          <li><strong>Recording a specific window could fail instantly, every time</strong> — picking a window from Ready and hitting Record threw "Failed to setup capture session" before the countdown even started. The window list had been widened to show windows on other Spaces or behind other apps, but the check that runs when Record is actually pressed was never updated to match, so it could never find the window the list had just offered. The two now agree.</li>
-          <li><strong>Record could run its countdown and fail on a microphone permission it already knew was missing</strong> — with Microphone switched on but not yet granted, the Grant row said so right there in the same screen, but Record stayed enabled and only failed after the countdown, with a raw system error instead of pointing at the row.</li>
-        </ul>
-        <h4>Changed</h4>
-        <ul>
-          <li><strong>The quality row on Save Video reads as a control now, not a caption</strong> — "High Quality — Best quality · Larger file ⌄ Advanced" was plain text next to a chevron, with no chrome telling you it opened anything. It now has the same button chip and hover state as the rest of the sheet, and the "Advanced" label and chevron sit together at the trailing edge, which is where a disclosure control is expected.</li>
-        </ul>
-      ]]></description>
-      <enclosure
-        url="https://github.com/aristidesnakos/irecord-releases/releases/download/v1.224.0/iRecord.dmg"
-        type="application/x-apple-diskimage"
-        sparkle:edSignature="3BMB4pBeYU9/+qAJDH9Xcjw5vylVOsx9svOFKx1N7RcQ/bUN/9H2us7Qj9VRUktYCthARbvNWByO7oEdOIyLBA==" length="3065672"
       />
     </item>
   </channel>
