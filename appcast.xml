@@ -7,6 +7,48 @@
     <language>en</language>
 
     <item>
+      <title>Version 1.245.0</title>
+      <pubDate>Wed, 02 Sep 2026 23:56:03 +0300</pubDate>
+      <sparkle:version>2624500</sparkle:version>
+      <sparkle:shortVersionString>1.245.0</sparkle:shortVersionString>
+      <sparkle:minimumSystemVersion>15.0</sparkle:minimumSystemVersion>
+      <description><![CDATA[
+        <style>
+          body { font-family: -apple-system, BlinkMacSystemFont, sans-serif; font-size: 13px; line-height: 1.4; }
+          h3 { margin: 0 0 10px 0; font-size: 15px; }
+          h4 { margin: 14px 0 4px 0; font-size: 13px; }
+          code { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 12px; }
+          ul { margin: 0; padding-left: 20px; }
+          li { margin: 6px 0; }
+        </style>
+        <h3>What's New in 1.245.0</h3>
+        <h4>Added</h4>
+        <ul>
+          <li><strong>Put your camera where you want it by dragging it</strong> — the New Recording screen used to offer Position and Size as two menus, and you only found out what they meant after recording. The camera is now the control: drag it to a corner of the preview, drag its inner corner to resize, and what you see is what gets saved. Shape is still a choice in the Camera button.</li>
+          <li><strong>The New Recording screen is bigger, and nothing is hidden below a scroll</strong> — the preview is now over three times the size it was and fills the top of the window, with every setting as one row of buttons underneath instead of four stacked panels you had to scroll through. How much recording time your free disk space will hold is now at the top, where you can see it before you start rather than once it is nearly gone.</li>
+          <li><strong>The New Recording screen now shows you the recording</strong> — the top of it is a live picture of exactly what will be captured, with your camera already in the corner it will end up in. If your screen hasn't changed yet it says so rather than spinning; if the window you picked has closed, or another app has taken your camera, it tells you there and then instead of after the countdown. Picking a window now works like the Mac's own screenshot tool: click <code>Choose window…</code>, the screen dims, and you point at the window you want. With two displays you click the one you mean, laid out the way they really sit on your desk.</li>
+          <li><strong>The countdown happens over that picture</strong> — the preview freezes on its last frame and 3-2-1 counts over it, so you can see what you are about to record right up to the moment it starts.</li>
+        </ul>
+        <h4>Fixed</h4>
+        <ul>
+          <li><strong>The New Recording preview no longer has black bars down the sides</strong> — the picture of your screen was being fitted into a box that was the wrong shape for most Macs, so there was a black strip on the left and right of everything you previewed. The box is now the shape of whatever you are recording, so the picture fills it. The row of buttons underneath has more room around it and sits centred.</li>
+          <li><strong>The camera in the New Recording preview now moves as you do</strong> — it only redrew when something on your screen changed, so while you were talking to a still window your own face sat there as a frozen photograph that jumped every few seconds. The camera now updates on its own, whatever the screen is doing.</li>
+          <li><strong>The New Recording screen no longer feels sluggish while the preview is running</strong> — every new frame of the preview was redrawing the whole screen around it, so the faster the camera got the heavier everything else became. The picture now updates on its own without touching the rest of the window.</li>
+          <li><strong>The New Recording preview is sharp</strong> — it was being drawn at half the detail your display can show, which made the whole picture, and your camera in particular, look soft and small. It now draws at full resolution.</li>
+          <li><strong>iRecord could quit unexpectedly while you were setting up a recording</strong> — two problems on the New Recording screen, both fixed: the dimming overlay used for picking a window was cleaned up in a way that could leave the app pointing at something no longer there, and the screen was asking your Mac which camera to use twelve times a second while you had it open.</li>
+          <li><strong>The editor showed your camera slightly further from the edge than the saved file put it</strong> — the preview and the export worked out the camera's margin two different ways, so they agreed only at one particular window width and drifted either side of it. They now use the same one. Your saved videos are unchanged; it is the preview that was off.</li>
+          <li><strong>Where you put the camera on the New Recording screen is where it appears in your video</strong> — Position, Size and Shape only ever changed the little camera bubble floating on your screen while you recorded. The saved video ignored all three, so choosing Top Left still put the camera in the bottom right corner, a Rectangle came out a circle, and the camera was a little bigger in the video than the bubble had been. All three now carry through to what you save.</li>
+          <li><strong>Camera size is a percentage on both screens</strong> — the New Recording screen offered Small, Medium and Large while the editor offered a percentage, and they did not mean the same thing. Both now say the same number, and if you had picked one of the three words it keeps the size the bubble showed you while you recorded. One side effect worth knowing: because the saved video used to ignore this setting completely, your next recording's camera may come out a little smaller than your last one's. Set whatever size you like on either screen.</li>
+        </ul>
+      ]]></description>
+      <enclosure
+        url="https://github.com/aristidesnakos/irecord-releases/releases/download/v1.245.0/iRecord.dmg"
+        type="application/x-apple-diskimage"
+        sparkle:edSignature="DYAUmPa+u+DiAFlDb+D7eJnM2onSv//STKOf+knOoeu1WYUqaYmvihZCjNsOpFmfdVVugnyIIj+ubMQ71ZUUCQ==" length="3396415"
+      />
+    </item>
+
+    <item>
       <title>Version 1.243.0</title>
       <pubDate>Mon, 31 Aug 2026 17:01:28 +0300</pubDate>
       <sparkle:version>2624300</sparkle:version>
@@ -36,7 +78,6 @@
         sparkle:edSignature="kgccjQ1DxgJlf8I6yFbUO4WJmWeEWmgwJr3eAfeJbZX91GMSX40LCQJi0BQsYkwx2vbjZ5fglt3HOoIzPfT6Aw==" length="3321457"
       />
     </item>
-
     <item>
       <title>Version 1.241.0</title>
       <pubDate>Sat, 29 Aug 2026 21:17:38 +0300</pubDate>
@@ -143,45 +184,6 @@
         url="https://github.com/aristidesnakos/irecord-releases/releases/download/v1.230.0/iRecord.dmg"
         type="application/x-apple-diskimage"
         sparkle:edSignature="LN4eY+K5m0LeZYcQ8bHaNUy82FIlJAYYiQb5AHmLj2dibyZsNDOQCwcLTH5LHXwnbz/A+FmhsablDCLVso0DCg==" length="3162962"
-      />
-    </item>
-    <item>
-      <title>Version 1.228.0</title>
-      <pubDate>Sun, 16 Aug 2026 23:41:04 +0300</pubDate>
-      <sparkle:version>2622800</sparkle:version>
-      <sparkle:shortVersionString>1.228.0</sparkle:shortVersionString>
-      <sparkle:minimumSystemVersion>15.0</sparkle:minimumSystemVersion>
-      <description><![CDATA[
-        <style>
-          body { font-family: -apple-system, BlinkMacSystemFont, sans-serif; font-size: 13px; line-height: 1.4; }
-          h3 { margin: 0 0 10px 0; font-size: 15px; }
-          h4 { margin: 14px 0 4px 0; font-size: 13px; }
-          code { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 12px; }
-          ul { margin: 0; padding-left: 20px; }
-          li { margin: 6px 0; }
-        </style>
-        <h3>What's New in 1.228.0</h3>
-        <h4>Added</h4>
-        <ul>
-          <li><strong>A recording that doesn't finish is offered back to you next time you open iRecord</strong> — if the app or your Mac stopped unexpectedly mid-recording, the file used to be unplayable and iRecord never mentioned it existed. Recordings are now written so that everything up to the last few seconds survives, and the next launch asks whether you want it back. Choosing to discard keeps the files for a week in case you didn't mean it.</li>
-          <li><strong>The recording indicator shows how much is already safe on disk</strong> — a second line under the timer, so you can see the recording is being written and not just counting. For the first few seconds it reads <code>--:--</code>, because nothing has been written yet and saying <code>00:00</code> looked like something had gone wrong.</li>
-        </ul>
-        <h4>Fixed</h4>
-        <ul>
-          <li><strong>The recording timer no longer freezes while a menu is open</strong> — opening a menu, or dragging the recording indicator around the screen, stopped the clock for as long as you held it there, and then it jumped forward when you let go. The recording itself was always fine; only the counter stalled. It now keeps time from the clock rather than by counting its own ticks, so it stays right even when the Mac is busy.</li>
-          <li><strong>The mouse pointer is still tracked while a menu is open</strong> — the same fault affected the pointer trail behind the zoom effect, which stopped being recorded for as long as any menu was down. That left a gap at the exact moment the pointer was most likely to be moving.</li>
-          <li><strong>Recordings you add or remove in Finder now show up on the Home screen</strong> — the list was read once when iRecord started, so a Recording folder you deleted in Finder kept appearing, and one you moved in never showed at all until you quit and reopened the app. Home now checks for changes when you go back to it and when you switch back to iRecord.</li>
-          <li><strong>A recording that didn't finish now says when it stopped, not just when it started</strong> — the offer to bring it back gave the length and the start time, so there was no way to tell a recording that ended early from one that ran until the Mac did.</li>
-          <li><strong>Running out of disk space mid-recording now stops and saves instead of silently breaking the take</strong> — the check only ran before you pressed Record, so a long recording could outrun the space it started with and end up damaged with nothing said. iRecord now warns while there is still room to free some up, and if space runs out anyway it stops and saves what you have.</li>
-          <li><strong>A take with no picture no longer breaks the whole recording</strong> — the app used to pick a take that saved sound but no video, and then your video wouldn't save at all. Those takes are skipped now, and a recording already stuck this way fixes itself when you open it. Nothing is deleted.</li>
-          <li><strong>The camera stays in step with an iPhone or iPad recording after the cable is knocked</strong> — when the connection dropped and came back, the app trimmed the dead air out of the phone recording but not out of the camera in the corner. Your face then ran behind your voice for the rest of the take, by however long the cable was out. The camera now pauses with the recording and picks up in the right place.</li>
-          <li><strong>Recordings on the home screen no longer sit on top of each other</strong> — each card was being stretched to the size of the picture inside it, so they came out at different widths and overlapped their neighbours. Every recording now gets an evenly sized card with the picture trimmed to fit.</li>
-        </ul>
-      ]]></description>
-      <enclosure
-        url="https://github.com/aristidesnakos/irecord-releases/releases/download/v1.228.0/iRecord.dmg"
-        type="application/x-apple-diskimage"
-        sparkle:edSignature="BavSwn9Z7JfgO0PU/yOAh6udc4SRJP4+Xxgxo0lvZAa36UxxdK4k8kerfLMI1JNAjgDTdgUKa9922HSDYmEuCQ==" length="3150275"
       />
     </item>
   </channel>
