@@ -7,6 +7,42 @@
     <language>en</language>
 
     <item>
+      <title>Version 1.264.0</title>
+      <pubDate>Mon, 21 Sep 2026 11:04:56 +0300</pubDate>
+      <sparkle:version>2626400</sparkle:version>
+      <sparkle:shortVersionString>1.264.0</sparkle:shortVersionString>
+      <sparkle:minimumSystemVersion>15.0</sparkle:minimumSystemVersion>
+      <description><![CDATA[
+        <style>
+          body { font-family: -apple-system, BlinkMacSystemFont, sans-serif; font-size: 13px; line-height: 1.4; }
+          h3 { margin: 0 0 10px 0; font-size: 15px; }
+          h4 { margin: 14px 0 4px 0; font-size: 13px; }
+          code { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 12px; }
+          ul { margin: 0; padding-left: 20px; }
+          li { margin: 6px 0; }
+        </style>
+        <h3>What's New in 1.264.0</h3>
+        <h4>Changed</h4>
+        <ul>
+          <li><strong>The editor gives the picture more room</strong> — the row of round buttons between the video and the timeline is gone, and what was on it has moved somewhere better. Play now sits on the timeline bar with everything else about time. The scissors sits on the playhead itself, right where the cut will land, and only appears when you are somewhere you can cut. Undo, redo and stepping a frame at a time are keys now — and the timeline tells you which ones, because the app has had these shortcuts all along and never said so anywhere you would see them. Removing a single clip has moved to the right-click menu on the clip, next to everything else you can do to it.</li>
+          <li><strong>The touch-up panel opens on the things you actually change</strong> — Camera and Cursor Zoom now sit at the top, and they are the two that are open when the panel is. Crop, Background and Padding start closed. The panel used to open all five at once, which made it taller than the window, so Cursor Zoom sat off the bottom of the screen and you had to scroll down to it every single time. A closed section still says when it is doing something — <code>Cropped</code>, <code>Image</code>, <code>12%</code> — so nothing you set can hide behind it.</li>
+          <li><strong>A series name stands out from the recordings under it</strong> — it was the same size and the same colour as the date on every card below it, so the thing that grouped your recordings read as quieter than a timestamp. It is now larger and brighter, with a small amber marker where each group starts.</li>
+        </ul>
+        <h4>Fixed</h4>
+        <ul>
+          <li><strong>Pointing at a window now gives you the window on top</strong> — where two windows overlapped, iRecord chose whichever app's name came first in the alphabet instead of the one under your pointer, so it kept landing on the same app wherever you clicked. It now picks the window you can actually see there.</li>
+          <li><strong>The list of windows keeps up while you arrange them</strong> — opening a window, closing one, or bringing a different one to the front all happen while iRecord is in the background, and the New Recording screen was still showing the list from when you opened it. It now looks again each time you come back to iRecord.</li>
+          <li><strong>The crop panel says what it kept, in words</strong> — it read <code>100% × 88% of the source</code>, which has the shape of a video size and left you to work out which number was which, and whether it was what survived or what was cut. It now says <code>Keeping the full width and 88% of the height</code>.</li>
+        </ul>
+      ]]></description>
+      <enclosure
+        url="https://github.com/aristidesnakos/irecord-releases/releases/download/v1.264.0/iRecord.dmg"
+        type="application/x-apple-diskimage"
+        sparkle:edSignature="FaAgFXxiXKiqpqjsQGBFNx/rffDi/P2kV/Y9xdtoVyNEjKmi7l32SYtk61Z3ZkoV171gcwwfJWcoa2zn4PYdAw==" length="3714819"
+      />
+    </item>
+
+    <item>
       <title>Version 1.258.0</title>
       <pubDate>Tue, 15 Sep 2026 14:05:39 +0300</pubDate>
       <sparkle:version>2625800</sparkle:version>
@@ -51,7 +87,6 @@
         sparkle:edSignature="ZZjbwenMu2u7TH8nlhjOs0HZCc2Egtght4TtwEbi0fM9LTWEVfD59fiNrWyFXSpnq3P6Vx77KWX+6g0zGx4OCQ==" length="3721074"
       />
     </item>
-
     <item>
       <title>Version 1.245.0</title>
       <pubDate>Wed, 02 Sep 2026 23:56:03 +0300</pubDate>
@@ -162,33 +197,6 @@
         url="https://github.com/aristidesnakos/irecord-releases/releases/download/v1.241.0/iRecord.dmg"
         type="application/x-apple-diskimage"
         sparkle:edSignature="u1/mK1IG3YgfC8eZ3shwqwZhxO5I9SJikx09p1Z6a2g04/H9ZY3j96O010+ub/ePO7IydJfo059MG4V5CxnjAw==" length="3312888"
-      />
-    </item>
-    <item>
-      <title>Version 1.231.0</title>
-      <pubDate>Wed, 19 Aug 2026 00:48:21 +0300</pubDate>
-      <sparkle:version>2623100</sparkle:version>
-      <sparkle:shortVersionString>1.231.0</sparkle:shortVersionString>
-      <sparkle:minimumSystemVersion>15.0</sparkle:minimumSystemVersion>
-      <description><![CDATA[
-        <style>
-          body { font-family: -apple-system, BlinkMacSystemFont, sans-serif; font-size: 13px; line-height: 1.4; }
-          h3 { margin: 0 0 10px 0; font-size: 15px; }
-          h4 { margin: 14px 0 4px 0; font-size: 13px; }
-          code { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 12px; }
-          ul { margin: 0; padding-left: 20px; }
-          li { margin: 6px 0; }
-        </style>
-        <h3>What's New in 1.231.0</h3>
-        <h4>Changed</h4>
-        <ul>
-          <li><strong>Notifications no longer appear in your recordings</strong> — a message or alert that arrived while you were recording the whole screen was captured along with everything else, and the only way to avoid it was to remember to turn notifications off first. Banners are now left out of the recording. You still see them on your screen; your viewers never do. Nothing about your Mac's settings is changed to make that happen, so there is nothing left switched off afterwards.</li>
-        </ul>
-      ]]></description>
-      <enclosure
-        url="https://github.com/aristidesnakos/irecord-releases/releases/download/v1.231.0/iRecord.dmg"
-        type="application/x-apple-diskimage"
-        sparkle:edSignature="LX3o5FepQkbjAeE9INBYO0yZN2Op+mKzxoy9yW8PP2XqtcvubZNQYZZM0opAY+uN4kw6SiyFQDI+A4UQjh2eAQ==" length="3163589"
       />
     </item>
   </channel>
