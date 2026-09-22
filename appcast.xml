@@ -7,6 +7,55 @@
     <language>en</language>
 
     <item>
+      <title>Version 1.265.0</title>
+      <pubDate>Tue, 22 Sep 2026 11:32:44 +0300</pubDate>
+      <sparkle:version>2626500</sparkle:version>
+      <sparkle:shortVersionString>1.265.0</sparkle:shortVersionString>
+      <sparkle:minimumSystemVersion>15.0</sparkle:minimumSystemVersion>
+      <description><![CDATA[
+        <style>
+          body { font-family: -apple-system, BlinkMacSystemFont, sans-serif; font-size: 13px; line-height: 1.4; }
+          h3 { margin: 0 0 10px 0; font-size: 15px; }
+          h4 { margin: 14px 0 4px 0; font-size: 13px; }
+          code { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 12px; }
+          ul { margin: 0; padding-left: 20px; }
+          li { margin: 6px 0; }
+        </style>
+        <h3>What's New in 1.265.0</h3>
+        <h4>Added</h4>
+        <ul>
+          <li><strong>Captions on your video, from a subtitle file or burned into the export</strong> — pick <code>Import SRT/VTT…</code> in the Captions section and the cues land on the timeline and are drawn over the picture as you scrub, so what you see while editing is what you get. Size and Position are there too (top or bottom), Save Video gained an <code>Export .srt</code> toggle that writes a subtitle file beside every video it saves, and <code>Burn into export</code> puts the words into the picture itself when that is what you need. Burn-in is off by default, because an <code>.srt</code> is for a player that can toggle captions and a file with them baked in cannot un-bake them.</li>
+          <li><strong>Plan a series before you shoot it</strong> — Home offers it in three places: on a fresh Home the hero asks whether you want to start recording or plan a series; once you have recordings there is a dashed <code>+ Plan a Series…</code> tile among them; and under any series header, <code>Plan next lecture…</code>. All three land in the plan sheet on the new recording, so the first recording of a series belongs to it from its first second and <code>Plan next lecture…</code> has something to attach to: the two <code>Plan a Series</code> launchers ask what the series is called, and <code>Plan next lecture…</code> reuses the name you already grouped under — or opens the member that still has Sections left to shoot.</li>
+          <li><strong>Plan a recording with AI, on your own key</strong> — when your notes read as prose rather than as one Section per line, the plan sheet's <code>Structure with AI</code> button turns them into Sections: a short back-and-forth about what you are making, and the outline it writes appears beside the notes as a draft to apply, edit as text or ask again. It runs against OpenRouter with your own key, connected and removed in Settings → AI and kept in the macOS Keychain; a Mac with Apple Intelligence answers the small per-Section asks on-device instead. Nothing is sent anywhere until you press something that says it will.</li>
+          <li><strong>Click a Section to read and write its script</strong> — selecting a Section block on the timeline opens a small panel with the lines for that Section, editable in place, and a <code>Suggest talking points</code> button. A suggestion arrives as ghost text with <code>Accept</code>, <code>Regenerate</code> and <code>Dismiss</code> — nothing is written until you accept it, and an accepted one lands as a single undo step along with your own edits.</li>
+        </ul>
+        <h4>Changed</h4>
+        <ul>
+          <li><strong>The record dialog leads with the Section's name</strong> — it said "Record Section 1: Section 1", stating the number twice and burying the one word you recognise — the name you gave it — in the middle. The name is the title now, with "Section 3 of 12 · 4:00 planned" underneath it, so you can see what you are about to record and how much of the plan is left.</li>
+          <li><strong>The plan sheet is one field with the plan beside it</strong> — it opened by asking which way you wanted to fill a field you had not seen yet, "Paste your own" or "Brainstorm with AI", and the control doing the asking was also squeezing the field's own label underneath itself. There is one field now — your source material, one Section per line or written out as prose — and what the sheet read back sits in a pane beside it as the numbered outline it will become, with lengths and a total, or an empty state that names both ways to fill it. The AI is a button under the notes instead of a mode, because notes that are already one Section per line never needed it, and it says so where you press it. The file button says what it does too: a .txt, .md or .pdf is read into the notes the moment you pick it, and links are not fetched. The sheet is wide enough to hold both panes, which is what a twelve-Section plan is.</li>
+          <li><strong>The plan sheet is called "Create a Plan", and the AI answers in Markdown</strong> — the old title named the object ("Plan Sections") instead of the job you came to do, and the model's replies arrived exactly as it writes them, asterisks and dashes and hashes included, so a bulleted outline came back as punctuation soup. The title says what you are doing; the replies are shown as the emphasis and lists they mean; and the conversation can be put away — "Hide AI" — without cancelling the plan you were already writing.</li>
+          <li><strong>"Plan a Series" asks what the series is called before it makes anything</strong> — the button used to create the recording first, with no name attached to it, so it never belonged to a series at all. That also broke the thing the button promises: "Plan next lecture…" only appears under a series heading, so there was nothing for it to attach itself to. Type a name, and the recording that gets created carries it. An empty name is not accepted, and "Start planning" stays greyed out until you type one.</li>
+        </ul>
+        <h4>Fixed</h4>
+        <ul>
+          <li><strong>"Plan a Series" works on a Home that already has recordings</strong> — the box that asks for the series name was attached to the first-run hero, the screen you only see while you have no recordings at all. On the ordinary Home, the one with recordings on it, pressing the grid's "Plan a Series" tile did nothing whatsoever: it was asking a question only the empty screen could answer. The prompt is now presented by Home itself, so every "Plan a Series" launcher reaches it — and so does the failure message when a recording cannot be created.</li>
+          <li><strong>A brainstorm cannot overwrite the notes it read</strong> — the AI's outline used to replace the text you had pasted, so the source it was reasoning about was gone and the next follow-up was talking about a list you never wrote. The draft is shown beside your notes, applied from there, and handed back to the editor only when you say so ("Edit this as text"); change the notes and the draft is dropped, because a draft about the old notes is a lie about this plan.</li>
+          <li><strong>Captions appear the moment you switch them on</strong> — the canvas draws the cue on screen, and it only ever worked out which cue that was while something <em>else</em> changed: the playback ticker, a retake, a camera file arriving. Editing is done paused, so switching Captions on had no effect at all until you moved the playhead. It now re-reads the cue on the switch itself and on an import, so what you turn on is what you see.</li>
+          <li><strong>The caption buttons have their padding back</strong> — Size, Position and the import button were text jammed against the edge of their own chip, because the padding and text size were set on the button instead of on the label inside it. They match the Camera and Cursor Zoom chips now, and "Import SRT/VTT…" is a proper button rather than a chip pretending to be one.</li>
+          <li><strong>Return does one thing at a time in the plan sheet</strong> — the sheet's "Add Sections" button and the brainstorm's "Start" both claimed the Return key, so pressing Return while you were still talking to the AI could commit a half-finished outline. Start owns Return while the brainstorm is showing; Add Sections owns it on the paste side.</li>
+          <li><strong>The plan sheet says what the prompts are waiting for</strong> — "Or start from a prompt" sat above four prompts that were greyed out until you had pasted some source material, and nothing anywhere said why. It now says so: add source material first, because a prompt starts from it.</li>
+          <li><strong>"Connect OpenRouter" opens Settings on the AI section, not at the top</strong> — it opened Settings on Recording, so the place you were sent to had nothing about connecting a key, and the way back to your plan was a guess. Both places that offer to connect a key now land on AI.</li>
+          <li><strong>The AI section is honest about what leaves your Mac</strong> — it said nothing about a recording is ever sent anywhere unless you start a brainstorm or press Suggest, but connecting a key sends one test request to check the key works before it is stored. That is the point of the check, and the section now says it.</li>
+        </ul>
+      ]]></description>
+      <enclosure
+        url="https://github.com/aristidesnakos/irecord-releases/releases/download/v1.265.0/iRecord.dmg"
+        type="application/x-apple-diskimage"
+        sparkle:edSignature="mP0MqytRs+O6hduqPSvTvmkhtcI/lW2QKsqr6FZQmVGgI/AYNa/mgo/+bjfN6tt4yVtbTdt/GA9fhO8GtxD4DQ==" length="3979373"
+      />
+    </item>
+
+    <item>
       <title>Version 1.264.0</title>
       <pubDate>Mon, 21 Sep 2026 11:04:56 +0300</pubDate>
       <sparkle:version>2626400</sparkle:version>
@@ -41,7 +90,6 @@
         sparkle:edSignature="FaAgFXxiXKiqpqjsQGBFNx/rffDi/P2kV/Y9xdtoVyNEjKmi7l32SYtk61Z3ZkoV171gcwwfJWcoa2zn4PYdAw==" length="3714819"
       />
     </item>
-
     <item>
       <title>Version 1.258.0</title>
       <pubDate>Tue, 15 Sep 2026 14:05:39 +0300</pubDate>
@@ -156,47 +204,6 @@
         url="https://github.com/aristidesnakos/irecord-releases/releases/download/v1.243.0/iRecord.dmg"
         type="application/x-apple-diskimage"
         sparkle:edSignature="kgccjQ1DxgJlf8I6yFbUO4WJmWeEWmgwJr3eAfeJbZX91GMSX40LCQJi0BQsYkwx2vbjZ5fglt3HOoIzPfT6Aw==" length="3321457"
-      />
-    </item>
-    <item>
-      <title>Version 1.241.0</title>
-      <pubDate>Sat, 29 Aug 2026 21:17:38 +0300</pubDate>
-      <sparkle:version>2624100</sparkle:version>
-      <sparkle:shortVersionString>1.241.0</sparkle:shortVersionString>
-      <sparkle:minimumSystemVersion>15.0</sparkle:minimumSystemVersion>
-      <description><![CDATA[
-        <style>
-          body { font-family: -apple-system, BlinkMacSystemFont, sans-serif; font-size: 13px; line-height: 1.4; }
-          h3 { margin: 0 0 10px 0; font-size: 15px; }
-          h4 { margin: 14px 0 4px 0; font-size: 13px; }
-          code { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 12px; }
-          ul { margin: 0; padding-left: 20px; }
-          li { margin: 6px 0; }
-        </style>
-        <h3>What's New in 1.241.0</h3>
-        <h4>Added</h4>
-        <ul>
-          <li><strong>Crop your screen recording right in the editor</strong> — say your window recording caught a row of browser tabs you'd rather not show. Open <code>Edit</code> and <code>Crop</code> is right there at the top; draw the area you want to keep and the rest is trimmed away in both the editor and your saved video.</li>
-          <li><strong>A trash icon in the editor deletes a Recording without hunting for a right-click menu</strong> — that was the only way to delete a Recording from inside the editor before. Save Video and Edit also lost their text labels in favour of a tidier row of icons next to it (hover any of them for a reminder of what it does). Deleting still asks you to confirm first, since it can't be undone.</li>
-          <li><strong>The timeline blocks show the sound in your recording</strong> — finding the pause where you stopped to think meant scrubbing back and forth watching the picture, because every block was a flat colour. Each block now draws the shape of its own sound, and a silence reads as a flat line along the bottom. Nothing about the recording changes; it is only easier to see where to cut.</li>
-          <li><strong>The New Recording window says what is about to spoil the take</strong> — a cluttered desktop, a chat app that is one message away from showing on screen, a battery about to run out. These are easy to miss until you watch the recording back, so iRecord now lists them before you press Record. It only looks: nothing on your Mac is changed or switched off, and you can start recording whatever it says.</li>
-          <li><strong>Re-record one part of a section without redoing the rest</strong> — if you had cut a section in two and wanted to redo only the second half, re-recording replaced both halves with the new take, so the first half stopped playing what you had recorded for it. Right-clicking a block now offers <code>Re-record this Part</code> alongside <code>Re-record the Whole Section</code>. The part you pick is the only one that changes, and every other block plays exactly what it played before.</li>
-        </ul>
-        <h4>Fixed</h4>
-        <ul>
-          <li><strong>Your face and your voice are back in sync</strong> — the camera video started counting from the moment the camera woke up rather than from the moment the recording began, so everything it filmed played about a second early and your lips ran ahead of what you were saying. The camera now starts where the recording starts. If the camera takes a moment to wake up, that moment is simply blank instead of shifting the whole thing.</li>
-          <li><strong>Choosing a window no longer offers you pieces of a window</strong> — some apps quietly keep extra windows open for their own toolbars and menus. These were listed alongside real windows, with nothing but the app's name on them, so two Chrome entries looked identical and picking the wrong one recorded a thin black strip instead of the page. Only real windows are offered now, and when two of them share a name the list shows their size so you can tell which is which.</li>
-          <li><strong>The shortcut for stopping a recording actually stops it</strong> — the menu said ⌘⇧. stops recording, but it only worked while iRecord itself was in front, which is never the case while you are recording something else. It now works from any app, for as long as a recording is running.</li>
-          <li><strong>Stopping from the floating bar takes one click, not two</strong> — clicking Stop while another app was in front spent the first click bringing iRecord forward, which on a full-screen recording put iRecord's own window into the video. The first click now stops the recording and iRecord stays out of the way.</li>
-          <li><strong>The floating recording bar stays where you put it</strong> — dragging it out of the way worked until the next recording, when it went back to the top of the screen. It now reappears where you left it, including after you unplug an external display.</li>
-          <li><strong>The file size shown before you save is now a limit, not a guess</strong> — the number on the Save screen was the most the video could weigh, but it was written as though it were the size you would get. Saved files often came in a lot smaller, because a recording of a mostly still screen compresses much further than a busy one. It now reads <code>up to 31 MB</code>, and the file you get is never bigger than that.</li>
-          <li><strong>Re-recording a section could hide part of the take you just made</strong> — if you had split a section and then re-recorded it, only as much of the new take as the old one was long stayed on the timeline. Anything past that point was saved to disk but left out of your video, with nothing on screen to say so. The whole take now appears, and a note tells you it came out longer. If you had deliberately trimmed the end off a section, that trim is still respected.</li>
-        </ul>
-      ]]></description>
-      <enclosure
-        url="https://github.com/aristidesnakos/irecord-releases/releases/download/v1.241.0/iRecord.dmg"
-        type="application/x-apple-diskimage"
-        sparkle:edSignature="u1/mK1IG3YgfC8eZ3shwqwZhxO5I9SJikx09p1Z6a2g04/H9ZY3j96O010+ub/ePO7IydJfo059MG4V5CxnjAw==" length="3312888"
       />
     </item>
   </channel>
