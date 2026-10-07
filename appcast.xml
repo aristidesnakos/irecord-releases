@@ -7,6 +7,43 @@
     <language>en</language>
 
     <item>
+      <title>Version 1.280.0</title>
+      <pubDate>Wed, 07 Oct 2026 21:06:56 +0300</pubDate>
+      <sparkle:version>2628000</sparkle:version>
+      <sparkle:shortVersionString>1.280.0</sparkle:shortVersionString>
+      <sparkle:minimumSystemVersion>15.0</sparkle:minimumSystemVersion>
+      <description><![CDATA[
+        <style>
+          body { font-family: -apple-system, BlinkMacSystemFont, sans-serif; font-size: 13px; line-height: 1.4; }
+          h3 { margin: 0 0 10px 0; font-size: 15px; }
+          h4 { margin: 14px 0 4px 0; font-size: 13px; }
+          code { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 12px; }
+          ul { margin: 0; padding-left: 20px; }
+          li { margin: 6px 0; }
+        </style>
+        <h3>What's New in 1.280.0</h3>
+        <h4>Added</h4>
+        <ul>
+          <li><strong>Captions from what you say, on by default</strong> — on macOS 26, a new Recording is now captioned in English as soon as you stop, made on your Mac, and the captions are burned into the saved video. If you press Save Video while captions are still being made, it waits for them and then saves on its own. Anything you said that came back with no words — the sentence after a long silence is the usual one — is listened to again, so it is not left out. You can turn this off in Settings → Recording, and Recordings you already made stay as they were.</li>
+          <li><strong>Write your script where you get ready to record</strong> — the window where you pick your screen, camera and microphone now has a Script chip. Type or paste what you'll say and it appears on the teleprompter as soon as you start recording. It also helps captions spell your names and terms right.</li>
+          <li><strong>Fix a caption by retyping it</strong> — Captions → Text lists every line with its time. Click a time to go there; retype a line and press Return to correct it. If you re-record a Section whose captions you corrected, iRecord says that your corrections stayed with the earlier take, and restoring that take brings them back.</li>
+        </ul>
+        <h4>Changed</h4>
+        <ul>
+          <li><strong>The plan sheet is a chat with a <code>+</code> on it</strong> — it used to be five controls all saying "put something in" and none of them saying which: a "Your source material" box, an <code>Add files…</code> button under it, a separate "Ask a follow-up" field, four prompt chips and a Start button. There is one composer now, and one <code>+</code> beside it. <code>+</code> offers the two things a plan is actually built from — files, and links — and either arrives as a chip above the field that says what it is and how much of it was read, with an <code>×</code> to take it off. The blank sheet says what it wants in words ("give me the material this series is built from … then say what you want it to become"), the line above the field keeps saying what is still missing, and the chips only appear while the conversation is empty, so they are a sentence to start from rather than a control the plan depends on. Return sends the message and nothing else in the sheet claims it any more.</li>
+          <li><strong>A link you attach is read, not just named</strong> — a model cannot open a page, so a URL on its own was never context, and the old sheet said so ("Links aren't fetched — bring the text itself"). Now the page's text is fetched once, with its scripts, styles and metadata stripped out and its entities decoded, so a plan built from a link is built from the words on it. When a page cannot be read the chip says why — "The page answered 404", "Nothing readable on that page" — rather than quietly leaving the plan short of material it was promised.</li>
+          <li><strong>The plan beside the conversation can be taken over by hand</strong> — the pane on the right is still the numbered read-back with lengths and a total, and <code>Write them myself</code> is always in its header now, whether it is empty, drafted or already yours. That is the path for an outline you already have, and the one that still works with no model connected: typing in it makes the plan your own, and the "drafted by the AI" line goes with the first keystroke instead of sitting over words you wrote.</li>
+          <li><strong>A drafted plan replaced a drafted plan, and nothing else</strong> — the old rule was that changing your notes threw the AI's draft away, because a draft about the old notes is a lie about this plan. With the material attached to the conversation instead of typed into the box that gets parsed, that rule had nothing left to protect: what the model writes now lands in the pane you are looking at, and what you type there stays until you ask for another outline.</li>
+        </ul>
+      ]]></description>
+      <enclosure
+        url="https://github.com/aristidesnakos/irecord-releases/releases/download/v1.280.0/iRecord.dmg"
+        type="application/x-apple-diskimage"
+        sparkle:edSignature="IvLtd8aMvjlyOsgUf7sXmWoxBBkejSVrP7hc5CWv44yLnKum+5JzL4/mQlQ7lfaQSutazLtcvZf7uyzw0oJTAg==" length="4388529"
+      />
+    </item>
+
+    <item>
       <title>Version 1.265.0</title>
       <pubDate>Tue, 22 Sep 2026 11:32:44 +0300</pubDate>
       <sparkle:version>2626500</sparkle:version>
@@ -54,7 +91,6 @@
         sparkle:edSignature="mP0MqytRs+O6hduqPSvTvmkhtcI/lW2QKsqr6FZQmVGgI/AYNa/mgo/+bjfN6tt4yVtbTdt/GA9fhO8GtxD4DQ==" length="3979373"
       />
     </item>
-
     <item>
       <title>Version 1.264.0</title>
       <pubDate>Mon, 21 Sep 2026 11:04:56 +0300</pubDate>
@@ -174,36 +210,6 @@
         url="https://github.com/aristidesnakos/irecord-releases/releases/download/v1.245.0/iRecord.dmg"
         type="application/x-apple-diskimage"
         sparkle:edSignature="DYAUmPa+u+DiAFlDb+D7eJnM2onSv//STKOf+knOoeu1WYUqaYmvihZCjNsOpFmfdVVugnyIIj+ubMQ71ZUUCQ==" length="3396415"
-      />
-    </item>
-    <item>
-      <title>Version 1.243.0</title>
-      <pubDate>Mon, 31 Aug 2026 17:01:28 +0300</pubDate>
-      <sparkle:version>2624300</sparkle:version>
-      <sparkle:shortVersionString>1.243.0</sparkle:shortVersionString>
-      <sparkle:minimumSystemVersion>15.0</sparkle:minimumSystemVersion>
-      <description><![CDATA[
-        <style>
-          body { font-family: -apple-system, BlinkMacSystemFont, sans-serif; font-size: 13px; line-height: 1.4; }
-          h3 { margin: 0 0 10px 0; font-size: 15px; }
-          h4 { margin: 14px 0 4px 0; font-size: 13px; }
-          code { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 12px; }
-          ul { margin: 0; padding-left: 20px; }
-          li { margin: 6px 0; }
-        </style>
-        <h3>What's New in 1.243.0</h3>
-        <h4>Fixed</h4>
-        <ul>
-          <li><strong>Recording a window no longer leaves a black strip down one side of the video</strong> — for some windows, iRecord asked for a slightly wrong size before recording started, so the picture didn't quite fill the frame it was given and the leftover space showed up black in every frame. iRecord now checks the real size right before it starts and uses that instead. Full-screen recordings were never affected.</li>
-          <li><strong>Deleting a Recording now really deletes it</strong> — the Recording disappeared from iRecord as it should, but an empty folder was left behind on your Mac every single time. They piled up quietly where your recordings are kept, and nothing ever cleared them. Nothing is left behind now.</li>
-          <li><strong>A quiet hiccup could throw away your edits</strong> — when iRecord couldn't write one small companion file next to a take, it gave up on saving that Recording altogether, so the trims and splits you had just made were lost without a word. The companion file is now skipped if it can't be written, and your edits are saved either way.</li>
-          <li><strong>Cropping your recording now fills the frame instead of leaving black bars</strong> — the trimmed picture used to play back inside the shape it had before you cropped it, so it looked smaller than the area you drew, with dark gaps where the trimmed edges used to be. The video now reshapes to exactly what you crop, in the editor and in the saved file.</li>
-        </ul>
-      ]]></description>
-      <enclosure
-        url="https://github.com/aristidesnakos/irecord-releases/releases/download/v1.243.0/iRecord.dmg"
-        type="application/x-apple-diskimage"
-        sparkle:edSignature="kgccjQ1DxgJlf8I6yFbUO4WJmWeEWmgwJr3eAfeJbZX91GMSX40LCQJi0BQsYkwx2vbjZ5fglt3HOoIzPfT6Aw==" length="3321457"
       />
     </item>
   </channel>
