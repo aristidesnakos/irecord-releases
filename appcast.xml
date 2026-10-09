@@ -7,6 +7,54 @@
     <language>en</language>
 
     <item>
+      <title>Version 1.282.1</title>
+      <pubDate>Fri, 09 Oct 2026 16:08:26 +0300</pubDate>
+      <sparkle:version>2628201</sparkle:version>
+      <sparkle:shortVersionString>1.282.1</sparkle:shortVersionString>
+      <sparkle:minimumSystemVersion>15.0</sparkle:minimumSystemVersion>
+      <description><![CDATA[
+        <style>
+          body { font-family: -apple-system, BlinkMacSystemFont, sans-serif; font-size: 13px; line-height: 1.4; }
+          h3 { margin: 0 0 10px 0; font-size: 15px; }
+          h4 { margin: 14px 0 4px 0; font-size: 13px; }
+          code { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 12px; }
+          ul { margin: 0; padding-left: 20px; }
+          li { margin: 6px 0; }
+        </style>
+        <h3>What's New in 1.282.1</h3>
+        <h4>Added</h4>
+        <ul>
+          <li><strong>Your takes come back already tidied</strong> — when you stop recording, the wait before your first word and after your last is trimmed, and pauses where nothing happened are shortened. On macOS 26, with captions on, your ums are cut too. The editor says how much shorter the video is and what was cut, and Undo All, there every time you open the Recording, puts it all back. You can turn this off in Settings → Recording.</li>
+        </ul>
+        <h4>Changed</h4>
+        <ul>
+          <li><strong>A take's problem now shows where it is</strong> — instead of a small warning sign on the clip, the part of the clip that plays the problem is striped. Move the playhead into the stripes and a short line under the video says what is wrong there, with a Trim here button that ends the clip just before it.</li>
+          <li><strong>Caption size is a slider</strong> — the Captions panel now sets how big your captions are with a slider instead of three buttons, and moves them between the bottom and the top with a switch. The panel reads in order: how captions look, what they say, then whether they go into the saved video. Recordings you already captioned keep the size they had.</li>
+        </ul>
+        <h4>Removed</h4>
+        <ul>
+          <li><strong>Your iPhone shows up once in the camera list</strong> — an iPhone used as a camera without a cable used to appear twice, once as itself and once as Desk View, which films the desk from above and only works with the phone clipped to the top of your screen. Desk View is gone from the list, so picking your iPhone always gets the camera that films you.</li>
+          <li><strong>Clicking a Section no longer covers the video with a script panel</strong> — the panel was for writing what to say, which is no help once a Section is recorded. Clicking a Section now just selects it, and you write a script on the Ready screen, before you record. The panel's Suggest talking points button went with it, and so did the Apple Intelligence line in Settings → AI.</li>
+        </ul>
+        <h4>Fixed</h4>
+        <ul>
+          <li><strong>A saved video says when its captions have changed</strong> — if you changed the captions in a video after saving it (put them in or took them out, made them bigger or smaller, moved them, or corrected a line), the saved file still said it matched, so you couldn't tell it had the old captions. Now the list next to Save Video and the card on Home say <em>Edited since saved</em>. After this update, videos you already saved with captions in them will say so once, even though nothing is wrong with them; saving again clears it.</li>
+          <li><strong>A paused iPhone or iPad recording no longer stops when the cable comes loose</strong> — if the cable slipped out while you were paused, iRecord didn't notice when you plugged it back in, kept trying to reconnect, and about half a minute later stopped the whole Recording while you were still paused. Now it sees the phone is back, says so, and waits for you, and when you resume, the take carries on where it left off. Time spent paused no longer counts toward the half a minute iRecord gives a cable to come back.</li>
+          <li><strong>A Section you delete while recording no longer comes back</strong> — if you deleted a Section in the editor while iRecord was still recording into the same Recording, it came back when you moved on to the next Section or pressed Stop, without its video. Now the editor waits until you stop before it lets you change that Recording, and a new name you give it while recording is kept.</li>
+          <li><strong>Opening a Recording while it records no longer loses Sections</strong> — if you opened a Recording from Home while iRecord was still recording into it, the Sections recorded after you opened it could vanish from the timeline once you stopped, and from the saved video too. Opening a different Recording while recording, then pressing Stop, could empty the timeline of the one you recorded. Now the editor shows every Section you recorded when you stop.</li>
+          <li><strong>You can't delete a Recording while it is recording</strong> — deleting it threw away the video being recorded, and every Section after it. Now iRecord says it is being recorded and asks you to stop first.</li>
+          <li><strong>Captions from a deleted take no longer turn up on the next one</strong> — if you deleted a Section while its captions were still being made, they could be saved anyway, then show up on the next take you recorded there and in its saved video. Now they are thrown away, and a new take never picks up captions that belong to a deleted one.</li>
+          <li><strong>Undo works after deleting half of a split Section</strong> — if you split a clip and chose Delete Section on one half, iRecord warned that the take would be thrown away, which it wasn't, and then ⌘Z could no longer undo anything you had done. Now that half simply leaves the timeline, with no warning, and ⌘Z brings it back.</li>
+        </ul>
+      ]]></description>
+      <enclosure
+        url="https://github.com/aristidesnakos/irecord-releases/releases/download/v1.282.1/iRecord.dmg"
+        type="application/x-apple-diskimage"
+        sparkle:edSignature="TnVVeqKMod+FMOeG5TdoyoRqYKsgt421qoTb/W7lljbQwbLFugE43KCX47+gJMU+apdKmxE8MYzaRXfycIdsBg==" length="4648904"
+      />
+    </item>
+
+    <item>
       <title>Version 1.282.0</title>
       <pubDate>Fri, 09 Oct 2026 15:21:36 +0300</pubDate>
       <sparkle:version>2628200</sparkle:version>
@@ -34,7 +82,6 @@
         sparkle:edSignature="4ES0j0ku9NwEICils9WTdgjNMSf3OxqBaV27kycsA0QFPDBmrYna3xRXptlJGP6odzTF77y16ix3DGMuG4IwDA==" length="4510097"
       />
     </item>
-
     <item>
       <title>Version 1.281.0</title>
       <pubDate>Thu, 08 Oct 2026 20:02:14 +0300</pubDate>
@@ -154,41 +201,6 @@
         url="https://github.com/aristidesnakos/irecord-releases/releases/download/v1.265.0/iRecord.dmg"
         type="application/x-apple-diskimage"
         sparkle:edSignature="mP0MqytRs+O6hduqPSvTvmkhtcI/lW2QKsqr6FZQmVGgI/AYNa/mgo/+bjfN6tt4yVtbTdt/GA9fhO8GtxD4DQ==" length="3979373"
-      />
-    </item>
-    <item>
-      <title>Version 1.264.0</title>
-      <pubDate>Mon, 21 Sep 2026 11:04:56 +0300</pubDate>
-      <sparkle:version>2626400</sparkle:version>
-      <sparkle:shortVersionString>1.264.0</sparkle:shortVersionString>
-      <sparkle:minimumSystemVersion>15.0</sparkle:minimumSystemVersion>
-      <description><![CDATA[
-        <style>
-          body { font-family: -apple-system, BlinkMacSystemFont, sans-serif; font-size: 13px; line-height: 1.4; }
-          h3 { margin: 0 0 10px 0; font-size: 15px; }
-          h4 { margin: 14px 0 4px 0; font-size: 13px; }
-          code { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 12px; }
-          ul { margin: 0; padding-left: 20px; }
-          li { margin: 6px 0; }
-        </style>
-        <h3>What's New in 1.264.0</h3>
-        <h4>Changed</h4>
-        <ul>
-          <li><strong>The editor gives the picture more room</strong> — the row of round buttons between the video and the timeline is gone, and what was on it has moved somewhere better. Play now sits on the timeline bar with everything else about time. The scissors sits on the playhead itself, right where the cut will land, and only appears when you are somewhere you can cut. Undo, redo and stepping a frame at a time are keys now — and the timeline tells you which ones, because the app has had these shortcuts all along and never said so anywhere you would see them. Removing a single clip has moved to the right-click menu on the clip, next to everything else you can do to it.</li>
-          <li><strong>The touch-up panel opens on the things you actually change</strong> — Camera and Cursor Zoom now sit at the top, and they are the two that are open when the panel is. Crop, Background and Padding start closed. The panel used to open all five at once, which made it taller than the window, so Cursor Zoom sat off the bottom of the screen and you had to scroll down to it every single time. A closed section still says when it is doing something — <code>Cropped</code>, <code>Image</code>, <code>12%</code> — so nothing you set can hide behind it.</li>
-          <li><strong>A series name stands out from the recordings under it</strong> — it was the same size and the same colour as the date on every card below it, so the thing that grouped your recordings read as quieter than a timestamp. It is now larger and brighter, with a small amber marker where each group starts.</li>
-        </ul>
-        <h4>Fixed</h4>
-        <ul>
-          <li><strong>Pointing at a window now gives you the window on top</strong> — where two windows overlapped, iRecord chose whichever app's name came first in the alphabet instead of the one under your pointer, so it kept landing on the same app wherever you clicked. It now picks the window you can actually see there.</li>
-          <li><strong>The list of windows keeps up while you arrange them</strong> — opening a window, closing one, or bringing a different one to the front all happen while iRecord is in the background, and the New Recording screen was still showing the list from when you opened it. It now looks again each time you come back to iRecord.</li>
-          <li><strong>The crop panel says what it kept, in words</strong> — it read <code>100% × 88% of the source</code>, which has the shape of a video size and left you to work out which number was which, and whether it was what survived or what was cut. It now says <code>Keeping the full width and 88% of the height</code>.</li>
-        </ul>
-      ]]></description>
-      <enclosure
-        url="https://github.com/aristidesnakos/irecord-releases/releases/download/v1.264.0/iRecord.dmg"
-        type="application/x-apple-diskimage"
-        sparkle:edSignature="FaAgFXxiXKiqpqjsQGBFNx/rffDi/P2kV/Y9xdtoVyNEjKmi7l32SYtk61Z3ZkoV171gcwwfJWcoa2zn4PYdAw==" length="3714819"
       />
     </item>
   </channel>
