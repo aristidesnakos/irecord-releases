@@ -7,6 +7,35 @@
     <language>en</language>
 
     <item>
+      <title>Version 1.282.0</title>
+      <pubDate>Fri, 09 Oct 2026 15:21:36 +0300</pubDate>
+      <sparkle:version>2628200</sparkle:version>
+      <sparkle:shortVersionString>1.282.0</sparkle:shortVersionString>
+      <sparkle:minimumSystemVersion>15.0</sparkle:minimumSystemVersion>
+      <description><![CDATA[
+        <style>
+          body { font-family: -apple-system, BlinkMacSystemFont, sans-serif; font-size: 13px; line-height: 1.4; }
+          h3 { margin: 0 0 10px 0; font-size: 15px; }
+          h4 { margin: 14px 0 4px 0; font-size: 13px; }
+          code { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 12px; }
+          ul { margin: 0; padding-left: 20px; }
+          li { margin: 6px 0; }
+        </style>
+        <h3>What's New in 1.282.0</h3>
+        <h4>Fixed</h4>
+        <ul>
+          <li><strong>Captions keep working when iRecord has been open a while</strong> — after iRecord had been open for some time, new takes could stop getting captions, with a message telling you to check your internet connection. Your internet was never the problem, and quitting and reopening iRecord was the only fix. Now captions keep working however long iRecord stays open.</li>
+          <li><strong>Save Video no longer drops your captions without saying so</strong> — if captions couldn't be made while Save Video was waiting for them, it saved the video without them and didn't tell you. Now it stops, tells you why, and lets you choose to save without captions.</li>
+        </ul>
+      ]]></description>
+      <enclosure
+        url="https://github.com/aristidesnakos/irecord-releases/releases/download/v1.282.0/iRecord.dmg"
+        type="application/x-apple-diskimage"
+        sparkle:edSignature="4ES0j0ku9NwEICils9WTdgjNMSf3OxqBaV27kycsA0QFPDBmrYna3xRXptlJGP6odzTF77y16ix3DGMuG4IwDA==" length="4510097"
+      />
+    </item>
+
+    <item>
       <title>Version 1.281.0</title>
       <pubDate>Thu, 08 Oct 2026 20:02:14 +0300</pubDate>
       <sparkle:version>2628100</sparkle:version>
@@ -43,7 +72,6 @@
         sparkle:edSignature="a0/salXHrWn+MRq2aJF6ypAx+ce8f51YlE+wtXWQh88p9Wpe2k4mmi5OKiocQihCrWQYQ7AfwcfH7yNr17xgAA==" length="4492318"
       />
     </item>
-
     <item>
       <title>Version 1.280.0</title>
       <pubDate>Wed, 07 Oct 2026 21:06:56 +0300</pubDate>
@@ -161,51 +189,6 @@
         url="https://github.com/aristidesnakos/irecord-releases/releases/download/v1.264.0/iRecord.dmg"
         type="application/x-apple-diskimage"
         sparkle:edSignature="FaAgFXxiXKiqpqjsQGBFNx/rffDi/P2kV/Y9xdtoVyNEjKmi7l32SYtk61Z3ZkoV171gcwwfJWcoa2zn4PYdAw==" length="3714819"
-      />
-    </item>
-    <item>
-      <title>Version 1.258.0</title>
-      <pubDate>Tue, 15 Sep 2026 14:05:39 +0300</pubDate>
-      <sparkle:version>2625800</sparkle:version>
-      <sparkle:shortVersionString>1.258.0</sparkle:shortVersionString>
-      <sparkle:minimumSystemVersion>15.0</sparkle:minimumSystemVersion>
-      <description><![CDATA[
-        <style>
-          body { font-family: -apple-system, BlinkMacSystemFont, sans-serif; font-size: 13px; line-height: 1.4; }
-          h3 { margin: 0 0 10px 0; font-size: 15px; }
-          h4 { margin: 14px 0 4px 0; font-size: 13px; }
-          code { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 12px; }
-          ul { margin: 0; padding-left: 20px; }
-          li { margin: 6px 0; }
-        </style>
-        <h3>What's New in 1.258.0</h3>
-        <h4>Added</h4>
-        <ul>
-          <li><strong>Group your recordings into a series</strong> — recordings that belong together can now be labelled as one. Right-click any recording on Home, or use the <code>⋯</code> button on its card or in the editor, and pick <code>Series ▸</code>. Home then shows them together under that name, and searching the series name finds all of them. A series is just a label: nothing moves on your Mac, no files are touched, and picking the same one again takes the recording back out. Renaming a series renames it everywhere at once.</li>
-          <li><strong>Reuse a recording you already set up</strong> — mark a recording <code>Use as Template</code> from the same menu, and <code>New Recording</code> gains a <code>From Template</code> list. Starting from one gives you a fresh recording with the same sections, the same script, the same planned lengths and the same look, and none of the old footage. The original is left exactly as it was.</li>
-          <li><strong>Record your whole plan in one go</strong> — with sections planned ahead, pressing <code>● Record next section</code> now records the <em>rest of them</em> in one run: one countdown, and <code>⌘⇧↓</code> moves you on to the next section without stopping. The teleprompter follows along, showing each section's script as you reach it, and every section's take lands on the section you planned it against. Stopping partway is fine — the sections you didn't reach are still there, still planned.</li>
-          <li><strong>Plan a recording before you shoot it</strong> — you can now write your sections down first. In the editor, press <code>Plan Sections…</code>, paste one line per section, and iRecord turns them into a checklist you record against. Add a length to any line if you want one — <code>Warm-up 2:00</code>, <code>90s kick drill</code>, <code>Freestyle pull — 1:30</code> — and a new row above the timeline shows the shape of the whole thing before you have shot a frame: solid blocks for what you have recorded, outlined ones for what is still to come. <code>● Record next section</code> now records the next section you planned instead of adding one on the end.</li>
-          <li><strong>See how long you are running</strong> — where you planned a length, iRecord tells you how the real thing compares: on each section, and at the top of the editor as <code>8 of 12 sections · 22:40 of 30:00</code>. It counts what you actually kept, so trimming a section that ran long brings it back in line. It only tells you; nothing goes red and nothing stops you saving.</li>
-          <li><strong>Save the same video at several shapes in one go</strong> — a video that had to go out square, tall and wide meant three trips through Save. The Save screen now has a Variants list: add the shapes you need, press Save once, and iRecord writes one file per shape into a folder you pick. Each row shows the exact size of the file it will make. Changing a shape here does not change your recording — it stays set up the way you left it.</li>
-          <li><strong>Save the picture on screen as an image</strong> — there is a new button next to Save Video that saves the frame you are parked on as a PNG, with your background, your camera and everything else exactly as the video would have it. Move the playhead to the frame you want and press it.</li>
-          <li><strong>Start a section over without stopping the recording</strong> — flub a line and your only way out was to stop the whole thing, then set the same shot up again from scratch. There is now a <code>↺</code> button next to Pause: it counts you back in with 3-2-1 and starts the section again with everything exactly as you had it. What you recorded up to that point is kept as a take, so you can still go back to it in the editor.</li>
-          <li><strong>See what a recording has produced</strong> — every video and poster you save is now listed in the editor, next to Save Video, with when you saved it and whether it still matches what is on the canvas. Trim a clip after saving and the row says <em>Edited since saved</em>, so you know which file is the old one. Home shows the same thing on each card: <em>Recorded</em>, <em>Saved · 3</em>, or <em>Edited since saved</em>.</li>
-        </ul>
-        <h4>Fixed</h4>
-        <ul>
-          <li><strong>Renaming a recording now renames its folder on your Mac, too</strong> — renaming only ever changed the name shown inside iRecord, so Finder kept showing <code>Untitled Recording 2</code>, <code>3</code>, <code>4</code> no matter what you called it. The folder now catches up once you leave the editor.</li>
-          <li><strong>Saved videos now start playing straight away when uploaded anywhere</strong> — every video iRecord saved was written with its index at the end of the file, so a browser had to download the whole thing before it could show the first frame. The index is now at the front, so a video posted to a website or sent through a link starts as soon as it begins to arrive.</li>
-          <li><strong>Your background image no longer disappears if you move or delete the original</strong> — picking an image for the background remembered where it was on your Mac, so moving or deleting that file turned the background black in the editor and in the saved video without a word. iRecord now keeps its own copy inside the recording, copies existing ones in when you open them, and if a copy can't be made the Background panel says so.</li>
-        </ul>
-        <h4>Fixed</h4>
-        <ul>
-          <li><strong>A recording no longer keeps playing after you leave the editor</strong> — press play, then go back to Home, and the sound carried on with nothing on screen to pause it. Deleting the recording didn't stop it either; only quitting iRecord did. Leaving the editor now stops playback.</li>
-        </ul>
-      ]]></description>
-      <enclosure
-        url="https://github.com/aristidesnakos/irecord-releases/releases/download/v1.258.0/iRecord.dmg"
-        type="application/x-apple-diskimage"
-        sparkle:edSignature="ZZjbwenMu2u7TH8nlhjOs0HZCc2Egtght4TtwEbi0fM9LTWEVfD59fiNrWyFXSpnq3P6Vx77KWX+6g0zGx4OCQ==" length="3721074"
       />
     </item>
   </channel>
