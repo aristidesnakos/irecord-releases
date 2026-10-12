@@ -7,6 +7,34 @@
     <language>en</language>
 
     <item>
+      <title>Version 1.285.0</title>
+      <pubDate>Mon, 12 Oct 2026 17:58:36 +0300</pubDate>
+      <sparkle:version>2628500</sparkle:version>
+      <sparkle:shortVersionString>1.285.0</sparkle:shortVersionString>
+      <sparkle:minimumSystemVersion>15.0</sparkle:minimumSystemVersion>
+      <description><![CDATA[
+        <style>
+          body { font-family: -apple-system, BlinkMacSystemFont, sans-serif; font-size: 13px; line-height: 1.4; }
+          h3 { margin: 0 0 10px 0; font-size: 15px; }
+          h4 { margin: 14px 0 4px 0; font-size: 13px; }
+          code { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 12px; }
+          ul { margin: 0; padding-left: 20px; }
+          li { margin: 6px 0; }
+        </style>
+        <h3>What's New in 1.285.0</h3>
+        <h4>Changed</h4>
+        <ul>
+          <li><strong>New copies of iRecord come with a one-day trial</strong> — someone installing iRecord for the first time now gets one day to try it before buying, instead of seven. If you are already on a trial, nothing changes: you keep the seven days you started with.</li>
+        </ul>
+      ]]></description>
+      <enclosure
+        url="https://github.com/aristidesnakos/irecord-releases/releases/download/v1.285.0/iRecord.dmg"
+        type="application/x-apple-diskimage"
+        sparkle:edSignature="tBDfIpQNwF+agGKE26T46RV8KS28uYSsCdKCZdxtueNKQa0UQeeXClhAFUG8WvswjtD1+yd0+w9/7Ul22CnBDw==" length="4655249"
+      />
+    </item>
+
+    <item>
       <title>Version 1.282.1</title>
       <pubDate>Fri, 09 Oct 2026 16:08:26 +0300</pubDate>
       <sparkle:version>2628201</sparkle:version>
@@ -53,7 +81,6 @@
         sparkle:edSignature="TnVVeqKMod+FMOeG5TdoyoRqYKsgt421qoTb/W7lljbQwbLFugE43KCX47+gJMU+apdKmxE8MYzaRXfycIdsBg==" length="4648904"
       />
     </item>
-
     <item>
       <title>Version 1.282.0</title>
       <pubDate>Fri, 09 Oct 2026 15:21:36 +0300</pubDate>
@@ -153,54 +180,6 @@
         url="https://github.com/aristidesnakos/irecord-releases/releases/download/v1.280.0/iRecord.dmg"
         type="application/x-apple-diskimage"
         sparkle:edSignature="IvLtd8aMvjlyOsgUf7sXmWoxBBkejSVrP7hc5CWv44yLnKum+5JzL4/mQlQ7lfaQSutazLtcvZf7uyzw0oJTAg==" length="4388529"
-      />
-    </item>
-    <item>
-      <title>Version 1.265.0</title>
-      <pubDate>Tue, 22 Sep 2026 11:32:44 +0300</pubDate>
-      <sparkle:version>2626500</sparkle:version>
-      <sparkle:shortVersionString>1.265.0</sparkle:shortVersionString>
-      <sparkle:minimumSystemVersion>15.0</sparkle:minimumSystemVersion>
-      <description><![CDATA[
-        <style>
-          body { font-family: -apple-system, BlinkMacSystemFont, sans-serif; font-size: 13px; line-height: 1.4; }
-          h3 { margin: 0 0 10px 0; font-size: 15px; }
-          h4 { margin: 14px 0 4px 0; font-size: 13px; }
-          code { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 12px; }
-          ul { margin: 0; padding-left: 20px; }
-          li { margin: 6px 0; }
-        </style>
-        <h3>What's New in 1.265.0</h3>
-        <h4>Added</h4>
-        <ul>
-          <li><strong>Captions on your video, from a subtitle file or burned into the export</strong> — pick <code>Import SRT/VTT…</code> in the Captions section and the cues land on the timeline and are drawn over the picture as you scrub, so what you see while editing is what you get. Size and Position are there too (top or bottom), Save Video gained an <code>Export .srt</code> toggle that writes a subtitle file beside every video it saves, and <code>Burn into export</code> puts the words into the picture itself when that is what you need. Burn-in is off by default, because an <code>.srt</code> is for a player that can toggle captions and a file with them baked in cannot un-bake them.</li>
-          <li><strong>Plan a series before you shoot it</strong> — Home offers it in three places: on a fresh Home the hero asks whether you want to start recording or plan a series; once you have recordings there is a dashed <code>+ Plan a Series…</code> tile among them; and under any series header, <code>Plan next lecture…</code>. All three land in the plan sheet on the new recording, so the first recording of a series belongs to it from its first second and <code>Plan next lecture…</code> has something to attach to: the two <code>Plan a Series</code> launchers ask what the series is called, and <code>Plan next lecture…</code> reuses the name you already grouped under — or opens the member that still has Sections left to shoot.</li>
-          <li><strong>Plan a recording with AI, on your own key</strong> — when your notes read as prose rather than as one Section per line, the plan sheet's <code>Structure with AI</code> button turns them into Sections: a short back-and-forth about what you are making, and the outline it writes appears beside the notes as a draft to apply, edit as text or ask again. It runs against OpenRouter with your own key, connected and removed in Settings → AI and kept in the macOS Keychain; a Mac with Apple Intelligence answers the small per-Section asks on-device instead. Nothing is sent anywhere until you press something that says it will.</li>
-          <li><strong>Click a Section to read and write its script</strong> — selecting a Section block on the timeline opens a small panel with the lines for that Section, editable in place, and a <code>Suggest talking points</code> button. A suggestion arrives as ghost text with <code>Accept</code>, <code>Regenerate</code> and <code>Dismiss</code> — nothing is written until you accept it, and an accepted one lands as a single undo step along with your own edits.</li>
-        </ul>
-        <h4>Changed</h4>
-        <ul>
-          <li><strong>The record dialog leads with the Section's name</strong> — it said "Record Section 1: Section 1", stating the number twice and burying the one word you recognise — the name you gave it — in the middle. The name is the title now, with "Section 3 of 12 · 4:00 planned" underneath it, so you can see what you are about to record and how much of the plan is left.</li>
-          <li><strong>The plan sheet is one field with the plan beside it</strong> — it opened by asking which way you wanted to fill a field you had not seen yet, "Paste your own" or "Brainstorm with AI", and the control doing the asking was also squeezing the field's own label underneath itself. There is one field now — your source material, one Section per line or written out as prose — and what the sheet read back sits in a pane beside it as the numbered outline it will become, with lengths and a total, or an empty state that names both ways to fill it. The AI is a button under the notes instead of a mode, because notes that are already one Section per line never needed it, and it says so where you press it. The file button says what it does too: a .txt, .md or .pdf is read into the notes the moment you pick it, and links are not fetched. The sheet is wide enough to hold both panes, which is what a twelve-Section plan is.</li>
-          <li><strong>The plan sheet is called "Create a Plan", and the AI answers in Markdown</strong> — the old title named the object ("Plan Sections") instead of the job you came to do, and the model's replies arrived exactly as it writes them, asterisks and dashes and hashes included, so a bulleted outline came back as punctuation soup. The title says what you are doing; the replies are shown as the emphasis and lists they mean; and the conversation can be put away — "Hide AI" — without cancelling the plan you were already writing.</li>
-          <li><strong>"Plan a Series" asks what the series is called before it makes anything</strong> — the button used to create the recording first, with no name attached to it, so it never belonged to a series at all. That also broke the thing the button promises: "Plan next lecture…" only appears under a series heading, so there was nothing for it to attach itself to. Type a name, and the recording that gets created carries it. An empty name is not accepted, and "Start planning" stays greyed out until you type one.</li>
-        </ul>
-        <h4>Fixed</h4>
-        <ul>
-          <li><strong>"Plan a Series" works on a Home that already has recordings</strong> — the box that asks for the series name was attached to the first-run hero, the screen you only see while you have no recordings at all. On the ordinary Home, the one with recordings on it, pressing the grid's "Plan a Series" tile did nothing whatsoever: it was asking a question only the empty screen could answer. The prompt is now presented by Home itself, so every "Plan a Series" launcher reaches it — and so does the failure message when a recording cannot be created.</li>
-          <li><strong>A brainstorm cannot overwrite the notes it read</strong> — the AI's outline used to replace the text you had pasted, so the source it was reasoning about was gone and the next follow-up was talking about a list you never wrote. The draft is shown beside your notes, applied from there, and handed back to the editor only when you say so ("Edit this as text"); change the notes and the draft is dropped, because a draft about the old notes is a lie about this plan.</li>
-          <li><strong>Captions appear the moment you switch them on</strong> — the canvas draws the cue on screen, and it only ever worked out which cue that was while something <em>else</em> changed: the playback ticker, a retake, a camera file arriving. Editing is done paused, so switching Captions on had no effect at all until you moved the playhead. It now re-reads the cue on the switch itself and on an import, so what you turn on is what you see.</li>
-          <li><strong>The caption buttons have their padding back</strong> — Size, Position and the import button were text jammed against the edge of their own chip, because the padding and text size were set on the button instead of on the label inside it. They match the Camera and Cursor Zoom chips now, and "Import SRT/VTT…" is a proper button rather than a chip pretending to be one.</li>
-          <li><strong>Return does one thing at a time in the plan sheet</strong> — the sheet's "Add Sections" button and the brainstorm's "Start" both claimed the Return key, so pressing Return while you were still talking to the AI could commit a half-finished outline. Start owns Return while the brainstorm is showing; Add Sections owns it on the paste side.</li>
-          <li><strong>The plan sheet says what the prompts are waiting for</strong> — "Or start from a prompt" sat above four prompts that were greyed out until you had pasted some source material, and nothing anywhere said why. It now says so: add source material first, because a prompt starts from it.</li>
-          <li><strong>"Connect OpenRouter" opens Settings on the AI section, not at the top</strong> — it opened Settings on Recording, so the place you were sent to had nothing about connecting a key, and the way back to your plan was a guess. Both places that offer to connect a key now land on AI.</li>
-          <li><strong>The AI section is honest about what leaves your Mac</strong> — it said nothing about a recording is ever sent anywhere unless you start a brainstorm or press Suggest, but connecting a key sends one test request to check the key works before it is stored. That is the point of the check, and the section now says it.</li>
-        </ul>
-      ]]></description>
-      <enclosure
-        url="https://github.com/aristidesnakos/irecord-releases/releases/download/v1.265.0/iRecord.dmg"
-        type="application/x-apple-diskimage"
-        sparkle:edSignature="mP0MqytRs+O6hduqPSvTvmkhtcI/lW2QKsqr6FZQmVGgI/AYNa/mgo/+bjfN6tt4yVtbTdt/GA9fhO8GtxD4DQ==" length="3979373"
       />
     </item>
   </channel>
