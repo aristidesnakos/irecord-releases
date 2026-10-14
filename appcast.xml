@@ -7,6 +7,50 @@
     <language>en</language>
 
     <item>
+      <title>Version 1.288.0</title>
+      <pubDate>Thu, 15 Oct 2026 01:11:47 +0300</pubDate>
+      <sparkle:version>2628800</sparkle:version>
+      <sparkle:shortVersionString>1.288.0</sparkle:shortVersionString>
+      <sparkle:minimumSystemVersion>15.0</sparkle:minimumSystemVersion>
+      <description><![CDATA[
+        <style>
+          body { font-family: -apple-system, BlinkMacSystemFont, sans-serif; font-size: 13px; line-height: 1.4; }
+          h3 { margin: 0 0 10px 0; font-size: 15px; }
+          h4 { margin: 14px 0 4px 0; font-size: 13px; }
+          code { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 12px; }
+          ul { margin: 0; padding-left: 20px; }
+          li { margin: 6px 0; }
+        </style>
+        <h3>What's New in 1.288.0</h3>
+        <h4>Added</h4>
+        <ul>
+          <li><strong>Add a shadow under your video</strong> — the Padding panel has a new Shadow switch that puts a soft shadow under your video, in the editor and in the video you save. The editor used to show a shadow on every Recording that your saved video never had; now there is none until you add it.</li>
+        </ul>
+        <h4>Changed</h4>
+        <ul>
+          <li><strong>Plan without the AI</strong> — the Create a Plan sheet has an AI switch at the top. Turn it off and there is no conversation: you type your Sections and see them listed with their lengths beside them. The sheet remembers your choice; until you make one, the AI is on only if you have connected an OpenRouter key.</li>
+          <li><strong>Cursor zoom's level is a slider</strong> — instead of four fixed choices, you can now set how far the zoom goes anywhere from 1.5× to 3×. The Cursor Zoom panel also now puts the mode first and the three sliders under it.</li>
+        </ul>
+        <h4>Fixed</h4>
+        <ul>
+          <li><strong>Saving no longer gets stuck partway</strong> — Save Video could stop moving partway through a Recording, most often one with many cuts, and never finish. Now it gets past the spot and saves the whole video.</li>
+          <li><strong>A save that stops moving now stops and says so</strong> — Save Video could sit on the same percentage forever, and pressing Cancel then closed iRecord. Now a save that makes no progress for 30 seconds ends with a message, Cancel always brings you back, and your Recording is never touched either way.</li>
+          <li><strong>Picture backgrounds show up in your saved videos</strong> — if a Recording had a picture as its background, the editor showed it, but the saved video and its poster frame had a plain black background instead. Now they show the picture, blurred and faded the way you set it.</li>
+          <li><strong>Backgrounds look the same in the editor and in your saved video</strong> — gradients and see-through colours came out a little different in colour in the saved video, and a round gradient came out smaller. Now both look the same. In the editor, a round gradient may look smaller than before, and a blurred picture a little sharper: that is how your saved video will look.</li>
+          <li><strong>Buttons near a picture background work again</strong> — with a tall picture as the background, some buttons stopped answering clicks: the Background panel's arrow and Choose Image button, Home and the Recording's name in the editor. On Home, a tall recording's thumbnail could block the bottom of the card above it. They all respond again.</li>
+          <li><strong>Padding grows evenly as you drag</strong> — with Link sides on, dragging the padding slider added space above the picture first and only evened it out when you let go, which looked like a strange zoom. Now all four sides grow together while you drag.</li>
+          <li><strong>The editor rounds corners and draws the camera border the way your saved video does</strong> — the editor rounded the corners of your screen and camera more than the saved video, drew a camera border thicker than in the file and half outside the camera, and on a tall or square video rounded the space around the picture instead of the picture itself. Now the editor matches the file.</li>
+          <li><strong>No more thin lines at the edge of your camera or screen in the editor</strong> — at some padding values, and while you dragged the padding slider, a thin line could show along the top of the camera circle, or a dark line along the edges of your screen. They were never in your saved video, and now the editor doesn't show them either.</li>
+        </ul>
+      ]]></description>
+      <enclosure
+        url="https://github.com/aristidesnakos/irecord-releases/releases/download/v1.288.0/iRecord.dmg"
+        type="application/x-apple-diskimage"
+        sparkle:edSignature="4LThc5ULYTSIAJkgCBT6h3+D9tCx3nkKJjhplKKAg8o7E7VLc6XDR5yH7V/xChZPLWM/Y566DtEVn258MUlsDg==" length="4666649"
+      />
+    </item>
+
+    <item>
       <title>Version 1.285.0</title>
       <pubDate>Mon, 12 Oct 2026 17:58:36 +0300</pubDate>
       <sparkle:version>2628500</sparkle:version>
@@ -33,7 +77,6 @@
         sparkle:edSignature="tBDfIpQNwF+agGKE26T46RV8KS28uYSsCdKCZdxtueNKQa0UQeeXClhAFUG8WvswjtD1+yd0+w9/7Ul22CnBDw==" length="4655249"
       />
     </item>
-
     <item>
       <title>Version 1.282.1</title>
       <pubDate>Fri, 09 Oct 2026 16:08:26 +0300</pubDate>
@@ -144,42 +187,6 @@
         url="https://github.com/aristidesnakos/irecord-releases/releases/download/v1.281.0/iRecord.dmg"
         type="application/x-apple-diskimage"
         sparkle:edSignature="a0/salXHrWn+MRq2aJF6ypAx+ce8f51YlE+wtXWQh88p9Wpe2k4mmi5OKiocQihCrWQYQ7AfwcfH7yNr17xgAA==" length="4492318"
-      />
-    </item>
-    <item>
-      <title>Version 1.280.0</title>
-      <pubDate>Wed, 07 Oct 2026 21:06:56 +0300</pubDate>
-      <sparkle:version>2628000</sparkle:version>
-      <sparkle:shortVersionString>1.280.0</sparkle:shortVersionString>
-      <sparkle:minimumSystemVersion>15.0</sparkle:minimumSystemVersion>
-      <description><![CDATA[
-        <style>
-          body { font-family: -apple-system, BlinkMacSystemFont, sans-serif; font-size: 13px; line-height: 1.4; }
-          h3 { margin: 0 0 10px 0; font-size: 15px; }
-          h4 { margin: 14px 0 4px 0; font-size: 13px; }
-          code { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 12px; }
-          ul { margin: 0; padding-left: 20px; }
-          li { margin: 6px 0; }
-        </style>
-        <h3>What's New in 1.280.0</h3>
-        <h4>Added</h4>
-        <ul>
-          <li><strong>Captions from what you say, on by default</strong> — on macOS 26, a new Recording is now captioned in English as soon as you stop, made on your Mac, and the captions are burned into the saved video. If you press Save Video while captions are still being made, it waits for them and then saves on its own. Anything you said that came back with no words — the sentence after a long silence is the usual one — is listened to again, so it is not left out. You can turn this off in Settings → Recording, and Recordings you already made stay as they were.</li>
-          <li><strong>Write your script where you get ready to record</strong> — the window where you pick your screen, camera and microphone now has a Script chip. Type or paste what you'll say and it appears on the teleprompter as soon as you start recording. It also helps captions spell your names and terms right.</li>
-          <li><strong>Fix a caption by retyping it</strong> — Captions → Text lists every line with its time. Click a time to go there; retype a line and press Return to correct it. If you re-record a Section whose captions you corrected, iRecord says that your corrections stayed with the earlier take, and restoring that take brings them back.</li>
-        </ul>
-        <h4>Changed</h4>
-        <ul>
-          <li><strong>The plan sheet is a chat with a <code>+</code> on it</strong> — it used to be five controls all saying "put something in" and none of them saying which: a "Your source material" box, an <code>Add files…</code> button under it, a separate "Ask a follow-up" field, four prompt chips and a Start button. There is one composer now, and one <code>+</code> beside it. <code>+</code> offers the two things a plan is actually built from — files, and links — and either arrives as a chip above the field that says what it is and how much of it was read, with an <code>×</code> to take it off. The blank sheet says what it wants in words ("give me the material this series is built from … then say what you want it to become"), the line above the field keeps saying what is still missing, and the chips only appear while the conversation is empty, so they are a sentence to start from rather than a control the plan depends on. Return sends the message and nothing else in the sheet claims it any more.</li>
-          <li><strong>A link you attach is read, not just named</strong> — a model cannot open a page, so a URL on its own was never context, and the old sheet said so ("Links aren't fetched — bring the text itself"). Now the page's text is fetched once, with its scripts, styles and metadata stripped out and its entities decoded, so a plan built from a link is built from the words on it. When a page cannot be read the chip says why — "The page answered 404", "Nothing readable on that page" — rather than quietly leaving the plan short of material it was promised.</li>
-          <li><strong>The plan beside the conversation can be taken over by hand</strong> — the pane on the right is still the numbered read-back with lengths and a total, and <code>Write them myself</code> is always in its header now, whether it is empty, drafted or already yours. That is the path for an outline you already have, and the one that still works with no model connected: typing in it makes the plan your own, and the "drafted by the AI" line goes with the first keystroke instead of sitting over words you wrote.</li>
-          <li><strong>A drafted plan replaced a drafted plan, and nothing else</strong> — the old rule was that changing your notes threw the AI's draft away, because a draft about the old notes is a lie about this plan. With the material attached to the conversation instead of typed into the box that gets parsed, that rule had nothing left to protect: what the model writes now lands in the pane you are looking at, and what you type there stays until you ask for another outline.</li>
-        </ul>
-      ]]></description>
-      <enclosure
-        url="https://github.com/aristidesnakos/irecord-releases/releases/download/v1.280.0/iRecord.dmg"
-        type="application/x-apple-diskimage"
-        sparkle:edSignature="IvLtd8aMvjlyOsgUf7sXmWoxBBkejSVrP7hc5CWv44yLnKum+5JzL4/mQlQ7lfaQSutazLtcvZf7uyzw0oJTAg==" length="4388529"
       />
     </item>
   </channel>
