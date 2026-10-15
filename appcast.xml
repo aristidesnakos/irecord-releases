@@ -7,6 +7,52 @@
     <language>en</language>
 
     <item>
+      <title>Version 1.288.1</title>
+      <pubDate>Thu, 15 Oct 2026 17:12:04 +0300</pubDate>
+      <sparkle:version>2628801</sparkle:version>
+      <sparkle:shortVersionString>1.288.1</sparkle:shortVersionString>
+      <sparkle:minimumSystemVersion>15.0</sparkle:minimumSystemVersion>
+      <description><![CDATA[
+        <style>
+          body { font-family: -apple-system, BlinkMacSystemFont, sans-serif; font-size: 13px; line-height: 1.4; }
+          h3 { margin: 0 0 10px 0; font-size: 15px; }
+          h4 { margin: 14px 0 4px 0; font-size: 13px; }
+          code { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 12px; }
+          ul { margin: 0; padding-left: 20px; }
+          li { margin: 6px 0; }
+        </style>
+        <h3>What's New in 1.288.1</h3>
+        <h4>Added</h4>
+        <ul>
+          <li><strong>The plan chat reads links you type</strong> — paste your product's website into a message and iRecord reads the page before the AI answers, showing it above the message box like any file you attach. Addresses on your own Mac or network are read only if you add them with +. A slow or very large page gives up after 30 seconds instead of holding up your message.</li>
+          <li><strong>Plans that fit what you make</strong> — the Create a Plan sheet asks once whether you usually make presentations, product demos, lessons, tutorials or a mix, and its suggestions and the AI's advice follow your answer. Home no longer calls every video a lecture unless you teach. You can change your answer in Settings → Recording.</li>
+        </ul>
+        <h4>Changed</h4>
+        <ul>
+          <li><strong>Product demos start with the product</strong> — the plan chat now asks what your product is called and for a link to its website, then its main features, who it is for and the problem it solves. It no longer assumes the video is about iRecord, and it no longer adds an empty placeholder Section while it is still asking.</li>
+          <li><strong>One zoom slider</strong> — Cursor Zoom had two sliders, Smooth and Speed, that did almost the same thing. There is now one, called Smooth.</li>
+          <li><strong>The Camera panel says Section</strong> — the switch beside Whole recording now reads Section instead of Each section.</li>
+        </ul>
+        <h4>Fixed</h4>
+        <ul>
+          <li><strong>Closing the plan sheet stops the AI</strong> — if you close Create a Plan, or switch AI off, while the AI is still answering, iRecord stops waiting for it. A late answer can no longer replace the Sections you are writing yourself.</li>
+          <li><strong>A message the AI could not answer comes back</strong> — if OpenRouter refuses a message or cannot be reached, your message goes back in the box with the reason, ready to send again, instead of going out again with every message after it.</li>
+          <li><strong>Captions appear straight away on a paused video</strong> — turning captions on, correcting a line, adding subtitles, or captions finishing for a new take used to leave the old words on screen, or none at all, until you pressed play or moved the playhead. The new words now show the moment they change.</li>
+          <li><strong>Fixing a caption no longer repeats words</strong> — if you retyped a line in the Captions list so it got longer, pressed Return and then clicked away, the words that spilled onto the next line could show up twice. Shortening a line could drop the first words of the next one. Now each fix is saved once.</li>
+          <li><strong>Naming a Series makes one Recording</strong> — pressing Return twice quickly in the Name this Series box could make two Recordings when your Mac was busy. Now it makes one.</li>
+          <li><strong>Saving right after you stop keeps the tidy-up</strong> — if you pressed Save Video as soon as you stopped recording, the video could be saved before iRecord had cut your pauses and ums, so it came out longer than the editor showed. Save Video now waits a moment for the tidy-up to finish, and says so.</li>
+          <li><strong>A save that stops no longer leaves a big file behind</strong> — when Save Video stopped partway, or you cancelled it while it was stuck, it left a large unfinished file in the folder you were saving to, and you had to find and delete it yourself. Now iRecord deletes it.</li>
+          <li><strong>Typing in a caption line no longer edits your video</strong> — while you corrected a line in the Captions list, ⌘Z undid your last timeline change instead of your typing, ⌘B cut the video, and the arrow keys moved the playhead instead of the cursor. Now those keys work on the text while you type, and go back to the timeline as soon as you click it.</li>
+        </ul>
+      ]]></description>
+      <enclosure
+        url="https://github.com/aristidesnakos/irecord-releases/releases/download/v1.288.1/iRecord.dmg"
+        type="application/x-apple-diskimage"
+        sparkle:edSignature="oCPBl7Uzj3G7sUG7oJYI3GBnlDgs2P49KOhlOzd3fwVDnsxjE9VMe1EQAMTWdjr/i61dWeaZERjjCAWPGb/9CQ==" length="4780726"
+      />
+    </item>
+
+    <item>
       <title>Version 1.288.0</title>
       <pubDate>Thu, 15 Oct 2026 01:11:47 +0300</pubDate>
       <sparkle:version>2628800</sparkle:version>
@@ -49,7 +95,6 @@
         sparkle:edSignature="4LThc5ULYTSIAJkgCBT6h3+D9tCx3nkKJjhplKKAg8o7E7VLc6XDR5yH7V/xChZPLWM/Y566DtEVn258MUlsDg==" length="4666649"
       />
     </item>
-
     <item>
       <title>Version 1.285.0</title>
       <pubDate>Mon, 12 Oct 2026 17:58:36 +0300</pubDate>
@@ -150,43 +195,6 @@
         url="https://github.com/aristidesnakos/irecord-releases/releases/download/v1.282.0/iRecord.dmg"
         type="application/x-apple-diskimage"
         sparkle:edSignature="4ES0j0ku9NwEICils9WTdgjNMSf3OxqBaV27kycsA0QFPDBmrYna3xRXptlJGP6odzTF77y16ix3DGMuG4IwDA==" length="4510097"
-      />
-    </item>
-    <item>
-      <title>Version 1.281.0</title>
-      <pubDate>Thu, 08 Oct 2026 20:02:14 +0300</pubDate>
-      <sparkle:version>2628100</sparkle:version>
-      <sparkle:shortVersionString>1.281.0</sparkle:shortVersionString>
-      <sparkle:minimumSystemVersion>15.0</sparkle:minimumSystemVersion>
-      <description><![CDATA[
-        <style>
-          body { font-family: -apple-system, BlinkMacSystemFont, sans-serif; font-size: 13px; line-height: 1.4; }
-          h3 { margin: 0 0 10px 0; font-size: 15px; }
-          h4 { margin: 14px 0 4px 0; font-size: 13px; }
-          code { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 12px; }
-          ul { margin: 0; padding-left: 20px; }
-          li { margin: 6px 0; }
-        </style>
-        <h3>What's New in 1.281.0</h3>
-        <h4>Added</h4>
-        <ul>
-          <li><strong>See what's hidden before you save</strong> — if you've hidden any areas of a Recording, Save Video now shows each one at the first and last moment it's hidden, so you can check nothing slips out before or after. One click saves. If your hidden areas are on a take this video no longer uses, it tells you that nothing in it is hidden.</li>
-          <li><strong>A take with a problem says so on the timeline</strong> — if a take's picture or sound stopped early, or went out of step after a pause, the clip that plays that part now carries a small warning sign. Point at it to see what went wrong and what to do. Before, you were told once, when you stopped recording.</li>
-          <li><strong>iRecord tells you when the camera froze</strong> — if the camera stopped sending pictures partway through a take, or its video came out choppy, you used to find out later, as a frozen face in your saved video. Now iRecord says so as soon as you stop, with how long it froze and where. Report an Issue… also adds the numbers from your last few takes — counts only, with no names or file paths in them — so a report can show what happened.</li>
-        </ul>
-        <h4>Fixed</h4>
-        <ul>
-          <li><strong>Deleting a Section no longer erases another Section's video</strong> — once one Section had been deleted, cancelling the recording of a new Section, or deleting another Section and going back to Home, could erase the video of a different Section in the same Recording. iRecord now never deletes any video when it tidies away an empty Section, including a take cut short by a crash that is waiting to be recovered.</li>
-          <li><strong>Recover no longer says the Section was deleted</strong> — if iRecord quit while you were recording a new Section, and you went back to Home before pressing Recover, Recover refused every time with "the Section it belongs to has been deleted". Now it puts the Section back with the recording in it.</li>
-          <li><strong>A recovered recording now shows up in your video</strong> — if iRecord quit while you were recording a new Section of a Recording you had already edited, Recover saved the recording but left it off the timeline, so it was missing from the editor and from the saved video. Now it goes on the end of the timeline, the same place it would have gone if the recording had finished.</li>
-          <li><strong>Sections you finish in one go stay in your video if iRecord quits</strong> — when you recorded planned Sections one after another with ⌘⇧↓ on a Recording you had already edited, and iRecord quit partway through, the Sections you had already finished were saved but left off the timeline, so they were missing from the editor and from the saved video. Now each Section goes onto the timeline the moment you move on to the next one.</li>
-          <li><strong>Pausing no longer puts your voice ahead of your face</strong> — after a pause, the video used to show a frozen picture for as long as the pause lasted while your voice carried on, so for the rest of the take you were heard before your lips moved, and it ended on silent picture. Now the pause is simply left out, and picture and sound pick up together. On Recordings paused before this update, a clip that plays past the pause now carries a warning sign saying the pause caused it.</li>
-        </ul>
-      ]]></description>
-      <enclosure
-        url="https://github.com/aristidesnakos/irecord-releases/releases/download/v1.281.0/iRecord.dmg"
-        type="application/x-apple-diskimage"
-        sparkle:edSignature="a0/salXHrWn+MRq2aJF6ypAx+ce8f51YlE+wtXWQh88p9Wpe2k4mmi5OKiocQihCrWQYQ7AfwcfH7yNr17xgAA==" length="4492318"
       />
     </item>
   </channel>
