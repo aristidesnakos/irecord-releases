@@ -1,10 +1,60 @@
 <?xml version="1.0" encoding="utf-8"?>
 <rss version="2.0" xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle">
   <channel>
-    <title>iRecord Updates</title>
+    <title>Prodoozie Updates</title>
     <link>https://github.com/aristidesnakos/irecord-releases/releases</link>
-    <description>Updates for iRecord - Professional screen recording</description>
+    <description>Updates for Prodoozie (formerly iRecord)</description>
     <language>en</language>
+
+    <item>
+      <title>Version 1.293.0</title>
+      <pubDate>Tue, 20 Oct 2026 17:03:45 +0300</pubDate>
+      <sparkle:version>2629300</sparkle:version>
+      <sparkle:shortVersionString>1.293.0</sparkle:shortVersionString>
+      <sparkle:minimumSystemVersion>15.0</sparkle:minimumSystemVersion>
+      <description><![CDATA[
+        <style>
+          body { font-family: -apple-system, BlinkMacSystemFont, sans-serif; font-size: 13px; line-height: 1.4; }
+          h3 { margin: 0 0 10px 0; font-size: 15px; }
+          h4 { margin: 14px 0 4px 0; font-size: 13px; }
+          code { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 12px; }
+          ul { margin: 0; padding-left: 20px; }
+          li { margin: 6px 0; }
+        </style>
+        <h3>What's New in 1.293.0</h3>
+        <h4>Added</h4>
+        <ul>
+          <li><strong>Add a video file to a Recording</strong> — press Add Video or Image… beside Record next section, right-click the timeline and choose Add Video or Image Here…, pick File ▸ Add Video or Image…, or just drop a video onto the timeline, and it becomes a Section of its own. Prodoozie copies it into the Recording and turns a phone's tall video the right way up, and a clip of another shape sits inside the frame without being squashed. Captions come only from a microphone track, so a phone video's sound plays but gets no captions.</li>
+          <li><strong>Add a picture or a GIF the same way</strong> — the same buttons, and a drop onto the timeline, take a picture or a GIF too, and each becomes a Section of its own. A picture shows for five seconds, and you can drag its end out to a full minute to talk over it. A GIF that loops plays for at least three seconds, so a short one isn't gone in a blink. Anything see-through in them shows as black, and Prodoozie tells you when that happens.</li>
+          <li><strong>Section titles</strong> — tick Section Titles in the editor's Text tab to put each Section's name on the video for its first four seconds. A Section you haven't named gets no title, and the title sits above your captions, so they never move.</li>
+          <li><strong>Style your Section titles</strong> — choose a dark, light or colored box, or no box at all, and a font and size. A colored box can match your background. Prodoozie picks white or black words for you, so a title is always easy to read on its box.</li>
+          <li><strong>Make a loop for your web page</strong> — the new loop button beside Poster frame turns your Recording into a short, silent video that plays on repeat. Pick the moments, speed them up, zoom in, ring what matters and add a label, and watch it play as it will on the page. Saving gives you the video, a picture to show before it plays, and code to paste into your site, and anything you hid stays hidden.</li>
+          <li><strong>Private text is hidden for you</strong> — when you stop, Prodoozie reads the new take on your Mac and hides people's names, email addresses, card numbers, keys, links and other text that looks private. The editor says what it hid, and you can show any kind again with one click. Only what's inside your windows is hidden: the menu bar, the Dock and the desktop are left alone. It can miss things, so look before you share. If a take can't be checked, the editor and Save Video tell you. You can turn it off in Settings → Recording.</li>
+        </ul>
+        <h4>Changed</h4>
+        <ul>
+          <li><strong>iRecord is now Prodoozie</strong> — the app has a new name, and that is all that changed. Your Recordings, your licence and the permissions you gave all carry over, so there is nothing to do. The app in your Applications folder may still be called iRecord after this update; it is the same app and keeps updating.</li>
+          <li><strong>Hidden areas are blurred, not black</strong> — a black box over a page looked like something broke. Anything new you hide, or that Prodoozie hides for you, is now a soft blur in the colours around it. The blur keeps nothing of what was under it, so it can't be undone. Areas you hid before stay as they were, and you can still choose solid or pixelate.</li>
+          <li><strong>The editor shows one thing at a time</strong> — the panel beside the video has a row of tabs, one for each part of your video: Look, Camera, Sections, Video, Zoom, Text and Hidden. Click the camera, a caption or a clip and the panel shows what you can change about it; click an empty spot to change the background. The timeline names its rows, the sound has a row of its own that always moves with its picture, and a row appears only when it has something in it. Section titles are switched on in Text.</li>
+          <li><strong>A roomier editor</strong> — the timeline's rows are taller with space between them, and its words and times are bigger and easier to read. Opening a Recording makes a small window bigger so the editor has room, and a new install opens at most of your screen.</li>
+          <li><strong>Cursor Zoom no longer offers Manual regions</strong> — picking it never zoomed anything: it turned the zoom off while the switch stayed on. It is gone from the list. A Recording already set to it shows Manual (zooms nothing) until you pick another mode, and saves the same video as before.</li>
+        </ul>
+        <h4>Fixed</h4>
+        <ul>
+          <li><strong>Report an Issue reaches us again</strong> — it started an email to an old address that no longer gets mail. It now goes to support@mail.prodoozie.com.</li>
+          <li><strong>A recording that stops suddenly keeps what was recorded</strong> — if a microphone went quiet for a few seconds, or System Audio was off, a recording cut short by a crash or a forced quit could come back empty. Now it comes back up to the last few seconds, and "saved through" on the recording indicator shows only what is really safe.</li>
+          <li><strong>A new plan starts at its first Section</strong> — planning a new Series left an empty Section 1 in front of your plan, so the header counted one Section too many and Record next section opened on the empty one. Your plan now takes its place.</li>
+          <li><strong>A plan fits on the timeline before you record</strong> — until something was recorded, the timeline showed only the start of your first planned Section, and zooming out did nothing. Now the whole plan is on screen, and Zoom and Fit work.</li>
+          <li><strong>A take that couldn't be saved is no longer forgotten</strong> — if Prodoozie stopped in the middle of a take before any of it was safely written, the next launch said nothing about it. Now it tells you which Recording and Section the take was in, so you know to record it again.</li>
+          <li><strong>Clicks in Prodoozie's own windows are recorded</strong> — when you recorded Prodoozie itself, your clicks in its windows were not saved, so Cursor Zoom set to On click never zoomed in on them. They are saved now, and a click made while Prodoozie was busy is no longer missed.</li>
+        </ul>
+      ]]></description>
+      <enclosure
+        url="https://github.com/aristidesnakos/irecord-releases/releases/download/v1.293.0/Prodoozie.dmg"
+        type="application/x-apple-diskimage"
+        sparkle:edSignature="bBj85NU4PuQc4qYT1Df6ChU0uzxFaE8Lq+Zig8Mxa9lrR0usOxySAKTsoS7n2TttePOYN+oCXuxC6qQMkg0GDg==" length="6097618"
+      />
+    </item>
 
     <item>
       <title>Version 1.288.1</title>
@@ -51,7 +101,6 @@
         sparkle:edSignature="oCPBl7Uzj3G7sUG7oJYI3GBnlDgs2P49KOhlOzd3fwVDnsxjE9VMe1EQAMTWdjr/i61dWeaZERjjCAWPGb/9CQ==" length="4780726"
       />
     </item>
-
     <item>
       <title>Version 1.288.0</title>
       <pubDate>Thu, 15 Oct 2026 01:11:47 +0300</pubDate>
@@ -167,34 +216,6 @@
         url="https://github.com/aristidesnakos/irecord-releases/releases/download/v1.282.1/iRecord.dmg"
         type="application/x-apple-diskimage"
         sparkle:edSignature="TnVVeqKMod+FMOeG5TdoyoRqYKsgt421qoTb/W7lljbQwbLFugE43KCX47+gJMU+apdKmxE8MYzaRXfycIdsBg==" length="4648904"
-      />
-    </item>
-    <item>
-      <title>Version 1.282.0</title>
-      <pubDate>Fri, 09 Oct 2026 15:21:36 +0300</pubDate>
-      <sparkle:version>2628200</sparkle:version>
-      <sparkle:shortVersionString>1.282.0</sparkle:shortVersionString>
-      <sparkle:minimumSystemVersion>15.0</sparkle:minimumSystemVersion>
-      <description><![CDATA[
-        <style>
-          body { font-family: -apple-system, BlinkMacSystemFont, sans-serif; font-size: 13px; line-height: 1.4; }
-          h3 { margin: 0 0 10px 0; font-size: 15px; }
-          h4 { margin: 14px 0 4px 0; font-size: 13px; }
-          code { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 12px; }
-          ul { margin: 0; padding-left: 20px; }
-          li { margin: 6px 0; }
-        </style>
-        <h3>What's New in 1.282.0</h3>
-        <h4>Fixed</h4>
-        <ul>
-          <li><strong>Captions keep working when iRecord has been open a while</strong> — after iRecord had been open for some time, new takes could stop getting captions, with a message telling you to check your internet connection. Your internet was never the problem, and quitting and reopening iRecord was the only fix. Now captions keep working however long iRecord stays open.</li>
-          <li><strong>Save Video no longer drops your captions without saying so</strong> — if captions couldn't be made while Save Video was waiting for them, it saved the video without them and didn't tell you. Now it stops, tells you why, and lets you choose to save without captions.</li>
-        </ul>
-      ]]></description>
-      <enclosure
-        url="https://github.com/aristidesnakos/irecord-releases/releases/download/v1.282.0/iRecord.dmg"
-        type="application/x-apple-diskimage"
-        sparkle:edSignature="4ES0j0ku9NwEICils9WTdgjNMSf3OxqBaV27kycsA0QFPDBmrYna3xRXptlJGP6odzTF77y16ix3DGMuG4IwDA==" length="4510097"
       />
     </item>
   </channel>
