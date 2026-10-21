@@ -7,6 +7,52 @@
     <language>en</language>
 
     <item>
+      <title>Version 1.294.0</title>
+      <pubDate>Wed, 21 Oct 2026 18:42:36 +0300</pubDate>
+      <sparkle:version>2629400</sparkle:version>
+      <sparkle:shortVersionString>1.294.0</sparkle:shortVersionString>
+      <sparkle:minimumSystemVersion>26.0</sparkle:minimumSystemVersion>
+      <description><![CDATA[
+        <style>
+          body { font-family: -apple-system, BlinkMacSystemFont, sans-serif; font-size: 13px; line-height: 1.4; }
+          h3 { margin: 0 0 10px 0; font-size: 15px; }
+          h4 { margin: 14px 0 4px 0; font-size: 13px; }
+          code { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 12px; }
+          ul { margin: 0; padding-left: 20px; }
+          li { margin: 6px 0; }
+        </style>
+        <h3>What's New in 1.294.0</h3>
+        <h4>Changed</h4>
+        <ul>
+          <li><strong>Prodoozie now needs macOS 26</strong> — each version is tested on macOS 26, so that is what it asks for. Updating is free on every Mac Prodoozie runs on. A Mac still on macOS 15 keeps version 1.293.0, which keeps working, and gets new versions once it updates.</li>
+          <li><strong>A clearer header in the editor</strong> — the loop button now says Loop. The trash button is gone from the header: delete a Recording from Home, or right-click the header, which now asks first. The touch-ups button no longer turns amber next to Save Video.</li>
+          <li><strong>Save a frame from the playhead</strong> — the picture button moved down beside the playhead's time, with a camera glyph, and File ▸ Save Frame as Image… does the same. It saves the frame you are looking at as a PNG, and it is now called a frame, not a poster frame.</li>
+          <li><strong>A cleaner timeline</strong> — the timeline no longer prints Sections, Video, Sound and Hidden beside its rows. What each row holds already says which row it is, so the room goes to your footage. Hover over the sound row to see why it can't be dragged.</li>
+          <li><strong>The timeline has colours</strong> — clips are amber, the sound under them is blue-purple, and anything you hid gets a rose strip, so you can tell the rows apart now that they have no names. The line that shows where you are, and the ring around the clip you picked, are white so they stand out on amber.</li>
+          <li><strong>The side panel fills the empty space</strong> — there used to be black bars on both sides of your video while the touch-ups panel was open. Now the panel grows to fill them, and your video stays the same size. It only grows so far, so a tall or square video in a very wide window can still have a bar.</li>
+          <li><strong>Cursor Zoom is now in the Video tab</strong> — it is a setting for your whole video, so it no longer has a tab of its own. Click the video, or the Zoom row on the timeline, and the Video tab opens with Cursor Zoom at the top.</li>
+        </ul>
+        <h4>Removed</h4>
+        <ul>
+          <li><strong>Settings no longer asks for an output folder</strong> — choosing one never changed where your Recordings were saved: they always go in your Movies folder, under iRecord. The setting is gone, and Open Recordings Folder in the menu bar now opens the folder your Recordings are really in.</li>
+        </ul>
+        <h4>Fixed</h4>
+        <ul>
+          <li><strong>Record no longer looks pressable when it isn't</strong> — pick Window and the Record button stayed bright red while doing nothing, because no window was chosen yet. It now dims until you pick one, and the preview says "Choose a window to record".</li>
+          <li><strong>The editor tells you when it can't save</strong> — when your disk was full, your changes looked saved but were gone when you quit. Now a line under the video says they couldn't be saved. The editor keeps them until you quit and tries again with your next change, every 30 seconds and when you close it. Free up some space, then press Try Again, and they are saved.</li>
+          <li><strong>Quitting no longer loses changes that couldn't be saved</strong> — when you quit, Prodoozie tries to save them once more. If it still can't, it asks first and names the Recording, so you can choose Don't Quit and free up some space.</li>
+          <li><strong>Section names no longer end in a comma</strong> — when a plan put a comma or colon before a Section's length, like "Why Light Matters, 1:00", the Section was called "Why Light Matters," with the comma still on. Now the comma goes with the length. A length written first, like "1:30, Freestyle pull", is read as the length too, instead of becoming part of the name.</li>
+          <li><strong>Gradient backgrounds look the same in the editor as in your saved video</strong> — on macOS 26 the editor showed a gradient background greyer through the middle than the video you saved. Now the editor shows it the way your video does. Videos you already saved don't change.</li>
+        </ul>
+      ]]></description>
+      <enclosure
+        url="https://github.com/aristidesnakos/irecord-releases/releases/download/v1.294.0/Prodoozie.dmg"
+        type="application/x-apple-diskimage"
+        sparkle:edSignature="sSjs8M9FJHZOhEV2Q5eV5metRWiD7FCNx7IbubLd07Hy4N/VfNsX9oSnxNEaEhRr7jxPYxlD5KGTqbylv14ADw==" length="7053509"
+      />
+    </item>
+
+    <item>
       <title>Version 1.293.0</title>
       <pubDate>Tue, 20 Oct 2026 17:03:45 +0300</pubDate>
       <sparkle:version>2629300</sparkle:version>
@@ -55,7 +101,6 @@
         sparkle:edSignature="bBj85NU4PuQc4qYT1Df6ChU0uzxFaE8Lq+Zig8Mxa9lrR0usOxySAKTsoS7n2TttePOYN+oCXuxC6qQMkg0GDg==" length="6097618"
       />
     </item>
-
     <item>
       <title>Version 1.288.1</title>
       <pubDate>Thu, 15 Oct 2026 17:12:04 +0300</pubDate>
@@ -169,53 +214,6 @@
         url="https://github.com/aristidesnakos/irecord-releases/releases/download/v1.285.0/iRecord.dmg"
         type="application/x-apple-diskimage"
         sparkle:edSignature="tBDfIpQNwF+agGKE26T46RV8KS28uYSsCdKCZdxtueNKQa0UQeeXClhAFUG8WvswjtD1+yd0+w9/7Ul22CnBDw==" length="4655249"
-      />
-    </item>
-    <item>
-      <title>Version 1.282.1</title>
-      <pubDate>Fri, 09 Oct 2026 16:08:26 +0300</pubDate>
-      <sparkle:version>2628201</sparkle:version>
-      <sparkle:shortVersionString>1.282.1</sparkle:shortVersionString>
-      <sparkle:minimumSystemVersion>15.0</sparkle:minimumSystemVersion>
-      <description><![CDATA[
-        <style>
-          body { font-family: -apple-system, BlinkMacSystemFont, sans-serif; font-size: 13px; line-height: 1.4; }
-          h3 { margin: 0 0 10px 0; font-size: 15px; }
-          h4 { margin: 14px 0 4px 0; font-size: 13px; }
-          code { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 12px; }
-          ul { margin: 0; padding-left: 20px; }
-          li { margin: 6px 0; }
-        </style>
-        <h3>What's New in 1.282.1</h3>
-        <h4>Added</h4>
-        <ul>
-          <li><strong>Your takes come back already tidied</strong> — when you stop recording, the wait before your first word and after your last is trimmed, and pauses where nothing happened are shortened. On macOS 26, with captions on, your ums are cut too. The editor says how much shorter the video is and what was cut, and Undo All, there every time you open the Recording, puts it all back. You can turn this off in Settings → Recording.</li>
-        </ul>
-        <h4>Changed</h4>
-        <ul>
-          <li><strong>A take's problem now shows where it is</strong> — instead of a small warning sign on the clip, the part of the clip that plays the problem is striped. Move the playhead into the stripes and a short line under the video says what is wrong there, with a Trim here button that ends the clip just before it.</li>
-          <li><strong>Caption size is a slider</strong> — the Captions panel now sets how big your captions are with a slider instead of three buttons, and moves them between the bottom and the top with a switch. The panel reads in order: how captions look, what they say, then whether they go into the saved video. Recordings you already captioned keep the size they had.</li>
-        </ul>
-        <h4>Removed</h4>
-        <ul>
-          <li><strong>Your iPhone shows up once in the camera list</strong> — an iPhone used as a camera without a cable used to appear twice, once as itself and once as Desk View, which films the desk from above and only works with the phone clipped to the top of your screen. Desk View is gone from the list, so picking your iPhone always gets the camera that films you.</li>
-          <li><strong>Clicking a Section no longer covers the video with a script panel</strong> — the panel was for writing what to say, which is no help once a Section is recorded. Clicking a Section now just selects it, and you write a script on the Ready screen, before you record. The panel's Suggest talking points button went with it, and so did the Apple Intelligence line in Settings → AI.</li>
-        </ul>
-        <h4>Fixed</h4>
-        <ul>
-          <li><strong>A saved video says when its captions have changed</strong> — if you changed the captions in a video after saving it (put them in or took them out, made them bigger or smaller, moved them, or corrected a line), the saved file still said it matched, so you couldn't tell it had the old captions. Now the list next to Save Video and the card on Home say <em>Edited since saved</em>. After this update, videos you already saved with captions in them will say so once, even though nothing is wrong with them; saving again clears it.</li>
-          <li><strong>A paused iPhone or iPad recording no longer stops when the cable comes loose</strong> — if the cable slipped out while you were paused, iRecord didn't notice when you plugged it back in, kept trying to reconnect, and about half a minute later stopped the whole Recording while you were still paused. Now it sees the phone is back, says so, and waits for you, and when you resume, the take carries on where it left off. Time spent paused no longer counts toward the half a minute iRecord gives a cable to come back.</li>
-          <li><strong>A Section you delete while recording no longer comes back</strong> — if you deleted a Section in the editor while iRecord was still recording into the same Recording, it came back when you moved on to the next Section or pressed Stop, without its video. Now the editor waits until you stop before it lets you change that Recording, and a new name you give it while recording is kept.</li>
-          <li><strong>Opening a Recording while it records no longer loses Sections</strong> — if you opened a Recording from Home while iRecord was still recording into it, the Sections recorded after you opened it could vanish from the timeline once you stopped, and from the saved video too. Opening a different Recording while recording, then pressing Stop, could empty the timeline of the one you recorded. Now the editor shows every Section you recorded when you stop.</li>
-          <li><strong>You can't delete a Recording while it is recording</strong> — deleting it threw away the video being recorded, and every Section after it. Now iRecord says it is being recorded and asks you to stop first.</li>
-          <li><strong>Captions from a deleted take no longer turn up on the next one</strong> — if you deleted a Section while its captions were still being made, they could be saved anyway, then show up on the next take you recorded there and in its saved video. Now they are thrown away, and a new take never picks up captions that belong to a deleted one.</li>
-          <li><strong>Undo works after deleting half of a split Section</strong> — if you split a clip and chose Delete Section on one half, iRecord warned that the take would be thrown away, which it wasn't, and then ⌘Z could no longer undo anything you had done. Now that half simply leaves the timeline, with no warning, and ⌘Z brings it back.</li>
-        </ul>
-      ]]></description>
-      <enclosure
-        url="https://github.com/aristidesnakos/irecord-releases/releases/download/v1.282.1/iRecord.dmg"
-        type="application/x-apple-diskimage"
-        sparkle:edSignature="TnVVeqKMod+FMOeG5TdoyoRqYKsgt421qoTb/W7lljbQwbLFugE43KCX47+gJMU+apdKmxE8MYzaRXfycIdsBg==" length="4648904"
       />
     </item>
   </channel>
