@@ -7,6 +7,47 @@
     <language>en</language>
 
     <item>
+      <title>Version 1.297.0</title>
+      <pubDate>Sat, 24 Oct 2026 00:16:49 +0300</pubDate>
+      <sparkle:version>2629700</sparkle:version>
+      <sparkle:shortVersionString>1.297.0</sparkle:shortVersionString>
+      <sparkle:minimumSystemVersion>26.0</sparkle:minimumSystemVersion>
+      <description><![CDATA[
+        <style>
+          body { font-family: -apple-system, BlinkMacSystemFont, sans-serif; font-size: 13px; line-height: 1.4; }
+          h3 { margin: 0 0 10px 0; font-size: 15px; }
+          h4 { margin: 14px 0 4px 0; font-size: 13px; }
+          code { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 12px; }
+          ul { margin: 0; padding-left: 20px; }
+          li { margin: 6px 0; }
+        </style>
+        <h3>What's New in 1.297.0</h3>
+        <h4>Added</h4>
+        <ul>
+          <li><strong>Section titles can pop or slide in</strong> — under Section Titles in the Text tab, Comes in picks how each title arrives: Fade, as before, Pop or Slide In. It leaves the reverse way, and the saved video moves exactly like the editor does.</li>
+          <li><strong>Lay a video, GIF or picture over your video</strong> — Add a Layer… in File, in the Layers tab or in the picture's right-click puts a file over your video from where you are, and dropping a file on the picture does the same. It fills the picture while it plays and your voice goes on underneath. The layer shows a small picture of what you added, and the saved video matches what you see.</li>
+          <li><strong>A layer is checked like a new take</strong> — Prodoozie looks for private text in the file you add, and Save Video and Share wait for that. Right-click a layer and choose Hide an Area… to cover part of it for as long as it shows.</li>
+          <li><strong>A retake says which layers it left behind</strong> — when you re-record a part with a layer on it, a line says "1 layer stayed with the earlier take". Keep It Here puts it over the new one.</li>
+        </ul>
+        <h4>Changed</h4>
+        <ul>
+          <li><strong>The timeline fits all its rows</strong> — Zoom, Layers and Hidden are thinner, and the window grows to make room for them, so you scroll far less to find a layer or a mask.</li>
+        </ul>
+        <h4>Fixed</h4>
+        <ul>
+          <li><strong>A title's fade is smooth in the editor</strong> — it used to play in a few jumpy steps while the saved video was smooth. Now the editor draws it on every frame too.</li>
+          <li><strong>A title no longer vanishes at a cut</strong> — when the tidy-up cut an um from a Section's first few seconds, its title disappeared at that cut. Now it stays on for its full four seconds.</li>
+          <li><strong>Pulling a Section's end works at Fit</strong> — dragging the last Section's end left used to run away from your pointer. It now follows it, and a short clip beside it no longer grabs the end of the clip before it.</li>
+        </ul>
+      ]]></description>
+      <enclosure
+        url="https://github.com/aristidesnakos/irecord-releases/releases/download/v1.297.0/Prodoozie.dmg"
+        type="application/x-apple-diskimage"
+        sparkle:edSignature="ElUNMDVQvOVO/0gtgFqVV80eGU5IPm9lMpck1FnTeb+1VyhE5KJeRV2sGV+dIhM8KKj3S+Y+NgGVPKj14RnBAQ==" length="7409265"
+      />
+    </item>
+
+    <item>
       <title>Version 1.294.0</title>
       <pubDate>Wed, 21 Oct 2026 18:42:36 +0300</pubDate>
       <sparkle:version>2629400</sparkle:version>
@@ -51,7 +92,6 @@
         sparkle:edSignature="sSjs8M9FJHZOhEV2Q5eV5metRWiD7FCNx7IbubLd07Hy4N/VfNsX9oSnxNEaEhRr7jxPYxlD5KGTqbylv14ADw==" length="7053509"
       />
     </item>
-
     <item>
       <title>Version 1.293.0</title>
       <pubDate>Tue, 20 Oct 2026 17:03:45 +0300</pubDate>
@@ -187,33 +227,6 @@
         url="https://github.com/aristidesnakos/irecord-releases/releases/download/v1.288.0/iRecord.dmg"
         type="application/x-apple-diskimage"
         sparkle:edSignature="4LThc5ULYTSIAJkgCBT6h3+D9tCx3nkKJjhplKKAg8o7E7VLc6XDR5yH7V/xChZPLWM/Y566DtEVn258MUlsDg==" length="4666649"
-      />
-    </item>
-    <item>
-      <title>Version 1.285.0</title>
-      <pubDate>Mon, 12 Oct 2026 17:58:36 +0300</pubDate>
-      <sparkle:version>2628500</sparkle:version>
-      <sparkle:shortVersionString>1.285.0</sparkle:shortVersionString>
-      <sparkle:minimumSystemVersion>15.0</sparkle:minimumSystemVersion>
-      <description><![CDATA[
-        <style>
-          body { font-family: -apple-system, BlinkMacSystemFont, sans-serif; font-size: 13px; line-height: 1.4; }
-          h3 { margin: 0 0 10px 0; font-size: 15px; }
-          h4 { margin: 14px 0 4px 0; font-size: 13px; }
-          code { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 12px; }
-          ul { margin: 0; padding-left: 20px; }
-          li { margin: 6px 0; }
-        </style>
-        <h3>What's New in 1.285.0</h3>
-        <h4>Changed</h4>
-        <ul>
-          <li><strong>New copies of iRecord come with a one-day trial</strong> — someone installing iRecord for the first time now gets one day to try it before buying, instead of seven. If you are already on a trial, nothing changes: you keep the seven days you started with.</li>
-        </ul>
-      ]]></description>
-      <enclosure
-        url="https://github.com/aristidesnakos/irecord-releases/releases/download/v1.285.0/iRecord.dmg"
-        type="application/x-apple-diskimage"
-        sparkle:edSignature="tBDfIpQNwF+agGKE26T46RV8KS28uYSsCdKCZdxtueNKQa0UQeeXClhAFUG8WvswjtD1+yd0+w9/7Ul22CnBDw==" length="4655249"
       />
     </item>
   </channel>
