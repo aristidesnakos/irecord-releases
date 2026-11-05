@@ -7,6 +7,42 @@
     <language>en</language>
 
     <item>
+      <title>Version 1.309.0</title>
+      <pubDate>Thu, 05 Nov 2026 23:55:31 +0200</pubDate>
+      <sparkle:version>2630900</sparkle:version>
+      <sparkle:shortVersionString>1.309.0</sparkle:shortVersionString>
+      <sparkle:minimumSystemVersion>26.0</sparkle:minimumSystemVersion>
+      <description><![CDATA[
+        <style>
+          body { font-family: -apple-system, BlinkMacSystemFont, sans-serif; font-size: 13px; line-height: 1.4; }
+          h3 { margin: 0 0 10px 0; font-size: 15px; }
+          h4 { margin: 14px 0 4px 0; font-size: 13px; }
+          code { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 12px; }
+          ul { margin: 0; padding-left: 20px; }
+          li { margin: 6px 0; }
+        </style>
+        <h3>What's New in 1.309.0</h3>
+        <h4>Added</h4>
+        <ul>
+          <li><strong>Play when you add a step to a loop</strong> — the Add a Step window now has Play and Pause beside the time. Play runs the video on from where you are, and Pause, or dragging along the strip, stops it right there.</li>
+        </ul>
+        <h4>Changed</h4>
+        <ul>
+          <li><strong>Crop is in the Video tab</strong> — the Crop row moved from the Look tab to the Video tab, under Cursor Zoom, so every Section has it. The Look tab is now just Background and Frame.</li>
+        </ul>
+        <h4>Fixed</h4>
+        <ul>
+          <li><strong>Pause, Stop and Start over work wherever you press them</strong> — on the recording indicator, a click beside the little icon did nothing, or dragged the indicator instead. Now the whole square around each icon is the button, and Next section works the same way.</li>
+        </ul>
+      ]]></description>
+      <enclosure
+        url="https://github.com/aristidesnakos/irecord-releases/releases/download/v1.309.0/Prodoozie.dmg"
+        type="application/x-apple-diskimage"
+        sparkle:edSignature="657vfRKP2xwkarMzghGW+CBY40DDbPLhrpdXmhUEqVMhQU1jG7WQKn4CRNtja0opU6mrAdCR5o7VI2n+xMb2Dw==" length="7867052"
+      />
+    </item>
+
+    <item>
       <title>Version 1.303.0</title>
       <pubDate>Fri, 30 Oct 2026 07:34:48 +0200</pubDate>
       <sparkle:version>2630300</sparkle:version>
@@ -46,7 +82,6 @@
         sparkle:edSignature="fJ9XmquvsqQBUrKyHM68jtBM6qofv5xx3vcqUb2chYY0zS6/tqxtE/aN0jr1yIq4H0tDg1z1Si9LyOYteuKnAQ==" length="7839663"
       />
     </item>
-
     <item>
       <title>Version 1.297.0</title>
       <pubDate>Sat, 24 Oct 2026 00:16:49 +0300</pubDate>
@@ -179,51 +214,6 @@
         url="https://github.com/aristidesnakos/irecord-releases/releases/download/v1.293.0/Prodoozie.dmg"
         type="application/x-apple-diskimage"
         sparkle:edSignature="bBj85NU4PuQc4qYT1Df6ChU0uzxFaE8Lq+Zig8Mxa9lrR0usOxySAKTsoS7n2TttePOYN+oCXuxC6qQMkg0GDg==" length="6097618"
-      />
-    </item>
-    <item>
-      <title>Version 1.288.1</title>
-      <pubDate>Thu, 15 Oct 2026 17:12:04 +0300</pubDate>
-      <sparkle:version>2628801</sparkle:version>
-      <sparkle:shortVersionString>1.288.1</sparkle:shortVersionString>
-      <sparkle:minimumSystemVersion>15.0</sparkle:minimumSystemVersion>
-      <description><![CDATA[
-        <style>
-          body { font-family: -apple-system, BlinkMacSystemFont, sans-serif; font-size: 13px; line-height: 1.4; }
-          h3 { margin: 0 0 10px 0; font-size: 15px; }
-          h4 { margin: 14px 0 4px 0; font-size: 13px; }
-          code { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 12px; }
-          ul { margin: 0; padding-left: 20px; }
-          li { margin: 6px 0; }
-        </style>
-        <h3>What's New in 1.288.1</h3>
-        <h4>Added</h4>
-        <ul>
-          <li><strong>The plan chat reads links you type</strong> — paste your product's website into a message and iRecord reads the page before the AI answers, showing it above the message box like any file you attach. Addresses on your own Mac or network are read only if you add them with +. A slow or very large page gives up after 30 seconds instead of holding up your message.</li>
-          <li><strong>Plans that fit what you make</strong> — the Create a Plan sheet asks once whether you usually make presentations, product demos, lessons, tutorials or a mix, and its suggestions and the AI's advice follow your answer. Home no longer calls every video a lecture unless you teach. You can change your answer in Settings → Recording.</li>
-        </ul>
-        <h4>Changed</h4>
-        <ul>
-          <li><strong>Product demos start with the product</strong> — the plan chat now asks what your product is called and for a link to its website, then its main features, who it is for and the problem it solves. It no longer assumes the video is about iRecord, and it no longer adds an empty placeholder Section while it is still asking.</li>
-          <li><strong>One zoom slider</strong> — Cursor Zoom had two sliders, Smooth and Speed, that did almost the same thing. There is now one, called Smooth.</li>
-          <li><strong>The Camera panel says Section</strong> — the switch beside Whole recording now reads Section instead of Each section.</li>
-        </ul>
-        <h4>Fixed</h4>
-        <ul>
-          <li><strong>Closing the plan sheet stops the AI</strong> — if you close Create a Plan, or switch AI off, while the AI is still answering, iRecord stops waiting for it. A late answer can no longer replace the Sections you are writing yourself.</li>
-          <li><strong>A message the AI could not answer comes back</strong> — if OpenRouter refuses a message or cannot be reached, your message goes back in the box with the reason, ready to send again, instead of going out again with every message after it.</li>
-          <li><strong>Captions appear straight away on a paused video</strong> — turning captions on, correcting a line, adding subtitles, or captions finishing for a new take used to leave the old words on screen, or none at all, until you pressed play or moved the playhead. The new words now show the moment they change.</li>
-          <li><strong>Fixing a caption no longer repeats words</strong> — if you retyped a line in the Captions list so it got longer, pressed Return and then clicked away, the words that spilled onto the next line could show up twice. Shortening a line could drop the first words of the next one. Now each fix is saved once.</li>
-          <li><strong>Naming a Series makes one Recording</strong> — pressing Return twice quickly in the Name this Series box could make two Recordings when your Mac was busy. Now it makes one.</li>
-          <li><strong>Saving right after you stop keeps the tidy-up</strong> — if you pressed Save Video as soon as you stopped recording, the video could be saved before iRecord had cut your pauses and ums, so it came out longer than the editor showed. Save Video now waits a moment for the tidy-up to finish, and says so.</li>
-          <li><strong>A save that stops no longer leaves a big file behind</strong> — when Save Video stopped partway, or you cancelled it while it was stuck, it left a large unfinished file in the folder you were saving to, and you had to find and delete it yourself. Now iRecord deletes it.</li>
-          <li><strong>Typing in a caption line no longer edits your video</strong> — while you corrected a line in the Captions list, ⌘Z undid your last timeline change instead of your typing, ⌘B cut the video, and the arrow keys moved the playhead instead of the cursor. Now those keys work on the text while you type, and go back to the timeline as soon as you click it.</li>
-        </ul>
-      ]]></description>
-      <enclosure
-        url="https://github.com/aristidesnakos/irecord-releases/releases/download/v1.288.1/iRecord.dmg"
-        type="application/x-apple-diskimage"
-        sparkle:edSignature="oCPBl7Uzj3G7sUG7oJYI3GBnlDgs2P49KOhlOzd3fwVDnsxjE9VMe1EQAMTWdjr/i61dWeaZERjjCAWPGb/9CQ==" length="4780726"
       />
     </item>
   </channel>
