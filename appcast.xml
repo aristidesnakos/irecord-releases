@@ -7,6 +7,34 @@
     <language>en</language>
 
     <item>
+      <title>Version 1.316.1</title>
+      <pubDate>Thu, 12 Nov 2026 20:59:13 +0200</pubDate>
+      <sparkle:version>2631601</sparkle:version>
+      <sparkle:shortVersionString>1.316.1</sparkle:shortVersionString>
+      <sparkle:minimumSystemVersion>26.0</sparkle:minimumSystemVersion>
+      <description><![CDATA[
+        <style>
+          body { font-family: -apple-system, BlinkMacSystemFont, sans-serif; font-size: 13px; line-height: 1.4; }
+          h3 { margin: 0 0 10px 0; font-size: 15px; }
+          h4 { margin: 14px 0 4px 0; font-size: 13px; }
+          code { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 12px; }
+          ul { margin: 0; padding-left: 20px; }
+          li { margin: 6px 0; }
+        </style>
+        <h3>What's New in 1.316.1</h3>
+        <h4>Changed</h4>
+        <ul>
+          <li><strong>Make a Loop shows what you made</strong> — a step you pick now opens once its rings and words are showing. Zoom waits for you to drag before it zooms, and a step's edges are easier to see and grab.</li>
+        </ul>
+      ]]></description>
+      <enclosure
+        url="https://github.com/aristidesnakos/irecord-releases/releases/download/v1.316.1/Prodoozie.dmg"
+        type="application/x-apple-diskimage"
+        sparkle:edSignature="VdtidHzQEy9BRBTtyQJtIJvoTQD7ULVJawp/4RH9hTCpU+8Nl70iXhj+aGTqvOX+1PUvxFozHBlmk81QPgMFBQ==" length="9103018"
+      />
+    </item>
+
+    <item>
       <title>Version 1.316.0</title>
       <pubDate>Thu, 12 Nov 2026 19:16:15 +0200</pubDate>
       <sparkle:version>2631600</sparkle:version>
@@ -53,7 +81,6 @@
         sparkle:edSignature="r++K3eMRWJOLwUWp9Lh8WaG6dZp1bb7vya/ZjvZNSNp1UJ9y5x6sgvC8zw7Tap1yXjkByNPfG42aVDMFcfa9Dg==" length="9120144"
       />
     </item>
-
     <item>
       <title>Version 1.315.0</title>
       <pubDate>Wed, 11 Nov 2026 17:56:53 +0200</pubDate>
@@ -162,46 +189,6 @@
         url="https://github.com/aristidesnakos/irecord-releases/releases/download/v1.309.0/Prodoozie.dmg"
         type="application/x-apple-diskimage"
         sparkle:edSignature="657vfRKP2xwkarMzghGW+CBY40DDbPLhrpdXmhUEqVMhQU1jG7WQKn4CRNtja0opU6mrAdCR5o7VI2n+xMb2Dw==" length="7867052"
-      />
-    </item>
-    <item>
-      <title>Version 1.303.0</title>
-      <pubDate>Fri, 30 Oct 2026 07:34:48 +0200</pubDate>
-      <sparkle:version>2630300</sparkle:version>
-      <sparkle:shortVersionString>1.303.0</sparkle:shortVersionString>
-      <sparkle:minimumSystemVersion>26.0</sparkle:minimumSystemVersion>
-      <description><![CDATA[
-        <style>
-          body { font-family: -apple-system, BlinkMacSystemFont, sans-serif; font-size: 13px; line-height: 1.4; }
-          h3 { margin: 0 0 10px 0; font-size: 15px; }
-          h4 { margin: 14px 0 4px 0; font-size: 13px; }
-          code { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 12px; }
-          ul { margin: 0; padding-left: 20px; }
-          li { margin: 6px 0; }
-        </style>
-        <h3>What's New in 1.303.0</h3>
-        <h4>Added</h4>
-        <ul>
-          <li><strong>Name a layer</strong> — right-click a layer on the timeline, or use its row in the Layers tab, and choose Rename Layer… to give it a name. The name shows when you hover the layer, in the Layers tab, and in the message when a layer's file could not be checked. Clear it and the layer goes back to "Layer 2".</li>
-          <li><strong>Put a layer in a corner</strong> — a layer can now sit over your video in a corner instead of filling it. Pick Full or Corner in the Layers tab or in the layer's right-click, drag it anywhere on the picture and it stays where you let go, and drag its inner corner to make it bigger or smaller. It stays put, over the camera, when the video zooms.</li>
-          <li><strong>Move and resize an area you hid</strong> — click an area you hid, or open Areas you drew in the Hidden tab and press Adjust, and it gets handles: drag a corner or an edge to resize it, drag inside it to move it, and click another area you drew to pick that one. It works over a layer too, and a new area has its handles as soon as you draw it.</li>
-          <li><strong>Check what Prodoozie hid</strong> — the Hidden tab now says how many things are hidden and lists them: Areas you drew, then Names, Links, Emails and the other kinds, each with a switch. Open a kind to see every one in the order it appears, click one to jump to it and see a ring round it on the picture, and use its eye to show just that one. One switch hides or shows everything found, and Hide an Area… is the small button beside the title.</li>
-        </ul>
-        <h4>Changed</h4>
-        <ul>
-          <li><strong>The Camera tab is one page, and you can drag the camera</strong> — under the four layouts, Place, Size, Shape, Camera, Split, Gap and Border are always there, and the ones your layout doesn't use are dimmed but still work, so you can set a corner before you switch to it. Frame each Section separately is now a switch at the bottom. On the picture, drag the camera to another corner, drag the dot on its inner corner to make it bigger or smaller, or, in Side by side, drag the line between the screen and the camera to change how wide it is.</li>
-          <li><strong>Text is one tab, Section by Section</strong> — the Text tab lists every Section with its title and the captions it plays, so the words on one slide are in one place. Type new words for a Section's title and the video says them; clear the box and the Section's name is the title again. The Sections tab is gone: a Section's length and Plan Sections… are in the Video tab, and the Sections row opens it.</li>
-          <li><strong>A title or a caption has a small panel</strong> — click one on the picture and a small panel opens on it with its words ready to retype and its look: Look, Comes in, Font and Size for a title, Size and Position for a caption. The Text tab says what the look is set to, and pressing that line opens the same panel.</li>
-          <li><strong>The Layers tab is a list and a page for each layer</strong> — the list shows your layers, front first, each with when it plays. Click one and the video goes to it and its page opens: where it sits, picked from five small pictures (Full and the four corners), its size, Rename Layer…, Hide an Area… and Delete Layer. Drag the grip beside a layer to put it in front of or behind another, and Add a Layer… is the small plus beside the title.</li>
-          <li><strong>A new layer starts in a corner</strong> — it goes in the corner across from your camera, or the one nearest where you dropped it, instead of filling the whole picture. Choose Full to fill it.</li>
-          <li><strong>The Video tab is a switch and a few plain rows</strong> — Cursor Zoom is a switch, and when it is on it says in plain words what each mode does: follow the pointer, on click, or always zoomed in. Under it are the rows for the clip you are on: pick another take, split, re-record (one choice for the part, one for the whole Section, each saying what it keeps), remove the clip, and Plan Sections…. Delete Section… is the quiet row at the bottom, and it asks first. The facts and the grey note are gone, because the clip already shows its name, length and takes.</li>
-          <li><strong>The Look tab starts with six looks</strong> — each is a small picture of your video framed with a background, padding and shadow. Click one and it sets all three, and ⌘Z puts them back. Under them, Background is Color, Gradient or Image, Padding is one slider, and Crop is a single row that says what you kept. The twelve wallpapers are gone; a Recording that used one keeps it.</li>
-        </ul>
-      ]]></description>
-      <enclosure
-        url="https://github.com/aristidesnakos/irecord-releases/releases/download/v1.303.0/Prodoozie.dmg"
-        type="application/x-apple-diskimage"
-        sparkle:edSignature="fJ9XmquvsqQBUrKyHM68jtBM6qofv5xx3vcqUb2chYY0zS6/tqxtE/aN0jr1yIq4H0tDg1z1Si9LyOYteuKnAQ==" length="7839663"
       />
     </item>
     <item>
