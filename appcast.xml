@@ -7,6 +7,41 @@
     <language>en</language>
 
     <item>
+      <title>Version 1.324.0</title>
+      <pubDate>Fri, 20 Nov 2026 00:47:44 +0200</pubDate>
+      <sparkle:version>2632400</sparkle:version>
+      <sparkle:shortVersionString>1.324.0</sparkle:shortVersionString>
+      <sparkle:minimumSystemVersion>26.0</sparkle:minimumSystemVersion>
+      <description><![CDATA[
+        <style>
+          body { font-family: -apple-system, BlinkMacSystemFont, sans-serif; font-size: 13px; line-height: 1.4; }
+          h3 { margin: 0 0 10px 0; font-size: 15px; }
+          h4 { margin: 14px 0 4px 0; font-size: 13px; }
+          code { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 12px; }
+          ul { margin: 0; padding-left: 20px; }
+          li { margin: 6px 0; }
+        </style>
+        <h3>What's New in 1.324.0</h3>
+        <h4>Added</h4>
+        <ul>
+          <li><strong>Refresh a brand from its website</strong> — if your site's logo or colours changed, choose Refresh from your site in the brand's menu in Settings ▸ Brand. You see the brand before and after, and pick what to take. Anything you changed by hand, like its name or look, stays as you made it. Every Recording and Template that uses the brand updates too, keeping its own words and settings.</li>
+          <li><strong>Every slide can move now, not only the frame</strong> — the Look tab has a Motion row in place of Assemble on Open. Pick Assemble, Sweep, Drift, Hand-off or Cut, and the intro and chapter slides build themselves the same way, their logo, words and lines arriving one after another. To change one slide on its own, use the small mark on its block in the timeline.</li>
+          <li><strong>Your logo can sit in a corner of every frame</strong> — turn on Logo on every frame under your brand in the Look tab. Your brand's logo shows in the bottom right of your video, or the corner you pick, at the size you pick. It is in the saved video exactly where you see it in the editor.</li>
+          <li><strong>Space plays and pauses</strong> — in the editor, press Space to play your video and again to pause it, as in other video editors. It doesn't get in the way when you type a title or a caption. The hints under the timeline now list it.</li>
+        </ul>
+        <h4>Changed</h4>
+        <ul>
+          <li><strong>The timeline waits for what you add</strong> — each planned Section now waits on the video row as a dashed block with a red record dot, right under its name. Click it to record that Section, or click New Section at the end for one you didn't plan. Pictures and videos over your video go on the Layers row: point at the timeline and it opens, then click where the picture should start.</li>
+        </ul>
+      ]]></description>
+      <enclosure
+        url="https://github.com/aristidesnakos/irecord-releases/releases/download/v1.324.0/Prodoozie.dmg"
+        type="application/x-apple-diskimage"
+        sparkle:edSignature="ZrhmRtXbd9XUwHLlwNw5VTNadG9zFog+HC0pJAXMiWCqONP5sEMjeHkeY6SgRh36n8grxbOXe9jKhRDfZU22CA==" length="9540156"
+      />
+    </item>
+
+    <item>
       <title>Version 1.319.0</title>
       <pubDate>Sun, 15 Nov 2026 08:27:56 +0200</pubDate>
       <sparkle:version>2631900</sparkle:version>
@@ -39,7 +74,6 @@
         sparkle:edSignature="3aH1szPcxUg07lTlj/ZifKqYE2tYufLwYau21CMI52f/rHX7hd0bV5dYOvI//Kc7EA0OkexXLeNm08APgt4pDQ==" length="9122663"
       />
     </item>
-
     <item>
       <title>Version 1.316.1</title>
       <pubDate>Thu, 12 Nov 2026 20:59:13 +0200</pubDate>
@@ -147,46 +181,6 @@
         url="https://github.com/aristidesnakos/irecord-releases/releases/download/v1.315.0/Prodoozie.dmg"
         type="application/x-apple-diskimage"
         sparkle:edSignature="7y7y0IDHzQdX+2teJL54CxW6AvQqgJ3/SYsC32g0eWOQYBLYwxgWY/AzCWFRAY32ijeLikzn+1JutMHjS663Cg==" length="8458516"
-      />
-    </item>
-    <item>
-      <title>Version 1.313.0</title>
-      <pubDate>Mon, 09 Nov 2026 17:42:29 +0200</pubDate>
-      <sparkle:version>2631300</sparkle:version>
-      <sparkle:shortVersionString>1.313.0</sparkle:shortVersionString>
-      <sparkle:minimumSystemVersion>26.0</sparkle:minimumSystemVersion>
-      <description><![CDATA[
-        <style>
-          body { font-family: -apple-system, BlinkMacSystemFont, sans-serif; font-size: 13px; line-height: 1.4; }
-          h3 { margin: 0 0 10px 0; font-size: 15px; }
-          h4 { margin: 14px 0 4px 0; font-size: 13px; }
-          code { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 12px; }
-          ul { margin: 0; padding-left: 20px; }
-          li { margin: 6px 0; }
-        </style>
-        <h3>What's New in 1.313.0</h3>
-        <h4>Changed</h4>
-        <ul>
-          <li><strong>Choosing a window to record is quicker</strong> — choose Window and the list is there straight away, each app once with its icon, and the window you recorded last is already picked. Two windows with the same name show their sizes, and a window that can't be recorded is greyed out. "Point at a window" is gone: it often picked a window you couldn't see.</li>
-          <li><strong>The New Recording window is tidier</strong> — what's in the picture sits on the left and what you hear on the right, all on one row. The note about your Mac now says what it found, like "12 menu bar icons in the shot", and only counts what will be in the recording.</li>
-          <li><strong>No more teleprompter</strong> — the Script button and the teleprompter are gone. Scripts you already wrote are kept and still help captions get your words right, and ⌘⇧↓ still moves to the next Section.</li>
-          <li><strong>Where the pointer goes is always recorded</strong> — the switch for it is gone, so cursor zoom always has something to follow.</li>
-          <li><strong>The editing panels are easier to read</strong> — each part of a tab now sits on a tile of its own, the headings stand out, and buttons like Split and Remove have a small icon so they look like buttons. Every switch lines up on the right. A click anywhere on the Crop row starts cropping, and a crop you already set is just as easy to change.</li>
-          <li><strong>The buttons along the top line up with the tabs</strong> — with the editing panel open, Save Video and the buttons beside it now start where the first tab starts, and the last button ends where the last tab ends.</li>
-          <li><strong>Settings are easier to read</strong> — every Settings tab now has bigger text, a clear heading for each part with a line under it saying what it is for, and more room between things. All the tabs are laid out the same way.</li>
-          <li><strong>What was hidden is in the Hidden tab</strong> — the line under the picture that said how many things were hidden, with a switch for each kind, is gone. The Hidden tab has the count, the switches and how far the check for sensitive text has read. The one thing still under the picture is a warning, when a take could not be checked.</li>
-        </ul>
-        <h4>Fixed</h4>
-        <ul>
-          <li><strong>Long pauses in the middle of a take are shortened again</strong> — since late October, tidying up a new take trimmed the quiet before your first word and after your last, but never shortened a pause in between, even while nothing on screen moved. Now it does again.</li>
-          <li><strong>Names in older takes are hidden too</strong> — takes checked for sensitive text before Prodoozie looked for people's names were never checked again, so names in them could show in a saved video. Now, when you open a Recording, those takes are checked once more, and Save Video waits for it as it does for a new take. Anything you had chosen to show is hidden again, so look through the Hidden tab before you share.</li>
-          <li><strong>A name that was found stays hidden</strong> — the check for sensitive text could lose a name for about a second when another word on the same line changed, and the saved video showed the name for that second. Now anything it found stays hidden while its words are still on that line. Takes checked before are checked again the next time you open their Recording.</li>
-        </ul>
-      ]]></description>
-      <enclosure
-        url="https://github.com/aristidesnakos/irecord-releases/releases/download/v1.313.0/Prodoozie.dmg"
-        type="application/x-apple-diskimage"
-        sparkle:edSignature="7AD3JDibSz2D5SZXDbFs32yXjtLb3iu9wTMSTM/f8ir/3XK1b3UREdYqVFf074omZoqGq283CfiNey9FCva6CQ==" length="8403897"
       />
     </item>
     <item>
