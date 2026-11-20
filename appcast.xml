@@ -7,6 +7,35 @@
     <language>en</language>
 
     <item>
+      <title>Version 1.324.1</title>
+      <pubDate>Fri, 20 Nov 2026 12:40:19 +0200</pubDate>
+      <sparkle:version>2632401</sparkle:version>
+      <sparkle:shortVersionString>1.324.1</sparkle:shortVersionString>
+      <sparkle:minimumSystemVersion>26.0</sparkle:minimumSystemVersion>
+      <description><![CDATA[
+        <style>
+          body { font-family: -apple-system, BlinkMacSystemFont, sans-serif; font-size: 13px; line-height: 1.4; }
+          h3 { margin: 0 0 10px 0; font-size: 15px; }
+          h4 { margin: 14px 0 4px 0; font-size: 13px; }
+          code { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 12px; }
+          ul { margin: 0; padding-left: 20px; }
+          li { margin: 6px 0; }
+        </style>
+        <h3>What's New in 1.324.1</h3>
+        <h4>Added</h4>
+        <ul>
+          <li><strong>Share a Recording as a link</strong> — press Share beside Save Video and Prodoozie uploads the video and gives you a link on prodoozie.com. Fix a Section later and Update Link puts the new cut behind the same link; revoke it and the link stops working. Like Save Video, Share waits until a new take has been tidied up and checked for private text before anything is uploaded.</li>
+          <li><strong>Two free hours of watching a month, and more when you need them</strong> — every licence includes two hours a month of people watching your links. More hours… sells 25, 100 or 250 hours, paid once, and they keep until you use them, for up to two years.</li>
+        </ul>
+      ]]></description>
+      <enclosure
+        url="https://github.com/aristidesnakos/irecord-releases/releases/download/v1.324.1/Prodoozie.dmg"
+        type="application/x-apple-diskimage"
+        sparkle:edSignature="RVtLGtx6+Qjq44drK9PsSBin0sopYYfYbbcENGTo8f04ib2A9hgde2soQNVcZTOBGEorGCrYQAbnTpYYYS/NDA==" length="9624886"
+      />
+    </item>
+
+    <item>
       <title>Version 1.324.0</title>
       <pubDate>Fri, 20 Nov 2026 00:47:44 +0200</pubDate>
       <sparkle:version>2632400</sparkle:version>
@@ -40,7 +69,6 @@
         sparkle:edSignature="ZrhmRtXbd9XUwHLlwNw5VTNadG9zFog+HC0pJAXMiWCqONP5sEMjeHkeY6SgRh36n8grxbOXe9jKhRDfZU22CA==" length="9540156"
       />
     </item>
-
     <item>
       <title>Version 1.319.0</title>
       <pubDate>Sun, 15 Nov 2026 08:27:56 +0200</pubDate>
@@ -146,41 +174,6 @@
         url="https://github.com/aristidesnakos/irecord-releases/releases/download/v1.316.0/Prodoozie.dmg"
         type="application/x-apple-diskimage"
         sparkle:edSignature="r++K3eMRWJOLwUWp9Lh8WaG6dZp1bb7vya/ZjvZNSNp1UJ9y5x6sgvC8zw7Tap1yXjkByNPfG42aVDMFcfa9Dg==" length="9120144"
-      />
-    </item>
-    <item>
-      <title>Version 1.315.0</title>
-      <pubDate>Wed, 11 Nov 2026 17:56:53 +0200</pubDate>
-      <sparkle:version>2631500</sparkle:version>
-      <sparkle:shortVersionString>1.315.0</sparkle:shortVersionString>
-      <sparkle:minimumSystemVersion>26.0</sparkle:minimumSystemVersion>
-      <description><![CDATA[
-        <style>
-          body { font-family: -apple-system, BlinkMacSystemFont, sans-serif; font-size: 13px; line-height: 1.4; }
-          h3 { margin: 0 0 10px 0; font-size: 15px; }
-          h4 { margin: 14px 0 4px 0; font-size: 13px; }
-          code { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 12px; }
-          ul { margin: 0; padding-left: 20px; }
-          li { margin: 6px 0; }
-        </style>
-        <h3>What's New in 1.315.0</h3>
-        <h4>Added</h4>
-        <ul>
-          <li><strong>Your brand on your videos</strong> — make a brand from your website in Settings → Brand, and Prodoozie takes your colours, logo and address from it. Pick it in the Look tab to put a heading, a footer and a ring around the picture, and press Add End Card in the Text tab to end on a card with your address. Each Recording keeps its own copy, so changing a brand later never changes a video you already made.</li>
-        </ul>
-        <h4>Changed</h4>
-        <ul>
-          <li><strong>A new icon</strong> — the leopard's eye now looks out of an open clapperboard, in the Dock and in the menu bar. While you record, the eye in the menu bar opens into a red dot.</li>
-        </ul>
-        <h4>Fixed</h4>
-        <ul>
-          <li><strong>Window recordings are sharp again with Stage Manager on</strong> — a window picked from the side strip was recorded at the size of its little preview, so the video came out tiny and blurry. Prodoozie now records the window at its real size.</li>
-        </ul>
-      ]]></description>
-      <enclosure
-        url="https://github.com/aristidesnakos/irecord-releases/releases/download/v1.315.0/Prodoozie.dmg"
-        type="application/x-apple-diskimage"
-        sparkle:edSignature="7y7y0IDHzQdX+2teJL54CxW6AvQqgJ3/SYsC32g0eWOQYBLYwxgWY/AzCWFRAY32ijeLikzn+1JutMHjS663Cg==" length="8458516"
       />
     </item>
     <item>
